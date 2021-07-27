@@ -15,11 +15,11 @@ export default function Navbar() {
 						<NavLink exact activeClassName='current' to='/home'>
 							Home
 						</NavLink>
-						<NavLink exact activeClassName='current' to='/story'>
-							Story
-						</NavLink>
 						<NavLink exact activeClassName='current' to='/wines'>
 							Wines
+						</NavLink>
+						<NavLink exact activeClassName='current' to='/story'>
+							Story
 						</NavLink>
 						<NavLink exact activeClassName='current' to='/winery'>
 							Winery
