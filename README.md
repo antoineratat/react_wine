@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# React Wine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of contents
 
-## Available Scripts
+1. [Project description](#description)
+2. [Features](#features)
+3. [Installation instructions](#installation)
+4. [Project structure](#structure)
+5. [Screenshots](#screenshots)
 
-In the project directory, you can run:
+## 1. Project description<a name="description"></a>
 
-### `yarn start`
+Wine enables retailers to check the different available products. It's a showcase website only.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Project Scope
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Wine is a programming project, that allows its developers to practice client-side programming using API calls.
 
-### `yarn test`
+### References
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   React - https://reactjs.org/
+-   React Router - https://reactrouter.com/web/guides/quick-start
+-   React Bootstrap - https://react-bootstrap.github.io/
+-   React Spinners - http://www.davidhu.io/react-spinners/
+-   React Promise Tracker - https://lemoncode.github.io/react-promise-tracker/React
 
-### `yarn build`
+## 2. Features<a name="features"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Wine system provides simple mechanism for users to acquire information.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The following are the main features that are include in the system:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   Cross Platform Support: Offer support for most of the known and commercial operating systems
 
-### `yarn eject`
+-   Browse products: The system allows users to browse products directly from the product database.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-   Filter products: The system allows user to filter and quickly find products.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 3. Installation instructions<a name="installation"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Versions:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   Node: 14.15.1
+-   Npm: 6.14.8
+-   React: 17.0.2
 
-## Learn More
+Download code from Github:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```shell
+git clone https://github.com/antoineratat/react_wine.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Navigate to project directory.
 
-### Code Splitting
+```shell
+cd react_wine
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install node modules.
 
-### Analyzing the Bundle Size
+```shell
+yarn install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run the app in development mode. Open http://localhost:3000 to view it in the browser.
 
-### Making a Progressive Web App
+```shell
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 4. Project structure<a name="structure"></a>
 
-### Advanced Configuration
+![Components Screenshot](https://github.com/antoineratat/react_advisor/blob/master/screenshots/Components_advisor.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 5. Screenshots<a name="screenshots"></a>
 
-### Deployment
+Main Result Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Components Screenshot](https://github.com/antoineratat/react_advisor/blob/master/screenshots/main_search.PNG?raw=true)
 
-### `yarn build` fails to minify
+Filter Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Components Screenshot](https://github.com/antoineratat/react_advisor/blob/master/screenshots/quick_search_component.PNG?raw=true)
