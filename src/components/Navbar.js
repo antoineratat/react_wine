@@ -12,9 +12,6 @@ export default function Navbar() {
 				<BootstrapNavbar.Toggle aria-controls='basic-navbar-nav' />
 				<BootstrapNavbar.Collapse id='basic-navbar-nav'>
 					<Nav className='mr-auto'>
-						<NavLink exact activeClassName='current' to='/home'>
-							Home
-						</NavLink>
 						<NavLink exact activeClassName='current' to='/wines'>
 							Wines
 						</NavLink>
