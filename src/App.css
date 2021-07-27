@@ -40,3 +40,40 @@
 a.current {
 	background: red;
 }
+
+#background_big,
+#background_small {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+#overlay {
+	background-color: rgba(49, 49, 49, 0.466);
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 1;
+}
+
+.navbar {
+	z-index: 2;
+}
+
+#background_small {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	#background_small {
+		display: block;
+	}
+	#background_big {
+		display: none;
+	}
+}
