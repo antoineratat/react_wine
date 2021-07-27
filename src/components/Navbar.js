@@ -12,11 +12,21 @@ export default function Navbar() {
 				<BootstrapNavbar.Toggle aria-controls='basic-navbar-nav' />
 				<BootstrapNavbar.Collapse id='basic-navbar-nav'>
 					<Nav className='mr-auto'>
-						<NavLink to='/home'>Home</NavLink>
-						<NavLink to='/story'>Story</NavLink>
-						<NavLink to='/wines'>Wines</NavLink>
-						<NavLink to='/winery'>Winery</NavLink>
-						<NavLink to='/contact'>Contact</NavLink>
+						<NavLink exact activeClassName='current' to='/home'>
+							Home
+						</NavLink>
+						<NavLink exact activeClassName='current' to='/story'>
+							Story
+						</NavLink>
+						<NavLink exact activeClassName='current' to='/wines'>
+							Wines
+						</NavLink>
+						<NavLink exact activeClassName='current' to='/winery'>
+							Winery
+						</NavLink>
+						<NavLink exact activeClassName='current' to='/contact'>
+							Contact
+						</NavLink>
 					</Nav>
 				</BootstrapNavbar.Collapse>
 			</BootstrapNavbar>
