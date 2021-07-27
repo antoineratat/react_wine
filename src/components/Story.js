@@ -1,5 +1,13 @@
 import React from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 export default function Story() {
-	return <div>Story</div>
+	return (
+		<>
+			<Navbar />
+			Story
+			<Footer />
+		</>
+	)
 }
