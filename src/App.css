@@ -2,9 +2,27 @@
 	text-align: center;
 }
 
-a.current {
-	background: red;
+#background_big,
+#background_small {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
 }
+
+#overlay {
+	background-color: rgba(49, 49, 49, 0.548);
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 1;
+}
+
+/* NAVBAR */
 
 .navbar {
 	display: grid;
@@ -17,13 +35,49 @@ a.current {
 .navbar_brand {
 	grid-area: 1 / 1 / span 1 / span 1;
 	align-self: center;
-	justify-self: center;
+	justify-self: flex-start;
+	margin-left: 1rem;
+	text-decoration: none;
+}
+
+.navbar-light .navbar-brand {
+	text-transform: uppercase;
+	color: white;
+	font-weight: 450;
+	text-decoration: none;
+}
+
+.navbar-light .navbar-brand:hover {
+	color: white;
 }
 
 .navbar_nav {
 	grid-area: 1 / 2 / span 1 / span 1;
-	align-self: center;
-	justify-self: center;
+	justify-content: center;
+}
+
+.navbar-nav {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	min-width: 400px;
+	max-width: 400px;
+	align-content: space-evenly;
+	justify-items: center;
+}
+
+.navbar-nav a {
+	text-transform: uppercase;
+	color: white;
+	font-weight: 450;
+	text-decoration: none;
+}
+
+.navbar-nav a {
+	transition: 0.5s ease-in-out;
+}
+
+a.current {
+	background: red;
 }
 
 #background_small {
