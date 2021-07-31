@@ -25,7 +25,7 @@ function onMouseExit(e) {
 export default function Navbar() {
 	return (
 		<>
-			<BootstrapNavbar className='navbar navbar-dark' expand='md'>
+			<BootstrapNavbar className='navbar navbar-dark disable-select' expand='md'>
 				<Link to='/' className='navbar_brand'>
 					<BootstrapNavbar.Brand>React Wine</BootstrapNavbar.Brand>
 				</Link>

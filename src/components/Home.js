@@ -7,8 +7,8 @@ export default function Home() {
 	return (
 		<>
 			<Container fluid className='container_home'>
-				<Navbar className='navbar' />
 				<div id='overlay'></div>
+				<Navbar className='navbar' />
 				<video
 					id='background_big'
 					src='https://res.cloudinary.com/della-vite/video/upload/f_auto,q_auto,ac_none,f_auto,w_1400/dato/1598299900-dvwebsitehomepagegeneral16x9.mp4'
