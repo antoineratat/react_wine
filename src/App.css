@@ -76,6 +76,7 @@
 /* NAVBAR */
 
 .navbar {
+	margin: 2rem 0rem;
 	display: grid;
 	grid-template: 1fr / 2fr 8fr 2fr;
 	width: 100%;
@@ -147,5 +148,30 @@ a.current {
 	}
 	#background_big {
 		display: none;
+	}
+
+	.navbar {
+		display: flex;
+	}
+
+	.navbar_nav {
+		width: 95%;
+		margin: 1rem 0rem;
+		display: flex;
+		background-color: rgba(34, 37, 37, 0.466);
+		border-radius: 0.2rem;
+	}
+
+	.navbar-nav {
+		display: flex;
+		padding: 1rem 0.7rem;
+		display: grid;
+		justify-content: center;
+		grid-template: repeat(4, 1fr) / 1fr;
+	}
+
+	.navbar-nav a {
+		transition: 0s ease-in-out;
+		margin: 0.2rem 0rem;
 	}
 }
