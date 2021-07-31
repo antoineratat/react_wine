@@ -151,6 +151,19 @@ a.current {
 	margin-right: 8rem;
 }
 
+.navigation-footer a {
+	font-family: 'rudabold';
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 450;
+	text-decoration: none;
+}
+
+.navigation-footer a {
+	transition: 0.5s ease-in-out;
+}
+
 .navigation-footer {
 	grid-area: 1 / 1 / span 1 / span 12;
 	display: grid;
@@ -173,7 +186,7 @@ a.current {
 .signature-footer {
 	grid-area: 2 / 1 / span 1 / span 12;
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	align-content: space-evenly;
 	justify-items: flex-end;
 }
@@ -187,13 +200,6 @@ a.current {
 	align-items: center;
 }
 
-.signature-footer .footer_year {
-	grid-area: 1 / 12 / span 1 / span 1;
-}
-.signature-footer .footer_signature {
-	grid-area: 1 / 11 / span 1 / span 1;
-}
-
 /* SELECT */
 
 .disable-select {
@@ -201,6 +207,37 @@ a.current {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 992px) {
+	.footer {
+		margin: 0rem;
+	}
+
+	.navigation-footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		align-content: space-evenly;
+		justify-self: center;
+		justify-items: center;
+	}
+
+	.signature-footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-content: space-evenly;
+		justify-items: center;
+		justify-self: center;
+	}
+
+	.signature-footer .footer_year {
+		grid-area: auto;
+	}
+	.signature-footer .footer_signature {
+		grid-area: auto;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -238,5 +275,24 @@ a.current {
 	a.current {
 		text-decoration: underline;
 		text-underline-offset: 0.2rem;
+	}
+
+	@media only screen and (max-width: 576px) {
+		.navigation-footer {
+			display: grid;
+			grid-template: repeat(4, 1fr) / 1fr;
+			align-content: space-evenly;
+			justify-self: center;
+			justify-items: center;
+		}
+
+		.signature-footer {
+			margin-top: 1rem;
+			display: grid;
+			grid-template: repeat(4, 1fr) / 1fr;
+			align-content: space-evenly;
+			justify-self: center;
+			justify-items: center;
+		}
 	}
 }
