@@ -131,7 +131,8 @@
 }
 
 a.current {
-	background: red;
+	text-decoration: underline;
+	text-underline-offset: 0.5rem;
 }
 
 #background_small {
@@ -173,5 +174,10 @@ a.current {
 	.navbar-nav a {
 		transition: 0s ease-in-out;
 		margin: 0.2rem 0rem;
+	}
+
+	a.current {
+		text-decoration: underline;
+		text-underline-offset: 0.2rem;
 	}
 }
