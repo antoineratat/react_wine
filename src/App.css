@@ -22,6 +22,57 @@
 	z-index: 1;
 }
 
+/* FONTS */
+
+@font-face {
+	font-family: 'poppinsbold';
+	src: url('./fonts/poppins-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poppinsmedium';
+	src: url('./fonts/poppins-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poppinssemibold';
+	src: url('./fonts/poppins-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poppinsregular';
+	src: url('./fonts/poppins-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rudaregular';
+	src: url('./fonts/Ruda-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rudaextrabold';
+	src: url('./fonts/Ruda-ExtraBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rudabold';
+	src: url('./fonts/Ruda-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -41,6 +92,7 @@
 }
 
 .navbar-light .navbar-brand {
+	font-family: 'rudaextrabold';
 	text-transform: uppercase;
 	color: white;
 	font-weight: 450;
@@ -66,6 +118,7 @@
 }
 
 .navbar-nav a {
+	font-family: 'rudabold';
 	text-transform: uppercase;
 	color: white;
 	font-weight: 450;
