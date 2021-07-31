@@ -5,23 +5,23 @@ import { Navbar as BootstrapNavbar, Nav } from 'react-bootstrap'
 export default function Navbar() {
 	return (
 		<>
-			<BootstrapNavbar className='admin_navbar ml-sm-2' bg='light' variant='light' expand='lg'>
-				<Link to='/'>
-					<BootstrapNavbar.Brand className='logo_font'>React Wine</BootstrapNavbar.Brand>
+			<BootstrapNavbar className='navbar' expand='lg'>
+				<Link to='/' className='navbar_brand'>
+					<BootstrapNavbar.Brand>React Wine</BootstrapNavbar.Brand>
 				</Link>
 				<BootstrapNavbar.Toggle aria-controls='basic-navbar-nav' />
-				<BootstrapNavbar.Collapse id='basic-navbar-nav'>
+				<BootstrapNavbar.Collapse id='basic-navbar-nav' className='navbar_nav'>
 					<Nav className='mr-auto'>
-						<NavLink exact activeClassName='current' to='/wines'>
+						<NavLink exact className='navbar_wines' activeClassName='current' to='/wines'>
 							Wines
 						</NavLink>
-						<NavLink exact activeClassName='current' to='/story'>
+						<NavLink exact className='navbar_story' activeClassName='current' to='/story'>
 							Story
 						</NavLink>
-						<NavLink exact activeClassName='current' to='/winery'>
+						<NavLink exact className='navbar_winery' activeClassName='current' to='/winery'>
 							Winery
 						</NavLink>
-						<NavLink exact activeClassName='current' to='/contact'>
+						<NavLink exact className='navbar_contact' activeClassName='current' to='/contact'>
 							Contact
 						</NavLink>
 					</Nav>
