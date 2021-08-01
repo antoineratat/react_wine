@@ -6,14 +6,21 @@ import { Container, Row, Col } from 'react-bootstrap'
 export default function Home() {
 	return (
 		<>
-			<Container fluid className='container_home'>
-				<div id='overlay'></div>
+			<Container fluid>
 				<Navbar className='navbar' />
-				<Row style={{ backgroundColor: 'yellow', border: '1px solid black' }}>
-					<Col style={{ backgroundColor: 'grey', border: '1px solid black' }}>Home</Col>
-				</Row>
-				<Footer />
+				<div id='overlay'></div>
+				<Container className='container_home disable-select'>
+					<Row className='row_title'>
+						<Col className='col_title'>
+							<h1>AN AWARD-WINNING PROSECCO CREATED BY THE DELEVINGNE SISTERS</h1>
+						</Col>
+					</Row>
+					<Row className='row_learn_more'>
+						<p className='text_learn_more'>Learn More</p>
+					</Row>
+				</Container>
 			</Container>
+			<Footer />
 		</>
 	)
 }
