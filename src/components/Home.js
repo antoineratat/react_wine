@@ -17,6 +17,9 @@ export default function Home() {
 					</Row>
 					<Row className='row_learn_more'>
 						<p className='text_learn_more'>Learn More</p>
+						<Col className='col_scrolldown'>
+							<div class='scrolldown'></div>
+						</Col>
 					</Row>
 				</Container>
 			</Container>

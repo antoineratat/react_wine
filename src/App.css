@@ -88,7 +88,7 @@ p {
 /* HOME */
 
 .container_home {
-	background-color: rgba(255, 255, 0, 0.274);
+	/* background-color: rgba(255, 255, 0, 0.274); */
 }
 
 .row_title {
@@ -96,22 +96,54 @@ p {
 	margin: auto;
 	min-height: 75vh;
 	align-items: center;
-	background-color: rgba(0, 255, 242, 0.274);
+	/* background-color: rgba(0, 255, 242, 0.274); */
 }
 
 .row_learn_more {
 	max-width: 675px;
 	margin: auto;
-	min-height: 15vh;
+	min-height: 16vh;
+	display: flex;
 	align-items: flex-end;
-	background-color: rgba(119, 0, 255, 0.274);
+	/* background-color: rgba(119, 0, 255, 0.274); */
 }
 
 .text_learn_more {
+	font-size: 0.9rem;
 	color: white;
 	text-transform: uppercase;
 	font-family: 'rudaregular';
 	text-align: center;
+	margin-bottom: -3rem;
+}
+
+/* SCROLL LINE */
+
+.col_scrolldown {
+	width: 10%;
+}
+
+.scrolldown {
+	width: 1px;
+	height: 60px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0) 50%);
+	background-position: 0 -60px;
+	background-size: 100% 200%;
+	animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+@keyframes scrolldown {
+	0% {
+		background-position: 0 -60px;
+	}
+	75% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 0 60px;
+	}
 }
 
 /* NAVBAR */
