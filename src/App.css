@@ -326,6 +326,64 @@ a.current {
 	transition: all 0.3s ease-out;
 }
 
+/* CONTACT */
+
+.container_contact {
+	min-height: 100vh;
+	padding-top: 5rem;
+}
+
+.container_inner_contact {
+	background-color: #232221;
+	min-height: 400px;
+	display: grid;
+	grid-template: 1fr / 4fr 3fr;
+	max-width: 1800px;
+}
+
+.contact_left {
+	/* background-color: rgba(0, 255, 255, 0.281); */
+	padding: 2rem;
+	display: grid;
+	grid-template: repeat(3, 1fr) / 1fr;
+}
+
+.contact_left .row {
+	justify-self: flex-start;
+	margin: 0;
+	padding: 2rem 0rem 0rem 8rem;
+	max-width: 700px;
+}
+
+.contact_left .row h1 {
+	font-family: 'rudaregular';
+	font-size: 2rem;
+	text-transform: uppercase;
+	align-self: flex-end;
+}
+
+.contact_left .row h4 {
+	padding-top: 0rem;
+	font-family: 'rudaregular';
+	font-size: 0.9rem;
+	text-transform: capitalize;
+	color: white;
+	align-self: flex-start;
+}
+
+.contact_left .row p {
+	font-family: 'rudaregular';
+	font-size: 0.9rem;
+	text-transform: capitalize;
+	color: white;
+	align-self: flex-start;
+}
+
+.contact_right {
+	background-color: rgba(0, 0, 255, 0.342);
+	padding: 2rem;
+}
+
 /* SELECT */
 
 .disable-select {
