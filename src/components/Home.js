@@ -39,13 +39,25 @@ export default function Home() {
 	})
 
 	const onWineIn = (e) => {
-		let image = document.getElementById(e.target.id).getElementsByTagName('img')[0]
-		image.style.transform = 'translate(0, -10px)'
+		let card = document.getElementById(e.target.id)
+		if (card) {
+			let image = card.getElementsByTagName('img')[0]
+			image.style.transform = 'translate(0, -10px)'
+			card.style.backgroundColor = '#111'
+		} else {
+			return
+		}
 	}
 
 	const onWineOut = (e) => {
-		let image = document.getElementById(e.target.id).getElementsByTagName('img')[0]
-		image.style.transform = 'translate(0, 0px)'
+		let card = document.getElementById(e.target.id)
+		if (card) {
+			let image = card.getElementsByTagName('img')[0]
+			image.style.transform = 'translate(0, 0px)'
+			card.style.backgroundColor = '#232221ef'
+		} else {
+			return
+		}
 	}
 
 	return (
