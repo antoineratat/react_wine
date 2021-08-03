@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
 
 export default function Home() {
@@ -16,7 +17,6 @@ export default function Home() {
 			(entries) =>
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
-						console.log('intersecting home')
 						setVisible(true)
 						observerHome = observerHome.disconnect()
 					}
@@ -29,7 +29,6 @@ export default function Home() {
 			(entries) =>
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
-						console.log('intersecting wine')
 						setVisible(false)
 						observerWine = observerWine.disconnect()
 					}
@@ -61,13 +60,61 @@ export default function Home() {
 							</Col>
 						</Row>
 					</Animated>
-
-					<Row ref={wines} className='row_title'>
-						<Col className='col_title'>
-							<h1>AN AWARD-WINNING PROSECCO CREATED BY THE DELEVINGNE SISTERS</h1>
-						</Col>
-					</Row>
 				</Container>
+
+				<Row ref={wines} className='row_wines disable-select'>
+					<Col className='col_wines'>
+						<Link to='/wines'>
+							<Animated animationIn='zoomIn' animationOut='fadeOut' animationInDuration={1500} isVisible={!visible}>
+								<Card className='card_wine'>
+									<Card.Img
+										className='image_wine'
+										variant='top'
+										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
+									/>
+									<Card.Body>
+										<Card.Title>Superiore</Card.Title>
+										<Card.Text>D.O.C.G Bottles</Card.Text>
+									</Card.Body>
+								</Card>
+							</Animated>
+						</Link>
+					</Col>
+					<Col className='col_wines'>
+						<Link to='/wines'>
+							<Animated animationIn='zoomIn' animationOut='fadeOut' animationInDuration={1500} isVisible={!visible}>
+								<Card className='card_wine'>
+									<Card.Img
+										className='image_wine'
+										variant='top'
+										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
+									/>
+									<Card.Body>
+										<Card.Title>Superiore</Card.Title>
+										<Card.Text>D.O.C.G Bottles</Card.Text>
+									</Card.Body>
+								</Card>
+							</Animated>
+						</Link>
+					</Col>
+					<Col className='col_wines'>
+						<Link to='/wines'>
+							<Animated animationIn='zoomIn' animationOut='fadeOut' animationInDuration={1500} isVisible={!visible}>
+								<Card className='card_wine'>
+									<Card.Img
+										className='image_wine'
+										variant='top'
+										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
+									/>
+									<Card.Body>
+										<Card.Title>Superiore</Card.Title>
+										<Card.Text>D.O.C.G Bottles</Card.Text>
+									</Card.Body>
+								</Card>
+							</Animated>
+						</Link>
+					</Col>
+				</Row>
 			</Container>
 			<Footer />
 		</>

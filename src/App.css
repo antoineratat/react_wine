@@ -164,7 +164,6 @@ p {
 	grid-area: 1 / 1 / span 1 / span 1;
 	align-self: center;
 	justify-self: center;
-
 	text-decoration: none;
 }
 
@@ -274,6 +273,55 @@ a.current {
 	text-transform: capitalize;
 	text-decoration: none;
 	align-items: center;
+}
+
+/* WINES */
+
+.row_wines {
+	margin: auto;
+	width: 100%;
+	max-width: 1500px;
+	min-height: 79vh;
+	align-items: center;
+	/* background-color: rgba(122, 139, 139, 0.671); */
+}
+
+.col_wines {
+	margin: auto;
+	max-width: 450px;
+}
+
+.card_wine {
+	background-color: #232221;
+	border-radius: 0.1rem;
+	text-align: center;
+}
+
+.card_wine .card-body .card-title {
+	color: white;
+	font-family: 'rudaextrabold';
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.card_wine .card-body .card-text {
+	color: white;
+	font-family: 'rudaregular';
+	text-transform: uppercase;
+	font-size: 1rem;
+	text-decoration: none;
+	margin-bottom: 1rem;
+}
+
+.col_wines a {
+	text-decoration: none;
+}
+
+.image_wine {
+	padding: 2rem 1rem;
+	width: 50%;
+	margin: auto;
 }
 
 /* SELECT */
@@ -397,6 +445,7 @@ a.current {
 
 	.row_title {
 		max-width: 475px;
+		margin-top: 5rem;
 	}
 
 	.col_title h1 {
