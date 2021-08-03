@@ -70,7 +70,7 @@ export default function Footer() {
 			</div>
 			<div className='signature-footer'>
 				<p className='footer_year'>2021 © Wine</p>
-				<p className='footer_signature'>Website by Antoine Ratat.</p>
+				<p className='footer_signature'>Website by Antoine Ratat</p>
 			</div>
 		</Row>
 	)

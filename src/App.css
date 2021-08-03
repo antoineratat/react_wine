@@ -289,6 +289,7 @@ a.current {
 .col_wines {
 	margin: auto;
 	max-width: 450px;
+	/* background-color: rgba(222, 255, 101, 0.774); */
 }
 
 .card_wine {
@@ -415,6 +416,26 @@ a.current {
 	.col_title h1 {
 		font-size: 2.5rem;
 	}
+
+	.card_wine {
+		flex-direction: row;
+	}
+
+	.col_wines {
+		min-width: 100%;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.image_wine {
+		padding: 2rem 1rem;
+		width: 15%;
+		margin-left: 3rem;
+	}
+
+	.card-body {
+		align-self: center;
+	}
 }
 
 @media only screen and (max-width: 576px) {
@@ -455,5 +476,9 @@ a.current {
 
 	.row_title {
 		min-height: 67vh;
+	}
+
+	.image_wine {
+		width: 25%;
 	}
 }
