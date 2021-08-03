@@ -38,6 +38,16 @@ export default function Home() {
 		observerWine.observe(wines.current)
 	})
 
+	const onWineIn = (e) => {
+		let image = document.getElementById(e.target.id).getElementsByTagName('img')[0]
+		image.style.transform = 'translate(0, -10px)'
+	}
+
+	const onWineOut = (e) => {
+		let image = document.getElementById(e.target.id).getElementsByTagName('img')[0]
+		image.style.transform = 'translate(0, 0px)'
+	}
+
 	return (
 		<>
 			<div ref={home}></div>
@@ -64,9 +74,9 @@ export default function Home() {
 
 				<Row ref={wines} className='row_wines disable-select'>
 					<Col className='col_wines'>
-						<Link to='/wines'>
+						<Link to='/wines' onMouseEnter={(e) => onWineIn(e)} onMouseLeave={(e) => onWineOut(e)}>
 							<Animated animationIn='zoomIn' animationOut='fadeOut' animationInDuration={1500} isVisible={!visible}>
-								<Card className='card_wine'>
+								<Card id='card1' className='card_wine'>
 									<Card.Img
 										className='image_wine'
 										variant='top'
@@ -80,10 +90,11 @@ export default function Home() {
 							</Animated>
 						</Link>
 					</Col>
+
 					<Col className='col_wines'>
-						<Link to='/wines'>
+						<Link to='/wines' onMouseEnter={(e) => onWineIn(e)} onMouseLeave={(e) => onWineOut(e)}>
 							<Animated animationIn='zoomIn' animationOut='fadeOut' animationInDuration={1500} isVisible={!visible}>
-								<Card className='card_wine'>
+								<Card id='card2' className='card_wine'>
 									<Card.Img
 										className='image_wine'
 										variant='top'
@@ -97,10 +108,11 @@ export default function Home() {
 							</Animated>
 						</Link>
 					</Col>
+
 					<Col className='col_wines'>
-						<Link to='/wines'>
+						<Link to='/wines' onMouseEnter={(e) => onWineIn(e)} onMouseLeave={(e) => onWineOut(e)}>
 							<Animated animationIn='zoomIn' animationOut='fadeOut' animationInDuration={1500} isVisible={!visible}>
-								<Card className='card_wine'>
+								<Card id='card3' className='card_wine'>
 									<Card.Img
 										className='image_wine'
 										variant='top'

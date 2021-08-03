@@ -292,7 +292,7 @@ a.current {
 }
 
 .card_wine {
-	background-color: #232221;
+	background-color: #232221ef;
 	border-radius: 0.1rem;
 	text-align: center;
 }
@@ -322,6 +322,7 @@ a.current {
 	padding: 2rem 1rem;
 	width: 50%;
 	margin: auto;
+	transition: all 0.3s ease-out;
 }
 
 /* SELECT */
