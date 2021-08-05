@@ -11,7 +11,7 @@ export default function Contact() {
 				<Navbar className='navbar' />
 				<div id='overlay'></div>
 				<Container fluid className='container_contact'>
-					<Animated style={{ margin: 'auto 5rem' }} animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
+					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
 						<Container fluid className='container_inner_contact'>
 							<Row>
 								<Col className='contact_left'>
@@ -29,7 +29,7 @@ export default function Contact() {
 									</Row>
 								</Col>
 							</Row>
-							<Row>
+							<Row className='row_contact_right'>
 								<Col className='contact_right'>
 									<Row>
 										<Col>

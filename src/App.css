@@ -380,7 +380,7 @@ a.current {
 }
 
 .contact_right {
-	background-color: rgba(0, 0, 255, 0.342);
+	/* background-color: rgba(0, 0, 255, 0.342); */
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(2, 1fr);
 	height: 60%;
@@ -455,8 +455,31 @@ a.current {
 		margin-bottom: 1rem;
 	}
 
+	.animated {
+		margin: 1rem;
+	}
+
+	.contact_left {
+		padding: 2rem 5rem;
+	}
+
 	.contact_left .row {
 		padding: 1rem;
+	}
+
+	.row_contact_right {
+		margin-left: 5.5rem;
+	}
+
+	.container_inner_contact {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.contact_right {
+		justify-items: flex-start;
+		margin: auto;
+		margin-top: 0rem;
 	}
 }
 
@@ -524,6 +547,20 @@ a.current {
 	.card-body {
 		align-self: center;
 	}
+
+	.contact_left {
+		padding: 1rem;
+	}
+
+	.contact_right {
+		justify-items: flex-start;
+		margin-top: 0rem;
+		padding: 1rem;
+	}
+
+	.row_contact_right {
+		margin-left: 1.2rem;
+	}
 }
 
 @media only screen and (max-width: 576px) {
@@ -568,5 +605,33 @@ a.current {
 
 	.image_wine {
 		width: 25%;
+	}
+
+	.row_contact_right {
+		margin: auto 1rem;
+		width: 100%;
+	}
+
+	.contact_right {
+		display: grid;
+		grid-template: repeat(5, 1fr) / 1fr;
+		row-gap: 1rem;
+		height: 60%;
+		padding: 0rem;
+		align-self: center;
+		margin-top: 2rem;
+	}
+
+	.animated {
+		margin: 0rem;
+	}
+
+	.contact_left .row {
+		padding: 1rem 0rem;
+	}
+
+	.container_contact {
+		min-height: 100vh;
+		padding: initial;
 	}
 }
