@@ -11,7 +11,7 @@ export default function Contact() {
 				<Navbar className='navbar' />
 				<div id='overlay'></div>
 				<Container fluid className='container_contact'>
-					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
+					<Animated style={{ margin: 'auto 5rem' }} animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
 						<Container fluid className='container_inner_contact'>
 							<Row>
 								<Col className='contact_left'>
@@ -30,7 +30,48 @@ export default function Contact() {
 								</Col>
 							</Row>
 							<Row>
-								<Col className='contact_right'></Col>
+								<Col className='contact_right'>
+									<Row>
+										<Col>
+											<Row>
+												<p className='title_contact'>Phone</p>
+											</Row>
+											<Row>
+												<p className='text_contact'>13111881660</p>
+											</Row>
+										</Col>
+									</Row>
+									<Row>
+										<Col>
+											<Row>
+												<p className='title_contact'>Email</p>
+											</Row>
+											<Row>
+												<p className='text_contact'>antoine.ratat@gmail.com</p>
+											</Row>
+										</Col>
+									</Row>
+									<Row>
+										<Col>
+											<Row>
+												<p className='title_contact'>TikTok</p>
+											</Row>
+											<Row>
+												<p className='text_contact'>@tiktok</p>
+											</Row>
+										</Col>
+									</Row>
+									<Row>
+										<Col>
+											<Row>
+												<p className='title_contact'>Skype</p>
+											</Row>
+											<Row>
+												<p className='text_contact'>skype</p>
+											</Row>
+										</Col>
+									</Row>
+								</Col>
 							</Row>
 						</Container>
 					</Animated>
