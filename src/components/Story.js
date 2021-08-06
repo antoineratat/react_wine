@@ -10,7 +10,11 @@ export default function Story() {
 	const wines = useRef()
 	const learn_more = useRef()
 	const scrolldown = useRef()
+	const picture1 = useRef()
+	const picture2 = useRef()
 	const [visible, setVisible] = useState(true)
+	const [visiblePicture1, setVisiblePicture1] = useState(false)
+	const [visiblePicture2, setVisiblePicture2] = useState(false)
 
 	useEffect(() => {
 		let observerHome = new IntersectionObserver(
@@ -36,6 +40,32 @@ export default function Story() {
 			{ rootMargin: '0px 0px -20px 0px' }
 		)
 		observerWine.observe(wines.current)
+
+		let observerPicture1 = new IntersectionObserver(
+			(entries) =>
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						console.log('appear picture1')
+						setVisiblePicture1(true)
+						observerPicture1 = observerPicture1.disconnect()
+					}
+				}),
+			{ rootMargin: '0px 0px -100px 0px' }
+		)
+		observerPicture1.observe(picture1.current)
+
+		let observerPicture2 = new IntersectionObserver(
+			(entries) =>
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						console.log('appear picture2')
+						setVisiblePicture2(true)
+						observerPicture2 = observerPicture2.disconnect()
+					}
+				}),
+			{ rootMargin: '0px 0px -100px 0px' }
+		)
+		observerPicture2.observe(picture2.current)
 	})
 
 	return (
@@ -67,8 +97,8 @@ export default function Story() {
 					</Col>
 				</Row>
 
-				<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
-					<Row className='row_picture_story_1'>
+				<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visiblePicture1}>
+					<Row className='row_picture_story_1' ref={picture1}>
 						<Col className='col_picture_story_1'>
 							<div>
 								<h1 className='black'>An Untold Story</h1>
@@ -82,21 +112,21 @@ export default function Story() {
 						<Col className='col_picture_story_2'>
 							<Image
 								className='col_picture_story_picture_1'
-								src='https://www.datocms-assets.com/25196/1597320030-dellavite02b1574.jpg?q=50&auto=format&dpr=1&w=1920&h=1540&fit=crop'
+								src='https://www.datocms-assets.com/25196/1597320030-dellavite02b1574.jpg?q=50&auto=format&dpr=2&w=1922&h=1540&fit=crop'
 							/>
 						</Col>
 					</Row>
 				</Animated>
 
-				<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
-					<Row className='row_picture_story_1'>
+				<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visiblePicture2}>
+					<Row className='row_picture_story_1' ref={picture2}>
 						<Col className='col_picture_story_3'>
 							<div>
-								<h1 className='black'>An Untold Story</h1>
+								<h1 className='black'>AN INSPIRATIONAL LANDSCAPE</h1>
 								<p>
-									Beneath the Dolomite mountains, the hills of Valdobbiadene are alive with the local culture, knowledge and passion for
-									making Prosecco. As it's so little known to the world beyond, Della Vite (meaning ‘from the vine’) sets out to tell
-									Prosecco’s real story.{' '}
+									A region of quiet valleys and dramatic skylines, Glera grapes have been grown here since Roman times. At the heart of
+									artisanal Italian wine culture, much of the area is a UNESCO World Heritage Site, selected for conservation for its cultural
+									and environmental significance. This means our winery’s sustainability is continually monitored.{' '}
 								</p>
 							</div>
 						</Col>
