@@ -110,10 +110,12 @@ export default function Story() {
 							</div>
 						</Col>
 						<Col className='col_picture_story_2'>
-							<Image
-								className='col_picture_story_picture_1'
-								src='https://www.datocms-assets.com/25196/1597320030-dellavite02b1574.jpg?q=50&auto=format&dpr=2&w=1922&h=1540&fit=crop'
-							/>
+							<Animated animationIn='fadeInUp' animationOut='fadeOut' animationInDuration={2000} isVisible={visiblePicture1}>
+								<Image
+									className='col_picture_story_picture_1'
+									src='https://www.datocms-assets.com/25196/1597320030-dellavite02b1574.jpg?q=50&auto=format&dpr=2&w=1922&h=1540&fit=crop'
+								/>
+							</Animated>
 						</Col>
 					</Row>
 				</Animated>
@@ -131,10 +133,12 @@ export default function Story() {
 							</div>
 						</Col>
 						<Col className='col_picture_story_4'>
-							<Image
-								className='col_picture_story_picture_1'
-								src='https://www.datocms-assets.com/25196/1598382040-c7a0513.jpeg?q=50&auto=format&dpr=1&w=1920&h=1540&fit=crop'
-							/>
+							<Animated animationIn='fadeInUp' animationOut='fadeOut' animationInDuration={2000} isVisible={visiblePicture2}>
+								<Image
+									className='col_picture_story_picture_1'
+									src='https://www.datocms-assets.com/25196/1598382040-c7a0513.jpeg?q=50&auto=format&dpr=1&w=1920&h=1540&fit=crop'
+								/>
+							</Animated>
 						</Col>
 					</Row>
 				</Animated>
