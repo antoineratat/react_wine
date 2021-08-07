@@ -100,7 +100,7 @@ export default function Story() {
 				<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visiblePicture1}>
 					<Row className='row_picture_story_1' ref={picture1}>
 						<Col className='col_picture_story_1'>
-							<div>
+							<div className='text_story'>
 								<h1 className='black'>An Untold Story</h1>
 								<p>
 									Beneath the Dolomite mountains, the hills of Valdobbiadene are alive with the local culture, knowledge and passion for
@@ -123,7 +123,7 @@ export default function Story() {
 				<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visiblePicture2}>
 					<Row className='row_picture_story_1' ref={picture2}>
 						<Col className='col_picture_story_3'>
-							<div>
+							<div className='text_story'>
 								<h1 className='black'>AN INSPIRATIONAL LANDSCAPE</h1>
 								<p>
 									A region of quiet valleys and dramatic skylines, Glera grapes have been grown here since Roman times. At the heart of
