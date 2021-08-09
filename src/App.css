@@ -853,11 +853,19 @@ a.current {
 		height: 100%;
 	}
 
+	.col_wines_4 {
+		grid-area: 1 / 1 / span 6 / span 12;
+		height: 100%;
+	}
+
+	.col_wines_3 {
+		grid-area: 7 / 1 / span 12 / span 12;
+		height: 100%;
+	}
+
 	.wine_description {
 		height: 100%;
 		display: grid;
-		/* display: flex; */
-		flex-direction: column;
 		grid-template: repeat(12, 1fr) / repeat(12, 1fr);
 	}
 
