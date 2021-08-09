@@ -71,7 +71,44 @@ export default function Wines() {
 								/>
 							</Animated>
 						</Col>
-						<Col className='col_wines_2'>2</Col>
+						<Col className='col_wines_2'>
+							<Row className='wine_description'>
+								<Col className='wine_description_left'>
+									<h1>Company Name</h1>
+									<h4>
+										Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints of
+										crostini and chamomile.
+									</h4>
+									<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+								</Col>
+								<Col className='wine_description_right'>
+									<Row>
+										<p className='title_contact'>Phone</p>
+										<p className='text_contact'>13111881660</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Phone</p>
+										<p className='text_contact'>13111881660</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Phone</p>
+										<p className='text_contact'>13111881660</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Phone</p>
+										<p className='text_contact'>13111881660</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Phone</p>
+										<p className='text_contact'>13111881660</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Phone</p>
+										<p className='text_contact'>13111881660</p>
+									</Row>
+								</Col>
+							</Row>
+						</Col>
 					</Row>
 					{/* ROW 2 */}
 					<Row className='row_wines_1' ref={row_wines_2}>

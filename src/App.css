@@ -521,20 +521,23 @@ a.current {
 
 .col_wines_1 {
 	background-color: rgba(216, 185, 8, 0.5);
-	grid-area: 1 / 1 / span 12 / span 5;
+	grid-area: 1 / 1 / span 12 / span 4;
 }
 .col_wines_2 {
 	background-color: rgba(255, 0, 55, 0.5);
-	grid-area: 1 / 6 / span 12 / span 9;
+	grid-area: 1 / 5 / span 12 / span 9;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
 }
 
 .col_wines_3 {
 	background-color: rgba(255, 0, 55, 0.5);
-	grid-area: 1 / 1 / span 12 / span 7;
+	grid-area: 1 / 1 / span 12 / span 8;
 }
 .col_wines_4 {
 	background-color: rgba(216, 185, 8, 0.5);
-	grid-area: 1 / 8 / span 12 / span 9;
+	grid-area: 1 / 9 / span 12 / span 9;
 }
 
 .animated_wines {
@@ -545,6 +548,70 @@ a.current {
 
 .image_wines_1 {
 	width: 35%;
+}
+
+.wine_description {
+	background-color: #232221;
+	height: 22vh;
+	display: grid;
+	grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
+.wine_description_left {
+	/* background-color: rgba(227, 255, 127, 0.377); */
+	grid-area: 1 / 1 / span 12 / span 6;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: auto;
+	padding-left: 1.5rem;
+}
+
+.wine_description_left h1 {
+	font-family: 'rudaregular';
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.wine_description_left h4 {
+	padding-top: 0rem;
+	font-family: 'rudaregular';
+	font-size: 0.9rem;
+	text-transform: capitalize;
+	color: white;
+}
+.wine_description_left p {
+	font-family: 'rudaregular';
+	font-size: 0.9rem;
+	text-transform: capitalize;
+	color: white;
+	justify-self: flex-end;
+}
+
+.wine_description_right {
+	/* background-color: rgba(127, 129, 255, 0.541); */
+	grid-area: 1 / 7 / span 12 / span 6;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+	padding: 1rem;
+}
+
+.wine_description_right .row {
+	justify-self: center;
+	align-items: center;
+}
+
+.wine_description_right .title_contact {
+	/* background-color: rgba(0, 0, 0, 0.438); */
+	margin: 0rem;
+	margin-top: 0.5rem;
+	padding: 0rem;
+}
+
+.wine_description_right .text_contact {
+	/* background-color: rgba(0, 0, 0, 0.438); */
+	margin: 0rem;
+	margin-bottom: 0.5rem;
+	padding: 0rem;
 }
 
 /* MEDIA QUERIES */
