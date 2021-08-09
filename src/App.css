@@ -519,6 +519,13 @@ a.current {
 	min-height: 50vh;
 }
 
+.col_wines_1,
+.col_wines_4 {
+	display: flex;
+	justify-self: center;
+	align-items: center;
+}
+
 .col_wines_1 {
 	background-color: rgba(216, 185, 8, 0.5);
 	grid-area: 1 / 1 / span 12 / span 4;
