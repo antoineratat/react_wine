@@ -64,6 +64,7 @@ export default function Wines() {
 								animationIn='fadeInUp'
 								animationOut='fadeOut'
 								animationInDuration={2000}
+								animationOutDuration={0}
 								isVisible={visibleRow1}>
 								<Image
 									className='image_wines_1'
@@ -148,6 +149,7 @@ export default function Wines() {
 								animationIn='fadeInUp'
 								animationOut='fadeOut'
 								animationInDuration={2000}
+								animationOutDuration={0}
 								isVisible={visibleRow2}>
 								<Image
 									className='image_wines_1'
@@ -164,6 +166,7 @@ export default function Wines() {
 								animationIn='fadeInUp'
 								animationOut='fadeOut'
 								animationInDuration={2000}
+								animationOutDuration={0}
 								isVisible={visibleRow3}>
 								<Image
 									className='image_wines_1'
