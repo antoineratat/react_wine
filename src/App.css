@@ -735,15 +735,27 @@ a.current {
 
 	.row_wines_1 {
 		grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+		height: 120vh;
 	}
 
-	.col_wines_1,
-	.col_wines_3 {
+	.col_wines_1 {
 		grid-area: 1 / 1 / span 6 / span 12;
 	}
-	.col_wines_2,
+
+	.col_wines_2 {
+		grid-area: 9 / 1 / span 12 / span 12;
+	}
+
+	.col_wines_3 {
+		grid-area: 9 / 1 / span 12 / span 12;
+	}
+
 	.col_wines_4 {
-		grid-area: 7 / 1 / span 12 / span 12;
+		grid-area: 1 / 1 / span 6 / span 12;
+	}
+
+	.animated_wines {
+		margin: auto;
 	}
 }
 
