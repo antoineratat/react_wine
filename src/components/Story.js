@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Navbar from './Navbar'
-// import { Link } from 'react-router-dom'
 import Footer from './Footer'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'

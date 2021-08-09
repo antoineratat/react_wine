@@ -508,6 +508,46 @@ a.current {
 	padding: 0rem 2rem;
 }
 
+/* WINES */
+
+.row_wines_1 {
+	background-color: rgba(0, 255, 255, 0.5);
+	display: grid;
+	grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+	max-width: 1800px;
+	margin: 5rem auto;
+}
+
+.col_wines_1 {
+	background-color: rgba(216, 185, 8, 0.5);
+	grid-area: 1 / 1 / span 12 / span 5;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.col_wines_2 {
+	background-color: rgba(255, 0, 55, 0.5);
+	grid-area: 1 / 6 / span 12 / span 9;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.col_wines_3 {
+	background-color: rgba(255, 0, 55, 0.5);
+	grid-area: 1 / 1 / span 12 / span 7;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.col_wines_4 {
+	background-color: rgba(216, 185, 8, 0.5);
+	grid-area: 1 / 8 / span 12 / span 9;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1200px) {
