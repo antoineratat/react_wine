@@ -603,6 +603,8 @@ a.current {
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(2, 1fr);
 	padding: 1rem;
+	max-height: 25vh;
+	margin: auto;
 }
 
 .wine_description_right .row {
