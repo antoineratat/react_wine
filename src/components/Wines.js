@@ -74,7 +74,7 @@ export default function Wines() {
 						<Col className='col_wines_2'>
 							<Row className='wine_description'>
 								<Col className='wine_description_left'>
-									<h1>Company Name</h1>
+									<h1>Wine Name</h1>
 									<h4>
 										Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints of
 										crostini and chamomile.
@@ -83,28 +83,24 @@ export default function Wines() {
 								</Col>
 								<Col className='wine_description_right'>
 									<Row>
-										<p className='title_contact'>Phone</p>
-										<p className='text_contact'>13111881660</p>
+										<p className='title_contact'>Taste</p>
+										<p className='text_contact'>Extra Dry</p>
 									</Row>
 									<Row>
-										<p className='title_contact'>Phone</p>
-										<p className='text_contact'>13111881660</p>
+										<p className='title_contact'>Acidity</p>
+										<p className='text_contact'>5.5G/L</p>
 									</Row>
 									<Row>
-										<p className='title_contact'>Phone</p>
-										<p className='text_contact'>13111881660</p>
+										<p className='title_contact'>Alcohol</p>
+										<p className='text_contact'>11.5%</p>
 									</Row>
 									<Row>
-										<p className='title_contact'>Phone</p>
-										<p className='text_contact'>13111881660</p>
+										<p className='title_contact'>Pressure</p>
+										<p className='text_contact'>5.5 ATM</p>
 									</Row>
 									<Row>
-										<p className='title_contact'>Phone</p>
-										<p className='text_contact'>13111881660</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Phone</p>
-										<p className='text_contact'>13111881660</p>
+										<p className='title_contact'>Grapes</p>
+										<p className='text_contact'>100% GLERA</p>
 									</Row>
 								</Col>
 							</Row>
@@ -112,7 +108,40 @@ export default function Wines() {
 					</Row>
 					{/* ROW 2 */}
 					<Row className='row_wines_1' ref={row_wines_2}>
-						<Col className='col_wines_3'>1</Col>
+						<Col className='col_wines_3'>
+							<Row className='wine_description'>
+								<Col className='wine_description_left'>
+									<h1>Wine Name</h1>
+									<h4>
+										Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints of
+										crostini and chamomile.
+									</h4>
+									<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+								</Col>
+								<Col className='wine_description_right'>
+									<Row>
+										<p className='title_contact'>Taste</p>
+										<p className='text_contact'>Extra Dry</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Acidity</p>
+										<p className='text_contact'>5.5G/L</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Alcohol</p>
+										<p className='text_contact'>11.5%</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Pressure</p>
+										<p className='text_contact'>5.5 ATM</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Grapes</p>
+										<p className='text_contact'>100% GLERA</p>
+									</Row>
+								</Col>
+							</Row>
+						</Col>
 						<Col className='col_wines_4'>
 							<Animated
 								className='animated_wines'
@@ -142,7 +171,40 @@ export default function Wines() {
 								/>
 							</Animated>
 						</Col>
-						<Col className='col_wines_2'>2</Col>
+						<Col className='col_wines_2'>
+							<Row className='wine_description'>
+								<Col className='wine_description_left'>
+									<h1>Wine Name</h1>
+									<h4>
+										Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints of
+										crostini and chamomile.
+									</h4>
+									<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+								</Col>
+								<Col className='wine_description_right'>
+									<Row>
+										<p className='title_contact'>Taste</p>
+										<p className='text_contact'>Extra Dry</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Acidity</p>
+										<p className='text_contact'>5.5G/L</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Alcohol</p>
+										<p className='text_contact'>11.5%</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Pressure</p>
+										<p className='text_contact'>5.5 ATM</p>
+									</Row>
+									<Row>
+										<p className='title_contact'>Grapes</p>
+										<p className='text_contact'>100% GLERA</p>
+									</Row>
+								</Col>
+							</Row>
+						</Col>
 					</Row>
 				</Container>
 				<Footer />
