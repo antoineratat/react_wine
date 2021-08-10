@@ -228,6 +228,10 @@ a.current {
 	text-decoration: none;
 }
 
+.col_language .btn svg {
+	opacity: 0.75;
+}
+
 .button_language_EN {
 	display: flex;
 	flex-direction: column;
