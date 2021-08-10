@@ -511,7 +511,7 @@ a.current {
 /* WINES */
 
 .row_wines_1 {
-	background-color: rgba(0, 255, 255, 0.5);
+	/* background-color: rgba(0, 255, 255, 0.5); */
 	display: grid;
 	grid-template: repeat(12, 1fr) / repeat(12, 1fr);
 	max-width: 1500px;
@@ -527,11 +527,17 @@ a.current {
 }
 
 .col_wines_1 {
-	background-color: rgba(216, 185, 8, 0.5);
+	/* background-color: rgba(216, 185, 8, 0.5); */
 	grid-area: 1 / 1 / span 12 / span 4;
+	transition: all 0.3s ease-out;
 }
+
+.col_wines_1:hover {
+	transform: translate(0px, -10px);
+}
+
 .col_wines_2 {
-	background-color: rgba(255, 0, 55, 0.5);
+	/* background-color: rgba(255, 0, 55, 0.5); */
 	grid-area: 1 / 5 / span 12 / span 9;
 	display: flex;
 	flex-direction: column;
@@ -539,15 +545,20 @@ a.current {
 }
 
 .col_wines_3 {
-	background-color: rgba(255, 0, 55, 0.5);
+	/* background-color: rgba(255, 0, 55, 0.5); */
 	grid-area: 1 / 1 / span 12 / span 8;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
 }
 .col_wines_4 {
-	background-color: rgba(216, 185, 8, 0.5);
+	/* background-color: rgba(216, 185, 8, 0.5); */
 	grid-area: 1 / 9 / span 12 / span 9;
+	transition: all 0.3s ease-out;
+}
+
+.col_wines_4:hover {
+	transform: translate(0px, -10px);
 }
 
 .animated_wines {

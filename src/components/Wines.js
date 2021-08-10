@@ -52,7 +52,7 @@ export default function Wines() {
 
 	return (
 		<>
-			<Container fluid className='container_home'>
+			<Container fluid className='container_home disable-select'>
 				<Navbar className='navbar' />
 				<div id='overlay'></div>
 				<Container fluid className='container_wines'>
@@ -73,75 +73,91 @@ export default function Wines() {
 							</Animated>
 						</Col>
 						<Col className='col_wines_2'>
-							<Row className='wine_description'>
-								<Col className='wine_description_left'>
-									<h1>Wine Name</h1>
-									<h4>
-										Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints of
-										crostini and chamomile.
-									</h4>
-									<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
-								</Col>
-								<Col className='wine_description_right'>
-									<Row>
-										<p className='title_contact'>Taste</p>
-										<p className='text_contact'>Extra Dry</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Acidity</p>
-										<p className='text_contact'>5.5G/L</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Alcohol</p>
-										<p className='text_contact'>11.5%</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Pressure</p>
-										<p className='text_contact'>5.5 ATM</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Grapes</p>
-										<p className='text_contact'>100% GLERA</p>
-									</Row>
-								</Col>
-							</Row>
+							<Animated
+								className='animated_wines'
+								animationIn='fadeIn'
+								animationOut='fadeOut'
+								animationInDuration={2000}
+								animationOutDuration={0}
+								isVisible={visibleRow1}>
+								<Row className='wine_description'>
+									<Col className='wine_description_left'>
+										<h1>Wine Name</h1>
+										<h4>
+											Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints
+											of crostini and chamomile.
+										</h4>
+										<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+									</Col>
+									<Col className='wine_description_right'>
+										<Row>
+											<p className='title_contact'>Taste</p>
+											<p className='text_contact'>Extra Dry</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Acidity</p>
+											<p className='text_contact'>5.5G/L</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Alcohol</p>
+											<p className='text_contact'>11.5%</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Pressure</p>
+											<p className='text_contact'>5.5 ATM</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Grapes</p>
+											<p className='text_contact'>100% GLERA</p>
+										</Row>
+									</Col>
+								</Row>
+							</Animated>
 						</Col>
 					</Row>
 					{/* ROW 2 */}
 					<Row className='row_wines_1' ref={row_wines_2}>
 						<Col className='col_wines_3'>
-							<Row className='wine_description'>
-								<Col className='wine_description_left'>
-									<h1>Wine Name</h1>
-									<h4>
-										Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints of
-										crostini and chamomile.
-									</h4>
-									<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
-								</Col>
-								<Col className='wine_description_right'>
-									<Row>
-										<p className='title_contact'>Taste</p>
-										<p className='text_contact'>Extra Dry</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Acidity</p>
-										<p className='text_contact'>5.5G/L</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Alcohol</p>
-										<p className='text_contact'>11.5%</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Pressure</p>
-										<p className='text_contact'>5.5 ATM</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Grapes</p>
-										<p className='text_contact'>100% GLERA</p>
-									</Row>
-								</Col>
-							</Row>
+							<Animated
+								className='animated_wines'
+								animationIn='fadeIn'
+								animationOut='fadeOut'
+								animationInDuration={2000}
+								animationOutDuration={0}
+								isVisible={visibleRow2}>
+								<Row className='wine_description'>
+									<Col className='wine_description_left'>
+										<h1>Wine Name</h1>
+										<h4>
+											Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints
+											of crostini and chamomile.
+										</h4>
+										<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+									</Col>
+									<Col className='wine_description_right'>
+										<Row>
+											<p className='title_contact'>Taste</p>
+											<p className='text_contact'>Extra Dry</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Acidity</p>
+											<p className='text_contact'>5.5G/L</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Alcohol</p>
+											<p className='text_contact'>11.5%</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Pressure</p>
+											<p className='text_contact'>5.5 ATM</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Grapes</p>
+											<p className='text_contact'>100% GLERA</p>
+										</Row>
+									</Col>
+								</Row>
+							</Animated>
 						</Col>
 						<Col className='col_wines_4'>
 							<Animated
@@ -175,38 +191,46 @@ export default function Wines() {
 							</Animated>
 						</Col>
 						<Col className='col_wines_2'>
-							<Row className='wine_description'>
-								<Col className='wine_description_left'>
-									<h1>Wine Name</h1>
-									<h4>
-										Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints of
-										crostini and chamomile.
-									</h4>
-									<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
-								</Col>
-								<Col className='wine_description_right'>
-									<Row>
-										<p className='title_contact'>Taste</p>
-										<p className='text_contact'>Extra Dry</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Acidity</p>
-										<p className='text_contact'>5.5G/L</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Alcohol</p>
-										<p className='text_contact'>11.5%</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Pressure</p>
-										<p className='text_contact'>5.5 ATM</p>
-									</Row>
-									<Row>
-										<p className='title_contact'>Grapes</p>
-										<p className='text_contact'>100% GLERA</p>
-									</Row>
-								</Col>
-							</Row>
+							<Animated
+								className='animated_wines'
+								animationIn='fadeIn'
+								animationOut='fadeOut'
+								animationInDuration={2000}
+								animationOutDuration={0}
+								isVisible={visibleRow3}>
+								<Row className='wine_description'>
+									<Col className='wine_description_left'>
+										<h1>Wine Name</h1>
+										<h4>
+											Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints
+											of crostini and chamomile.
+										</h4>
+										<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+									</Col>
+									<Col className='wine_description_right'>
+										<Row>
+											<p className='title_contact'>Taste</p>
+											<p className='text_contact'>Extra Dry</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Acidity</p>
+											<p className='text_contact'>5.5G/L</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Alcohol</p>
+											<p className='text_contact'>11.5%</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Pressure</p>
+											<p className='text_contact'>5.5 ATM</p>
+										</Row>
+										<Row>
+											<p className='title_contact'>Grapes</p>
+											<p className='text_contact'>100% GLERA</p>
+										</Row>
+									</Col>
+								</Row>
+							</Animated>
 						</Col>
 					</Row>
 				</Container>
