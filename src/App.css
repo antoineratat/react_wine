@@ -256,13 +256,17 @@ a.current {
 	grid-gap: 0.5rem;
 }
 
+.button_language_CN svg {
+	margin-top: 0.095rem;
+}
+
 .btn-dark {
 	background-color: #2125297d;
 	border-color: #2125297d;
 }
 
 .flag_cn {
-	transform: scale(0.9);
+	transform: scale(0.95);
 }
 
 .flag_us {
