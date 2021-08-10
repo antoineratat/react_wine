@@ -7,7 +7,7 @@ import { Animated } from 'react-animated-css'
 import { LanguageContext } from '../language/LanguageContext'
 
 export default function Home(props) {
-	const { dictionary } = useContext(LanguageContext)
+	const { dictionary, language } = useContext(LanguageContext)
 
 	const home = useRef()
 	const wines = useRef()
@@ -67,7 +67,7 @@ export default function Home(props) {
 		<>
 			<div ref={home}></div>
 			<Container fluid>
-				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} />
+				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} language={language} />
 				<div id='overlay'></div>
 				<Container className='container_home disable-select'>
 					<Row className='row_title'>

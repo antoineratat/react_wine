@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Navbar as BootstrapNavbar, Nav, Button, Col, Row } from 'react-bootstrap'
+import { Navbar as BootstrapNavbar, Nav, Button, Col } from 'react-bootstrap'
 import Flags from 'country-flag-icons/react/3x2'
 
 export default function Navbar(props) {
-	const { handleUpdateLanguage } = props
+	const { handleUpdateLanguage, language } = props
 
 	function onMouseEnter(e) {
 		let navbar_nav = document.getElementsByClassName('navbar-nav')[0]
@@ -78,15 +78,24 @@ export default function Navbar(props) {
 					</Nav>
 				</BootstrapNavbar.Collapse>
 				<Col className='col_language'>
-					<Button onClick={() => handleUpdateLanguage('en-US')} variant='dark' className='button_language_EN'>
+					<Button
+						onClick={() => handleUpdateLanguage('en-US')}
+						variant='dark'
+						className={language === 'en-US' ? 'button_language_EN button_language_hover' : 'button_language_EN'}>
 						EN
 						<Flags.US title='United States' className='flag_us' />
 					</Button>
-					<Button onClick={() => handleUpdateLanguage('fr-FR')} variant='dark' className='button_language_FR'>
+					<Button
+						onClick={() => handleUpdateLanguage('fr-FR')}
+						variant='dark'
+						className={language === 'fr-FR' ? 'button_language_FR button_language_hover' : 'button_language_FR'}>
 						FR
 						<Flags.FR title='France' className='flag_fr' />
 					</Button>
-					<Button onClick={() => handleUpdateLanguage('zh-CN')} variant='dark' className='button_language_CN'>
+					<Button
+						onClick={() => handleUpdateLanguage('zh-CN')}
+						variant='dark'
+						className={language === 'zh-CN' ? 'button_language_CN button_language_hover' : 'button_language_CN'}>
 						中文
 						<Flags.CN title='China' className='flag_cn' />
 					</Button>

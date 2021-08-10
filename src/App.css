@@ -213,19 +213,19 @@ a.current {
 .col_language {
 	/* background-color: rgba(0, 255, 255, 0.459); */
 	display: flex;
-	justify-content: center;
-	justify-content: space-around;
+	margin: auto;
+	grid-gap: 0.5rem;
 	max-width: 170px;
 }
 
-.col_language .btn-primary {
-	background-color: rgba(255, 192, 203, 0);
-	border-color: rgba(255, 192, 203, 0);
+.col_language .btn {
 	font-family: 'rudabold';
 	text-transform: uppercase;
-	color: white;
 	font-weight: 450;
 	text-decoration: none;
+	color: white;
+	height: 60px;
+	transition: 0.5s ease-in-out;
 }
 
 .col_language .btn svg {
@@ -275,6 +275,11 @@ a.current {
 
 .flag_fr {
 	transform: scale(1.4);
+}
+
+.button_language_hover {
+	background-color: #1c1f23;
+	border-color: #1a1e21;
 }
 
 /* FOOTER */
