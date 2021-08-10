@@ -1,11 +1,14 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef, useContext } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
+import { LanguageContext } from '../language/LanguageContext'
 
-export default function Home() {
+export default function Home(props) {
+	const { dictionary } = useContext(LanguageContext)
+
 	const home = useRef()
 	const wines = useRef()
 	const learn_more = useRef()
@@ -64,12 +67,13 @@ export default function Home() {
 		<>
 			<div ref={home}></div>
 			<Container fluid>
-				<Navbar className='navbar' />
+				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} />
 				<div id='overlay'></div>
 				<Container className='container_home disable-select'>
 					<Row className='row_title'>
 						<Col className='col_title'>
 							<h1>AN AWARD-WINNING PROSECCO CREATED BY THE DELEVINGNE SISTERS</h1>
+							<p>{dictionary.identification}</p>
 						</Col>
 					</Row>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
