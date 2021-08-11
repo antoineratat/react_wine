@@ -14,7 +14,7 @@ export const dictionaryList = {
 		// CONTACT
 		contact_company_name: 'Le Village Distribution',
 		contact_company_description:
-			'Le Village Distribution represents five wineries from three different regions of France that have a high vocation in viticulture. Winehora Distribution currently produces 15 different varieties of fine wines. Each vineyard is managed with passion and respect for its tradition, in accordance with its territory of origin.',
+			'Le Village Distribution represents five wineries from three different regions of France that have a high vocation in viticulture. Le Village Distribution currently produces 15 different varieties of fine wines. Each vineyard is managed with passion and respect for its tradition, in accordance with its territory of origin.',
 		contact_company_location: '30.40001° N 104.04001° E, CHENGDU, CHINA',
 		contact_label_phone: 'Phone',
 		contact_phone: '13111881660',
@@ -43,22 +43,22 @@ export const dictionaryList = {
 		// STORY
 		story_title: 'OUR JOURNEY OF DISCOVERY',
 		story_subtitle: 'EXCEPTIONAL QUALITY WINE MADE USING SUSTAINABLE METHODS',
-		story_card_title_1: 'An Untold Story',
+		story_card_title_1: 'Connect Cultures',
 		story_card_description_1:
-			"Beneath the Dolomite mountains, the hills of Valdobbiadene are alive with the local culture, knowledge and passion for making Prosecco. As it's so little known to the world beyond, Della Vite (meaning ‘from the vine’) sets out to tell Prosecco’s real story.",
+			'Le Village is growing and remains fully committed to its original purpose: reaching out and connect cultures to discerning wine lovers from all over China.',
 		story_card_title_2: 'AN INSPIRATIONAL LANDSCAPE',
 		story_card_description_2:
-			'A region of quiet valleys and dramatic skylines, Glera grapes have been grown here since Roman times. At the heart of artisanal Italian wine culture, much of the area is a UNESCO World Heritage Site, selected for conservation for its cultural and environmental significance. This means our winery’s sustainability is continually monitored.',
+			'A region of quiet valleys and dramatic skylines, grapes have been grown here since ancient times. At the heart of artisanal French wine culture, selected for conservation for its cultural and environmental significance.',
 
 		// WINERY
 		winery_title: 'EXPLORE OUR WINERIES',
 		winery_subtitle: 'We have an incredibly unique and diverse portfolio of wineries',
-		winery_card_title_1: 'SEBASTIANI',
+		winery_card_title_1: 'LES BACCHANALES',
 		winery_card_description_1:
-			'Sonoma County is one of the most diverse wine growing regions in the world. As with most of California, our climate is influenced by the distance and exposure to the cold Pacific Ocean.',
-		winery_card_title_2: 'LANCASTER ESTATE',
+			'It is the great diversity of soil along with the cool evenings and sun-drenched days that create ideal growing conditions for Muscat varietals. At Les Bacchanales, we are dedicated to growing Muscat and Sparkling with the explicit intention of producing the most authentic expression possible.',
+		winery_card_title_2: 'MALTOFF',
 		winery_card_description_2:
-			'It is the great diversity of soil along with the cool evenings and sun-drenched days that create ideal growing conditions for Bordeaux varietals. At Lancaster Estate, we are dedicated to growing Cabernet Sauvignon, Malbec, Merlot, Petite Verdot and Cabernet Franc with the explicit intention of producing the most authentic expression possible.',
+			'This winery specializes in producing the red wines Burgundy is famous for like Chardonnay,  Pinot Noir etc. And there are also wine-tasting events organized here that consists of red, white and rosé wines.',
 
 		// WINES
 
