@@ -6,9 +6,9 @@ export const dictionaryList = {
 		home_title: 'SPECIALIST IMPORTER OF WINES FROM FRANCE',
 		home_wine_name_1: 'Vallée du Rhône',
 		home_wine_description_1: 'Red Wine - IGP',
-		home_wine_name_2: 'Muscat Beaumes-de-Venise',
+		home_wine_name_2: 'Muscat',
 		home_wine_description_2: 'White Wine - AOC',
-		home_wine_name_3: 'Muscat Beaumes-de-Venise',
+		home_wine_name_3: 'Sparkling Muscat',
 		home_wine_description_3: 'Sparkling White Wine - AOC',
 
 		// CONTACT
