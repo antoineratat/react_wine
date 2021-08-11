@@ -66,7 +66,7 @@ export default function Home(props) {
 	return (
 		<>
 			<div ref={home}></div>
-			<Container fluid>
+			<Container fluid className='container_myhome'>
 				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} language={language} />
 				<div id='overlay'></div>
 				<Container className='container_home disable-select'>

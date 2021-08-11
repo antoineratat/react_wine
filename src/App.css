@@ -108,6 +108,10 @@ p {
 
 /* HOME */
 
+.container_myhome {
+	margin-bottom: 5rem;
+}
+
 .row_title {
 	max-width: 675px;
 	margin: auto;
@@ -853,6 +857,7 @@ a.current {
 
 	.container_wines {
 		padding: 0rem;
+		margin-bottom: 5rem;
 	}
 
 	.row_wines_1 {
