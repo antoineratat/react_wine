@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef, useContext } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
+import { LanguageContext } from '../language/LanguageContext'
 
 export default function Story() {
 	const home = useRef()
@@ -14,6 +15,7 @@ export default function Story() {
 	const [visible, setVisible] = useState(true)
 	const [visiblePicture1, setVisiblePicture1] = useState(false)
 	const [visiblePicture2, setVisiblePicture2] = useState(false)
+	const { dictionary, language } = useContext(LanguageContext)
 
 	useEffect(() => {
 		let observerHome = new IntersectionObserver(
@@ -76,13 +78,13 @@ export default function Story() {
 				<Container className='container_home'>
 					<Row className='row_title'>
 						<Col className='col_title'>
-							<h1>OUR JOURNEY OF DISCOVERY</h1>
+							<h1>{dictionary.story_title}</h1>
 						</Col>
 					</Row>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
 						<Row className='row_learn_more'>
 							<p ref={learn_more} className='text_learn_more'>
-								Learn More
+								{dictionary.learn_more}
 							</p>
 							<Col className='col_scrolldown'>
 								<div ref={scrolldown} className='scrolldown'></div>
@@ -92,7 +94,7 @@ export default function Story() {
 				</Container>
 				<Row ref={wines} className='row_description_story'>
 					<Col>
-						<h1 className='title_story'>EXCEPTIONAL QUALITY PROSECCO MADE USING SUSTAINABLE METHODS</h1>
+						<h1 className='title_story'>{dictionary.story_subtitle}</h1>
 					</Col>
 				</Row>
 
@@ -100,12 +102,8 @@ export default function Story() {
 					<Row className='row_picture_story_1' ref={picture1}>
 						<Col className='col_picture_story_1'>
 							<div className='text_story'>
-								<h1 className='black'>An Untold Story</h1>
-								<p>
-									Beneath the Dolomite mountains, the hills of Valdobbiadene are alive with the local culture, knowledge and passion for
-									making Prosecco. As it's so little known to the world beyond, Della Vite (meaning ‘from the vine’) sets out to tell
-									Prosecco’s real story.{' '}
-								</p>
+								<h1 className='black'>{dictionary.story_card_title_1}</h1>
+								<p>{dictionary.story_card_description_1} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_2'>
@@ -123,12 +121,8 @@ export default function Story() {
 					<Row className='row_picture_story_1' ref={picture2}>
 						<Col className='col_picture_story_3'>
 							<div className='text_story'>
-								<h1 className='black'>AN INSPIRATIONAL LANDSCAPE</h1>
-								<p>
-									A region of quiet valleys and dramatic skylines, Glera grapes have been grown here since Roman times. At the heart of
-									artisanal Italian wine culture, much of the area is a UNESCO World Heritage Site, selected for conservation for its cultural
-									and environmental significance. This means our winery’s sustainability is continually monitored.{' '}
-								</p>
+								<h1 className='black'>{dictionary.story_card_title_2}</h1>
+								<p>{dictionary.story_card_description_2} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_4'>
