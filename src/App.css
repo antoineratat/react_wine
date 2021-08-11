@@ -462,8 +462,9 @@ a.current {
 .contact_left .row h4 {
 	padding-top: 0rem;
 	font-family: 'rudaregular';
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	letter-spacing: 0.05rem;
+	line-height: 2;
 	text-transform: inherit;
 	color: white;
 	align-self: flex-start;
@@ -595,10 +596,7 @@ a.current {
 .col_picture_story_1 p,
 .col_picture_story_3 p {
 	color: black;
-	font-size: 0.9rem;
 	line-height: 2;
-	letter-spacing: 0.02em;
-	text-transform: capitalize;
 	padding-top: 0rem;
 	font-family: 'rudaregular';
 	font-size: 0.8rem;
