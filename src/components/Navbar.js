@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Navbar as BootstrapNavbar, Nav, Button, Col } from 'react-bootstrap'
 import Flags from 'country-flag-icons/react/3x2'
+import { LanguageContext } from '../language/LanguageContext'
 
 export default function Navbar(props) {
 	const { handleUpdateLanguage, language } = props
+	const { dictionary } = useContext(LanguageContext)
 
 	function onMouseEnter(e) {
 		let navbar_nav = document.getElementsByClassName('navbar-nav')[0]
@@ -30,7 +32,7 @@ export default function Navbar(props) {
 		<>
 			<BootstrapNavbar className='navbar navbar-dark disable-select' expand='md'>
 				<Link to='/' className='navbar_brand'>
-					<BootstrapNavbar.Brand>React Wine</BootstrapNavbar.Brand>
+					<BootstrapNavbar.Brand>{dictionary.navbar_brand}</BootstrapNavbar.Brand>
 				</Link>
 				<BootstrapNavbar.Toggle aria-controls='basic-navbar-nav' />
 				<BootstrapNavbar.Collapse id='basic-navbar-nav' className='navbar_nav'>
@@ -43,7 +45,7 @@ export default function Navbar(props) {
 							to='/wines'
 							onMouseEnter={(e) => onMouseEnter(e)}
 							onMouseLeave={(e) => onMouseExit(e)}>
-							Wines
+							{dictionary.navbar_wines}
 						</NavLink>
 						<NavLink
 							exact
@@ -53,7 +55,7 @@ export default function Navbar(props) {
 							to='/story'
 							onMouseEnter={(e) => onMouseEnter(e)}
 							onMouseLeave={(e) => onMouseExit(e)}>
-							Story
+							{dictionary.navbar_story}
 						</NavLink>
 						<NavLink
 							exact
@@ -63,7 +65,7 @@ export default function Navbar(props) {
 							to='/winery'
 							onMouseEnter={(e) => onMouseEnter(e)}
 							onMouseLeave={(e) => onMouseExit(e)}>
-							Winery
+							{dictionary.navbar_winery}
 						</NavLink>
 						<NavLink
 							exact
@@ -73,7 +75,7 @@ export default function Navbar(props) {
 							to='/contact'
 							onMouseEnter={(e) => onMouseEnter(e)}
 							onMouseLeave={(e) => onMouseExit(e)}>
-							Contact
+							{dictionary.navbar_contact}
 						</NavLink>
 					</Nav>
 				</BootstrapNavbar.Collapse>
