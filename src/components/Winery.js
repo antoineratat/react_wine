@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef, useContext } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
+import { LanguageContext } from '../language/LanguageContext'
 
 export default function Winery() {
 	const home = useRef()
@@ -14,6 +15,7 @@ export default function Winery() {
 	const [visible, setVisible] = useState(true)
 	const [visiblePicture1, setVisiblePicture1] = useState(false)
 	const [visiblePicture2, setVisiblePicture2] = useState(false)
+	const { dictionary, language } = useContext(LanguageContext)
 
 	useEffect(() => {
 		let observerHome = new IntersectionObserver(
@@ -76,13 +78,13 @@ export default function Winery() {
 				<Container className='container_home'>
 					<Row className='row_title'>
 						<Col className='col_title'>
-							<h1>EXPLORE OUR WINERIES</h1>
+							<h1>{dictionary.winery_title}</h1>
 						</Col>
 					</Row>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
 						<Row className='row_learn_more'>
 							<p ref={learn_more} className='text_learn_more'>
-								Learn More
+								{dictionary.learn_more}
 							</p>
 							<Col className='col_scrolldown'>
 								<div ref={scrolldown} className='scrolldown'></div>
@@ -92,7 +94,7 @@ export default function Winery() {
 				</Container>
 				<Row ref={wines} className='row_description_story'>
 					<Col>
-						<h1 className='title_story'>We have an incredibly unique and diverse portfolio of wineries</h1>
+						<h1 className='title_story'>{dictionary.winery_subtitle}</h1>
 					</Col>
 				</Row>
 
@@ -100,11 +102,8 @@ export default function Winery() {
 					<Row className='row_picture_story_1' ref={picture1}>
 						<Col className='col_picture_story_1'>
 							<div className='text_story'>
-								<h1 className='black'>SEBASTIANI</h1>
-								<p>
-									Sonoma County is one of the most diverse wine growing regions in the world. As with most of California, our climate is
-									influenced by the distance and exposure to the cold Pacific Ocean.{' '}
-								</p>
+								<h1 className='black'>{dictionary.winery_card_title_1}</h1>
+								<p>{dictionary.winery_card_description_1} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_2'>
@@ -122,12 +121,8 @@ export default function Winery() {
 					<Row className='row_picture_story_1' ref={picture2}>
 						<Col className='col_picture_story_3'>
 							<div className='text_story'>
-								<h1 className='black'>LANCASTER ESTATE</h1>
-								<p>
-									It is the great diversity of soil along with the cool evenings and sun-drenched days that create ideal growing conditions
-									for Bordeaux varietals. At Lancaster Estate, we are dedicated to growing Cabernet Sauvignon, Malbec, Merlot, Petite Verdot
-									and Cabernet Franc with the explicit intention of producing the most authentic expression possible.{' '}
-								</p>
+								<h1 className='black'>{dictionary.winery_card_title_2}</h1>
+								<p>{dictionary.winery_card_description_2} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_4'>
