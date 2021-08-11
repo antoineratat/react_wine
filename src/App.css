@@ -688,27 +688,33 @@ a.current {
 	flex-direction: column;
 	align-items: flex-start;
 	margin: auto;
-	padding-left: 2rem;
+	padding-left: 3rem;
 }
 
 .wine_description_left h1 {
-	font-family: 'rudaregular';
-	font-size: 2rem;
+	font-family: 'Silk-Serif';
+	font-size: 2.2rem;
+	margin-bottom: 1.5rem;
 	text-transform: uppercase;
 }
 .wine_description_left h4 {
 	padding-top: 0rem;
 	font-family: 'rudaregular';
-	font-size: 0.9rem;
-	text-transform: capitalize;
+	font-size: 0.75rem;
+	letter-spacing: 0.05rem;
+	line-height: 2;
+	text-transform: inherit;
 	color: white;
+	align-self: flex-start;
 }
 .wine_description_left p {
+	justify-self: flex-end;
 	font-family: 'rudaregular';
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	text-transform: capitalize;
 	color: white;
-	justify-self: flex-end;
+	letter-spacing: 0.1rem;
+	margin-top: 1.5rem;
 }
 
 .wine_description_right {
@@ -739,6 +745,8 @@ a.current {
 	margin: 0rem;
 	margin-bottom: 0.5rem;
 	padding: 0rem;
+	flex-wrap: inherit;
+	max-width: fit-content;
 }
 
 /* MEDIA QUERIES */

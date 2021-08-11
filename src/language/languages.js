@@ -70,15 +70,15 @@ export const dictionaryList = {
 
 		wine_card_title_1: 'Vallée du Rhône',
 		wine_card_description_1:
-			'a pattern of black fruits and spices. Grown organically and vinified without added sulphites, this good red wine has a nice balance in the mouth.',
+			'A pattern of black fruits and spices. Grown organically and vinified without added sulphites, this good red wine has a nice balance in the mouth.',
 		wine_card_location_1: '44,0709° N, 5,0127° E, BEAUMES-DE-VENISE, FRANCE',
 		wine_card_taste_1: 'Extra Dry',
 		wine_card_acidity_1: '5.5G/L',
 		wine_card_alcohol_1: '13.5%',
 		wine_card_pressure_1: '5.5 ATM',
-		wine_card_grapes_1: '100% GRENACHE',
+		wine_card_grapes_1: '70% GRENACHE 20% GARIGNAN 10% CINSAULT',
 
-		wine_card_title_2: 'Muscat Beaumes-de-Venise',
+		wine_card_title_2: 'Muscat',
 		wine_card_description_2:
 			'The Muscat Beaumes de Venise is produced exclusively from muscat with small grains. This world-renowned white wine is distinguished by its beautiful aromatic persistence and freshness.',
 		wine_card_location_2: '44,0709° N, 5,0127° E, BEAUMES-DE-VENISE, FRANCE',
@@ -88,7 +88,7 @@ export const dictionaryList = {
 		wine_card_pressure_2: '5.5 ATM',
 		wine_card_grapes_2: '100% MUSCAT',
 
-		wine_card_title_3: 'Muscat Beaumes-de-Venise',
+		wine_card_title_3: 'Sparkling Muscat',
 		wine_card_description_3:
 			'The Muscat Beaumes de Venise seduces the eye with its tiled pink dress. The fruit is fair in this sweet wine, with aromas of candied citrus fruits and orange blossom.',
 		wine_card_location_3: '44,0709° N, 5,0127° E, BEAUMES-DE-VENISE, FRANCE',
