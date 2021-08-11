@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Row } from 'react-bootstrap'
+import { LanguageContext } from '../language/LanguageContext'
 
 function onMouseEnter(e) {
 	let navbar_nav = document.getElementsByClassName('navigation-footer')[0]
@@ -24,6 +25,8 @@ function onMouseExit(e) {
 }
 
 export default function Footer() {
+	const { dictionary, language } = useContext(LanguageContext)
+
 	return (
 		<Row className='footer disable-select'>
 			<div className='navigation-footer'>
@@ -35,7 +38,7 @@ export default function Footer() {
 					to='/wines'
 					onMouseEnter={(e) => onMouseEnter(e)}
 					onMouseLeave={(e) => onMouseExit(e)}>
-					Wines
+					{dictionary.footer_wines}
 				</NavLink>
 				<NavLink
 					exact
@@ -45,7 +48,7 @@ export default function Footer() {
 					to='/story'
 					onMouseEnter={(e) => onMouseEnter(e)}
 					onMouseLeave={(e) => onMouseExit(e)}>
-					Story
+					{dictionary.footer_story}
 				</NavLink>
 				<NavLink
 					exact
@@ -55,7 +58,7 @@ export default function Footer() {
 					to='/winery'
 					onMouseEnter={(e) => onMouseEnter(e)}
 					onMouseLeave={(e) => onMouseExit(e)}>
-					Winery
+					{dictionary.footer_winery}
 				</NavLink>
 				<NavLink
 					exact
@@ -65,12 +68,12 @@ export default function Footer() {
 					to='/contact'
 					onMouseEnter={(e) => onMouseEnter(e)}
 					onMouseLeave={(e) => onMouseExit(e)}>
-					Contact
+					{dictionary.footer_contact}
 				</NavLink>
 			</div>
 			<div className='signature-footer'>
-				<p className='footer_year'>2021 © Wine</p>
-				<p className='footer_signature'>Website by Antoine Ratat</p>
+				<p className='footer_year'>{dictionary.footer_website}</p>
+				<p className='footer_signature'>{dictionary.footer_website_by}</p>
 			</div>
 		</Row>
 	)

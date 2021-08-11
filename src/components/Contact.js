@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
+import { LanguageContext } from '../language/LanguageContext'
 
 export default function Contact() {
+	const { dictionary, language } = useContext(LanguageContext)
+
 	return (
 		<>
 			<Container fluid className='container_home'>
@@ -16,16 +19,13 @@ export default function Contact() {
 							<Row>
 								<Col className='contact_left'>
 									<Row>
-										<h1>Company Name</h1>
+										<h1>{dictionary.contact_company_name}</h1>
 									</Row>
 									<Row>
-										<h4>
-											Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints
-											of crostini and chamomile.
-										</h4>
+										<h4>{dictionary.contact_company_description}</h4>
 									</Row>
 									<Row>
-										<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+										<p>{dictionary.contact_company_location}</p>
 									</Row>
 								</Col>
 							</Row>
@@ -34,40 +34,40 @@ export default function Contact() {
 									<Row>
 										<Col>
 											<Row>
-												<p className='title_contact'>Phone</p>
+												<p className='title_contact'>{dictionary.contact_label_phone}</p>
 											</Row>
 											<Row>
-												<p className='text_contact'>13111881660</p>
-											</Row>
-										</Col>
-									</Row>
-									<Row>
-										<Col>
-											<Row>
-												<p className='title_contact'>Email</p>
-											</Row>
-											<Row>
-												<p className='text_contact'>antoine.ratat@gmail.com</p>
+												<p className='text_contact'>{dictionary.contact_phone}</p>
 											</Row>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
 											<Row>
-												<p className='title_contact'>TikTok</p>
+												<p className='title_contact'>{dictionary.contact_label_email}</p>
 											</Row>
 											<Row>
-												<p className='text_contact'>@tiktok</p>
+												<p className='text_contact'>{dictionary.contact_email}</p>
 											</Row>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
 											<Row>
-												<p className='title_contact'>Skype</p>
+												<p className='title_contact'>{dictionary.contact_label_tiktok}</p>
 											</Row>
 											<Row>
-												<p className='text_contact'>skype</p>
+												<p className='text_contact'>{dictionary.contact_tiktok}</p>
+											</Row>
+										</Col>
+									</Row>
+									<Row>
+										<Col>
+											<Row>
+												<p className='title_contact'>{dictionary.contact_label_skype}</p>
+											</Row>
+											<Row>
+												<p className='text_contact'>{dictionary.contact_skype}</p>
 											</Row>
 										</Col>
 									</Row>
