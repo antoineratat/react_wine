@@ -37,7 +37,7 @@ export default function Contact(props) {
 												<p className='title_contact'>{dictionary.contact_label_phone}</p>
 											</Row>
 											<Row>
-												<p className='text_contact'>{dictionary.contact_phone}</p>
+												<p className='text_contact'>{language === 'zh-CN' ? dictionary.contact_phone_cn : dictionary.contact_phone}</p>
 											</Row>
 										</Col>
 									</Row>
@@ -47,7 +47,7 @@ export default function Contact(props) {
 												<p className='title_contact'>{dictionary.contact_label_email}</p>
 											</Row>
 											<Row>
-												<p className='text_contact'>{dictionary.contact_email}</p>
+												<p className='text_contact'>{language === 'zh-CN' ? dictionary.contact_email_cn : dictionary.contact_email}</p>
 											</Row>
 										</Col>
 									</Row>
