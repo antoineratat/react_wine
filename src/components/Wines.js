@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef, useContext } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
+import { LanguageContext } from '../language/LanguageContext'
 
 export default function Wines() {
 	const row_wines_1 = useRef()
@@ -11,6 +12,7 @@ export default function Wines() {
 	const [visibleRow1, setVisibleRow1] = useState(false)
 	const [visibleRow2, setVisibleRow2] = useState(false)
 	const [visibleRow3, setVisibleRow3] = useState(false)
+	const { dictionary, language } = useContext(LanguageContext)
 
 	useEffect(() => {
 		let observerRow1 = new IntersectionObserver(
@@ -82,33 +84,30 @@ export default function Wines() {
 								isVisible={visibleRow1}>
 								<Row className='wine_description'>
 									<Col className='wine_description_left'>
-										<h1>Wine Name</h1>
-										<h4>
-											Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints
-											of crostini and chamomile.
-										</h4>
-										<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+										<h1>{dictionary.wine_card_title_1}</h1>
+										<h4>{dictionary.wine_card_description_1}</h4>
+										<p>{dictionary.wine_card_location_1}</p>
 									</Col>
 									<Col className='wine_description_right'>
 										<Row>
-											<p className='title_contact'>Taste</p>
-											<p className='text_contact'>Extra Dry</p>
+											<p className='title_contact'>{dictionary.wine_label_taste}</p>
+											<p className='text_contact'>{dictionary.wine_card_taste_1}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Acidity</p>
-											<p className='text_contact'>5.5G/L</p>
+											<p className='title_contact'>{dictionary.wine_label_acidity}</p>
+											<p className='text_contact'>{dictionary.wine_card_acidity_1}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Alcohol</p>
-											<p className='text_contact'>11.5%</p>
+											<p className='title_contact'>{dictionary.wine_label_alcohol}</p>
+											<p className='text_contact'>{dictionary.wine_card_alcohol_1}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Pressure</p>
-											<p className='text_contact'>5.5 ATM</p>
+											<p className='title_contact'>{dictionary.wine_label_pressure}</p>
+											<p className='text_contact'>{dictionary.wine_card_pressure_1}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Grapes</p>
-											<p className='text_contact'>100% GLERA</p>
+											<p className='title_contact'>{dictionary.wine_label_grape}</p>
+											<p className='text_contact'>{dictionary.wine_card_grapes_1}</p>
 										</Row>
 									</Col>
 								</Row>
@@ -127,33 +126,30 @@ export default function Wines() {
 								isVisible={visibleRow2}>
 								<Row className='wine_description'>
 									<Col className='wine_description_left'>
-										<h1>Wine Name</h1>
-										<h4>
-											Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints
-											of crostini and chamomile.
-										</h4>
-										<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+										<h1>{dictionary.wine_card_title_2}</h1>
+										<h4>{dictionary.wine_card_description_2}</h4>
+										<p>{dictionary.wine_card_location_2}</p>
 									</Col>
 									<Col className='wine_description_right'>
 										<Row>
-											<p className='title_contact'>Taste</p>
-											<p className='text_contact'>Extra Dry</p>
+											<p className='title_contact'>{dictionary.wine_label_taste}</p>
+											<p className='text_contact'>{dictionary.wine_card_taste_2}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Acidity</p>
-											<p className='text_contact'>5.5G/L</p>
+											<p className='title_contact'>{dictionary.wine_label_acidity}</p>
+											<p className='text_contact'>{dictionary.wine_card_acidity_2}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Alcohol</p>
-											<p className='text_contact'>11.5%</p>
+											<p className='title_contact'>{dictionary.wine_label_alcohol}</p>
+											<p className='text_contact'>{dictionary.wine_card_alcohol_2}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Pressure</p>
-											<p className='text_contact'>5.5 ATM</p>
+											<p className='title_contact'>{dictionary.wine_label_pressure}</p>
+											<p className='text_contact'>{dictionary.wine_card_pressure_2}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Grapes</p>
-											<p className='text_contact'>100% GLERA</p>
+											<p className='title_contact'>{dictionary.wine_label_grape}</p>
+											<p className='text_contact'>{dictionary.wine_card_grapes_2}</p>
 										</Row>
 									</Col>
 								</Row>
@@ -200,33 +196,30 @@ export default function Wines() {
 								isVisible={visibleRow3}>
 								<Row className='wine_description'>
 									<Col className='wine_description_left'>
-										<h1>Wine Name</h1>
-										<h4>
-											Rich and extra-dry with a highly mineral palate that lingers, our Prosecco Superiore DOCG is characterised by hints
-											of crostini and chamomile.
-										</h4>
-										<p>45.9013° N, 11.9959° E, NORTHERN ITALY</p>
+										<h1>{dictionary.wine_card_title_3}</h1>
+										<h4>{dictionary.wine_card_description_3}</h4>
+										<p>{dictionary.wine_card_location_3}</p>
 									</Col>
 									<Col className='wine_description_right'>
 										<Row>
-											<p className='title_contact'>Taste</p>
-											<p className='text_contact'>Extra Dry</p>
+											<p className='title_contact'>{dictionary.wine_label_taste}</p>
+											<p className='text_contact'>{dictionary.wine_card_taste_3}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Acidity</p>
-											<p className='text_contact'>5.5G/L</p>
+											<p className='title_contact'>{dictionary.wine_label_acidity}</p>
+											<p className='text_contact'>{dictionary.wine_card_acidity_3}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Alcohol</p>
-											<p className='text_contact'>11.5%</p>
+											<p className='title_contact'>{dictionary.wine_label_alcohol}</p>
+											<p className='text_contact'>{dictionary.wine_card_alcohol_3}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Pressure</p>
-											<p className='text_contact'>5.5 ATM</p>
+											<p className='title_contact'>{dictionary.wine_label_pressure}</p>
+											<p className='text_contact'>{dictionary.wine_card_pressure_3}</p>
 										</Row>
 										<Row>
-											<p className='title_contact'>Grapes</p>
-											<p className='text_contact'>100% GLERA</p>
+											<p className='title_contact'>{dictionary.wine_label_grape}</p>
+											<p className='text_contact'>{dictionary.wine_card_grapes_3}</p>
 										</Row>
 									</Col>
 								</Row>
