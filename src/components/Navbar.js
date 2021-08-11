@@ -77,6 +77,29 @@ export default function Navbar(props) {
 							onMouseLeave={(e) => onMouseExit(e)}>
 							{dictionary.navbar_contact}
 						</NavLink>
+						<Col className='col_language_phone mt-4'>
+							<Button
+								onClick={() => handleUpdateLanguage('zh-CN')}
+								variant='dark'
+								className={language === 'zh-CN' ? 'button_language_CN button_language_hover' : 'button_language_CN'}>
+								中文
+								<Flags.CN title='China' className='flag_cn' />
+							</Button>
+							<Button
+								onClick={() => handleUpdateLanguage('fr-FR')}
+								variant='dark'
+								className={language === 'fr-FR' ? 'button_language_FR button_language_hover' : 'button_language_FR'}>
+								FR
+								<Flags.FR title='France' className='flag_fr' />
+							</Button>
+							<Button
+								onClick={() => handleUpdateLanguage('en-US')}
+								variant='dark'
+								className={language === 'en-US' ? 'button_language_EN button_language_hover' : 'button_language_EN'}>
+								EN
+								<Flags.US title='United States' className='flag_us' />
+							</Button>
+						</Col>
 					</Nav>
 				</BootstrapNavbar.Collapse>
 				<Col className='col_language'>

@@ -198,6 +198,10 @@ p {
 	/* text-shadow: 2px 2px 2px black; */
 }
 
+.col_language_phone {
+	display: none;
+}
+
 .navbar-light .navbar-brand:hover {
 	color: white;
 }
@@ -1018,6 +1022,14 @@ a.current {
 		justify-items: center;
 		justify-self: center;
 	}
+
+	.col_language {
+		display: none;
+	}
+
+	.col_language_phone {
+		display: inline-flex;
+	}
 }
 
 @media only screen and (max-width: 576px) {
@@ -1137,6 +1149,7 @@ a.current {
 
 	.wine_description_left h1 {
 		font-size: 1.5rem;
+		margin-top: 1.5rem;
 	}
 
 	.wine_description_left h4 {
