@@ -5,7 +5,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
 import { LanguageContext } from '../language/LanguageContext'
 
-export default function Wines() {
+export default function Wines(props) {
 	const row_wines_1 = useRef()
 	const row_wines_2 = useRef()
 	const row_wines_3 = useRef()
@@ -55,7 +55,7 @@ export default function Wines() {
 	return (
 		<>
 			<Container fluid className='container_home disable-select'>
-				<Navbar className='navbar' />
+				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} language={language} />
 				<div id='overlay'></div>
 				<Container fluid className='container_wines'>
 					{/* ROW 1 */}

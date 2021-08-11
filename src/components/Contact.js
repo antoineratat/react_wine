@@ -5,13 +5,13 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
 import { LanguageContext } from '../language/LanguageContext'
 
-export default function Contact() {
+export default function Contact(props) {
 	const { dictionary, language } = useContext(LanguageContext)
 
 	return (
 		<>
 			<Container fluid className='container_home'>
-				<Navbar className='navbar' />
+				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} language={language} />
 				<div id='overlay'></div>
 				<Container fluid className='container_contact'>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
