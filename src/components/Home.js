@@ -72,14 +72,13 @@ export default function Home(props) {
 				<Container className='container_home disable-select'>
 					<Row className='row_title'>
 						<Col className='col_title'>
-							<h1>AN AWARD-WINNING PROSECCO CREATED BY THE DELEVINGNE SISTERS</h1>
-							<p>{dictionary.identification}</p>
+							<h1>{dictionary.home_title}</h1>
 						</Col>
 					</Row>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
 						<Row className='row_learn_more'>
 							<p ref={learn_more} className='text_learn_more'>
-								Learn More
+								{dictionary.learn_more}
 							</p>
 							<Col className='col_scrolldown'>
 								<div ref={scrolldown} className='scrolldown'></div>
@@ -99,8 +98,8 @@ export default function Home(props) {
 										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
 									/>
 									<Card.Body>
-										<Card.Title>Superiore</Card.Title>
-										<Card.Text>D.O.C.G Bottles</Card.Text>
+										<Card.Title>{dictionary.home_wine_name_1}</Card.Title>
+										<Card.Text>{dictionary.home_wine_description_1}</Card.Text>
 									</Card.Body>
 								</Card>
 							</Animated>
@@ -117,8 +116,8 @@ export default function Home(props) {
 										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
 									/>
 									<Card.Body>
-										<Card.Title>Superiore</Card.Title>
-										<Card.Text>D.O.C.G Bottles</Card.Text>
+										<Card.Title>{dictionary.home_wine_name_2}</Card.Title>
+										<Card.Text>{dictionary.home_wine_description_2}</Card.Text>
 									</Card.Body>
 								</Card>
 							</Animated>
@@ -135,8 +134,8 @@ export default function Home(props) {
 										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
 									/>
 									<Card.Body>
-										<Card.Title>Superiore</Card.Title>
-										<Card.Text>D.O.C.G Bottles</Card.Text>
+										<Card.Title>{dictionary.home_wine_name_3}</Card.Title>
+										<Card.Text>{dictionary.home_wine_description_3}</Card.Text>
 									</Card.Body>
 								</Card>
 							</Animated>

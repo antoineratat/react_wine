@@ -79,11 +79,11 @@ export default function Navbar(props) {
 				</BootstrapNavbar.Collapse>
 				<Col className='col_language'>
 					<Button
-						onClick={() => handleUpdateLanguage('en-US')}
+						onClick={() => handleUpdateLanguage('zh-CN')}
 						variant='dark'
-						className={language === 'en-US' ? 'button_language_EN button_language_hover' : 'button_language_EN'}>
-						EN
-						<Flags.US title='United States' className='flag_us' />
+						className={language === 'zh-CN' ? 'button_language_CN button_language_hover' : 'button_language_CN'}>
+						中文
+						<Flags.CN title='China' className='flag_cn' />
 					</Button>
 					<Button
 						onClick={() => handleUpdateLanguage('fr-FR')}
@@ -93,11 +93,11 @@ export default function Navbar(props) {
 						<Flags.FR title='France' className='flag_fr' />
 					</Button>
 					<Button
-						onClick={() => handleUpdateLanguage('zh-CN')}
+						onClick={() => handleUpdateLanguage('en-US')}
 						variant='dark'
-						className={language === 'zh-CN' ? 'button_language_CN button_language_hover' : 'button_language_CN'}>
-						中文
-						<Flags.CN title='China' className='flag_cn' />
+						className={language === 'en-US' ? 'button_language_EN button_language_hover' : 'button_language_EN'}>
+						EN
+						<Flags.US title='United States' className='flag_us' />
 					</Button>
 				</Col>
 			</BootstrapNavbar>
