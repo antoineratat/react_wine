@@ -25,7 +25,7 @@ function onMouseExit(e) {
 }
 
 export default function Footer() {
-	const { dictionary, language } = useContext(LanguageContext)
+	const { dictionary } = useContext(LanguageContext)
 
 	return (
 		<Row className='footer disable-select'>

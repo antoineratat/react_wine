@@ -1127,7 +1127,8 @@ a.current {
 
 	.row_picture_story_1 {
 		min-height: 70vh;
-		margin-top: 0rem;
+		margin-top: 1rem;
+		display: inline;
 	}
 
 	.row_wines_1 {
@@ -1158,5 +1159,14 @@ a.current {
 
 	.wine_description_left p {
 		font-size: 0.8rem;
+	}
+
+	.card_wine .card-body .card-title {
+		font-size: 1.2rem;
+	}
+
+	.image_wine {
+		padding: 1rem 1rem;
+		margin-left: 1rem;
 	}
 }
