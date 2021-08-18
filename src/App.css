@@ -687,6 +687,8 @@ a.current {
 	height: 30vh;
 	display: grid;
 	grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+	min-width: 100%;
+	/* min-height: 100%; */
 }
 
 .wine_description_left {

@@ -63,7 +63,6 @@ export const dictionaryList = {
 			'This winery specializes in producing the red wines Burgundy is famous for like Chardonnay,  Pinot Noir etc. And there are also wine-tasting events organized here that consists of red, white and rosé wines.',
 
 		// WINES
-
 		wine_label_taste: 'Taste',
 		wine_label_acidity: 'Acidity',
 		wine_label_alcohol: 'Alcohol',
@@ -104,7 +103,7 @@ export const dictionaryList = {
 	// --- CN ---
 
 	'zh-CN': {
-		learn_more: 'Learn More',
+		learn_more: '了解更多',
 
 		// HOME
 		home_title: '来自法国的专业红酒进出口商',
@@ -115,21 +114,21 @@ export const dictionaryList = {
 		home_wine_name_3: '起泡酒 Muscat',
 		home_wine_description_3: '白葡萄起泡酒 - AOC',
 
-		// 联系方式
-		联系方式_company_name: 'Le Village Distribution',
-		联系方式_company_description:
+		// contact
+		contact_company_name: 'Le Village Distribution',
+		contact_company_description:
 			'Le Village Distribution代表来自法国三个不同地区的五家葡萄酒厂，他们在葡萄栽培方面具有很高的专业性。Le Village Distribution目前生产15种不同的优质葡萄酒红酒.每一个葡萄园都根据其原产地，法式传统方式进行专业化地管理。',
-		联系方式_company_location: '北纬30.40001°  东经104.04001° , 成都, 中国',
-		联系方式_label_phone: '联系电话',
-		联系方式_phone: '13111881660',
-		联系方式_phone_cn: '18008008656',
-		联系方式_label_email: '邮箱',
-		联系方式_email: 'antoine.ratat@gmail.com',
-		联系方式_email_cn: '1205233942@qq.com',
-		联系方式_label_tiktok: '抖音',
-		联系方式_tiktok: '@18008008656',
-		联系方式_label_skype: '微博',
-		联系方式_skype: '@18008008656',
+		contact_company_location: '北纬30.40001°  东经104.04001° , 成都, 中国',
+		contact_label_phone: '联系电话',
+		contact_phone: '13111881660',
+		contact_phone_cn: '18008008656',
+		contact_label_email: '邮箱',
+		contact_email: 'antoine.ratat@gmail.com',
+		contact_email_cn: '1205233942@qq.com',
+		contact_label_tiktok: '抖音',
+		contact_tiktok: '@18008008656',
+		contact_label_skype: '微博',
+		contact_skype: '@18008008656',
 
 		// FOOTER
 		footer_红酒: '红酒',
@@ -137,65 +136,66 @@ export const dictionaryList = {
 		footer_酿酒厂: '酿酒厂',
 		footer_联系方式: '联系方式',
 		footer_website: '2021 © Le Village',
-		footer_website_by: 'Website by Antoine Ratat',
+		footer_website_by: '网站由 Antoine Ratat',
 
 		// NAVBAR
 		navbar_brand: 'Le Village',
-		navbar_红酒: '红酒',
-		navbar_内容: '内容',
-		navbar_酿酒厂: '酿酒厂',
-		navbar_联系方式: '联系方式',
+		navbar_wines: '红酒',
+		navbar_story: '内容',
+		navbar_winery: '酿酒厂',
+		navbar_contact: '联系方式',
 
-		// 内容
-		内容_title: '我们的发现之旅',
-		内容_subtitle: '采用可持续方法酿造的优质葡萄酒',
-		内容_card_title_1: '文化交流',
-		内容_card_description_1:
+		// STORY
+		story_title: '我们的发现之旅',
+		story_subtitle: '采用可持续方法酿造的优质葡萄酒',
+		story_card_title_1: '文化交流',
+		story_card_description_1:
 			'Le Village 是着力于把高品质红酒带给中国的每一位红酒爱好者并同中国进行友好的民间文化交流活动，促进两国人民友谊持续健康友好发展',
-		内容_card_title_2: '令人心旷神怡的地方',
-		内容_card_description_2:
+		story_card_title_2: '令人心旷神怡的地方',
+		story_card_description_2:
 			'这里是一个有着宁静山谷和蔚蓝天空的地方，从古至今都是葡萄种植的宝地。这里同时也是法国人工葡萄种植文化核心的所在地，因为文化环境的非凡意义因而被选定为法定保护区        // 酿酒厂',
-		酿酒厂_title: '探索我们的酿酒厂',
-		酿酒厂_subtitle: '我们有自己一套独特的酿酒方式和设备组合',
-		酿酒厂_card_title_1: 'LES BACCHANALES',
-		酿酒厂_card_description_1:
+
+		// WINERY
+		winery_title: '探索我们的酿酒厂',
+		winery_subtitle: '我们有自己一套独特的酿酒方式和设备组合',
+		winery_card_title_1: 'LES BACCHANALES',
+		winery_card_description_1:
 			'这里的气候白天日照充足夜晚凉爽温差大，土壤的多样性为麝香葡萄品种创造了理想的生长条件。在Les Bacchanales，我们致力于种植麝香葡萄并使其名扬海外，其目的是为了带给大家最优质的葡萄酒.',
-		酿酒厂_card_title_2: 'MALTOFF',
-		酿酒厂_card_description_2:
+		winery_card_title_2: 'MALTOFF',
+		winery_card_description_2:
 			'这家酿酒厂专门生产以霞多丽、黑皮诺等为主要品种的勃艮第红酒。此外，这里还会组织品尝红葡萄酒、白葡萄酒和桃红葡萄酒的品酒活动。',
 
-		// 红酒
-
-		wine_label_口味: '口味',
-		wine_label_酸度: '酸度',
-		wine_label_酒精度: '酒精度',
+		// WINES
+		wine_label_taste: '口味',
+		wine_label_acidity: '酸度',
+		wine_label_alcohol: '酒精度',
 		wine_label_pressure: '压力值',
 		wine_label_grape: '葡萄品种',
 
 		wine_card_title_1: '罗纳河谷',
 		wine_card_description_1: '有机种植酿造，不添加亚硫酸盐，这款优质红葡萄酒入口平衡杆极佳',
 		wine_card_location_1: '北纬44,0709° ,东经 5,0127° , 博姆-德沃尼斯, 法国',
-		wine_card_口味_1: '干型',
-		wine_card_酸度_1: '5.5G/L',
-		wine_card_酒精度_1: '13.5%',
+		wine_card_taste_1: '干型',
+		wine_card_acidity_1: '5.5G/L',
+		wine_card_alcohol_1: '13.5%',
 		wine_card_pressure_1: '5.5 ATM',
 		wine_card_grapes_1: '70% 歌海娜 20% 佳丽酿 10% 神索',
 
 		wine_card_title_2: '小麝香',
 		wine_card_description_2: '博姆-德沃尼斯白葡萄酒专门用小粒麝香酿制而成。这种享誉世界的白葡萄酒以其美丽的芳香持久性和新鲜度而著称',
 		wine_card_location_2: '北纬44,0709° ,东经5,0127°, 博姆-德沃尼斯, 法国',
-		wine_card_口味_2: '甜型',
-		wine_card_酸度_2: '4.5G/L',
-		wine_card_酒精度_2: '13.5%',
+		wine_card_taste_2: '甜型',
+		wine_card_acidity_2: '4.5G/L',
+		wine_card_alcohol_2: '13.5%',
 		wine_card_pressure_2: '5.5 ATM',
 		wine_card_grapes_2: '100% 小麝香',
 
-		wine_card_title_3: '起泡酒 ',
+		wine_card_title_3: '起泡酒',
 		wine_card_description_3: '博姆-德沃尼斯白葡萄酒外表有着',
 		wine_card_location_3: '北纬44,0709° , 东经5,0127°, 博姆-德沃尼斯, 法国',
-		wine_card_口味_3: '甜型起泡酒',
-		wine_card_酸度_3: '4.5G/L',
-		wine_card_酒精度_3: '13.5%',
+		wine_card_taste_3: '甜型起泡酒',
+		wine_card_acidity_3: '4.5G/L',
+		wine_card_alcohol_3: '13.5%',
 		wine_card_pressure_3: '5.5 ATM',
 		wine_card_grapes_3: '100% 小麝香',
 	},
