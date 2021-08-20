@@ -78,7 +78,7 @@ export default function Story(props) {
 				<Container className='container_home'>
 					<Row className='row_title'>
 						<Col className='col_title'>
-							<h1>{dictionary.story_title}</h1>
+							<h1 className={language === 'zh-CN' ? 'h1_cn' : ''}>{dictionary.story_title}</h1>
 						</Col>
 					</Row>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
@@ -94,7 +94,7 @@ export default function Story(props) {
 				</Container>
 				<Row ref={wines} className='row_description_story'>
 					<Col>
-						<h1 className='title_story'>{dictionary.story_subtitle}</h1>
+						<h1 className={language === 'zh-CN' ? 'title_story h1_cn' : 'title_story'}>{dictionary.story_subtitle}</h1>
 					</Col>
 				</Row>
 
@@ -102,8 +102,8 @@ export default function Story(props) {
 					<Row className='row_picture_story_1' ref={picture1}>
 						<Col className='col_picture_story_1'>
 							<div className='text_story'>
-								<h1 className='black'>{dictionary.story_card_title_1}</h1>
-								<p>{dictionary.story_card_description_1} </p>
+								<h1 className={language === 'zh-CN' ? 'black h1_cn' : 'black'}>{dictionary.story_card_title_1}</h1>
+								<p style={language === 'zh-CN' ? { fontSize: '.9rem' } : ''}>{dictionary.story_card_description_1} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_2'>
@@ -121,8 +121,8 @@ export default function Story(props) {
 					<Row className='row_picture_story_1' ref={picture2}>
 						<Col className='col_picture_story_3'>
 							<div className='text_story'>
-								<h1 className='black'>{dictionary.story_card_title_2}</h1>
-								<p>{dictionary.story_card_description_2} </p>
+								<h1 className={language === 'zh-CN' ? 'black h1_cn' : 'black'}>{dictionary.story_card_title_2}</h1>
+								<p style={language === 'zh-CN' ? { fontSize: '.9rem' } : ''}>{dictionary.story_card_description_2} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_4'>

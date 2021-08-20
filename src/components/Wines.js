@@ -84,7 +84,7 @@ export default function Wines(props) {
 								isVisible={visibleRow1}>
 								<Row className='wine_description'>
 									<Col className='wine_description_left'>
-										<h1>{dictionary.wine_card_title_1}</h1>
+										<h1 className={language === 'zh-CN' ? 'h1_cn' : ''}>{dictionary.wine_card_title_1}</h1>
 										<h4>{dictionary.wine_card_description_1}</h4>
 										<p>{dictionary.wine_card_location_1}</p>
 									</Col>

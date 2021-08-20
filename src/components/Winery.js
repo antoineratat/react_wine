@@ -78,7 +78,7 @@ export default function Winery(props) {
 				<Container className='container_home'>
 					<Row className='row_title'>
 						<Col className='col_title'>
-							<h1>{dictionary.winery_title}</h1>
+							<h1 className={language === 'zh-CN' ? 'h1_cn' : ''}>{dictionary.winery_title}</h1>
 						</Col>
 					</Row>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
@@ -94,7 +94,7 @@ export default function Winery(props) {
 				</Container>
 				<Row ref={wines} className='row_description_story'>
 					<Col>
-						<h1 className='title_story'>{dictionary.winery_subtitle}</h1>
+						<h1 className={language === 'zh-CN' ? 'h1_cn title_story' : 'title_story'}>{dictionary.winery_subtitle}</h1>
 					</Col>
 				</Row>
 
@@ -103,7 +103,7 @@ export default function Winery(props) {
 						<Col className='col_picture_story_1'>
 							<div className='text_story'>
 								<h1 className='black'>{dictionary.winery_card_title_1}</h1>
-								<p>{dictionary.winery_card_description_1} </p>
+								<p style={language === 'zh-CN' ? { fontSize: '.9rem' } : ''}>{dictionary.winery_card_description_1} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_2'>
@@ -122,7 +122,7 @@ export default function Winery(props) {
 						<Col className='col_picture_story_3'>
 							<div className='text_story'>
 								<h1 className='black'>{dictionary.winery_card_title_2}</h1>
-								<p>{dictionary.winery_card_description_2} </p>
+								<p style={language === 'zh-CN' ? { fontSize: '.9rem' } : ''}>{dictionary.winery_card_description_2} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_4'>

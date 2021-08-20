@@ -119,6 +119,15 @@ p {
 	font-size: 1.1rem;
 }
 
+.h1_cn {
+	font-family: 'hanzhen';
+	letter-spacing: 0.15rem;
+}
+
+.text_cn {
+	font-size: 0.9rem;
+}
+
 /* HOME */
 
 .container_myhome {

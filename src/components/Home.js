@@ -72,7 +72,7 @@ export default function Home(props) {
 				<Container className='container_home disable-select'>
 					<Row className='row_title'>
 						<Col className='col_title'>
-							<h1>{dictionary.home_title}</h1>
+							<h1 className={language === 'zh-CN' ? 'h1_cn' : ''}>{dictionary.home_title}</h1>
 						</Col>
 					</Row>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
