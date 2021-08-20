@@ -98,8 +98,8 @@ export default function Home(props) {
 										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
 									/>
 									<Card.Body>
-										<Card.Title style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : ''}>{dictionary.home_wine_name_1}</Card.Title>
-										<Card.Text style={language === 'zh-CN' ? { fontSize: '1rem' } : ''}>{dictionary.home_wine_description_1}</Card.Text>
+										<Card.Title style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{dictionary.home_wine_name_1}</Card.Title>
+										<Card.Text style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>{dictionary.home_wine_description_1}</Card.Text>
 									</Card.Body>
 								</Card>
 							</Animated>
@@ -116,8 +116,8 @@ export default function Home(props) {
 										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
 									/>
 									<Card.Body>
-										<Card.Title style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : ''}>{dictionary.home_wine_name_2}</Card.Title>
-										<Card.Text style={language === 'zh-CN' ? { fontSize: '1rem' } : ''}>{dictionary.home_wine_description_2}</Card.Text>
+										<Card.Title style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{dictionary.home_wine_name_2}</Card.Title>
+										<Card.Text style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>{dictionary.home_wine_description_2}</Card.Text>
 									</Card.Body>
 								</Card>
 							</Animated>
@@ -134,8 +134,8 @@ export default function Home(props) {
 										src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
 									/>
 									<Card.Body>
-										<Card.Title style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : ''}>{dictionary.home_wine_name_3}</Card.Title>
-										<Card.Text style={language === 'zh-CN' ? { fontSize: '1rem' } : ''}>{dictionary.home_wine_description_3}</Card.Text>
+										<Card.Title style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{dictionary.home_wine_name_3}</Card.Title>
+										<Card.Text style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>{dictionary.home_wine_description_3}</Card.Text>
 									</Card.Body>
 								</Card>
 							</Animated>

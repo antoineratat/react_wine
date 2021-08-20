@@ -103,7 +103,7 @@ export default function Winery(props) {
 						<Col className='col_picture_story_1'>
 							<div className='text_story'>
 								<h1 className='black'>{dictionary.winery_card_title_1}</h1>
-								<p style={language === 'zh-CN' ? { fontSize: '1rem' } : ''}>{dictionary.winery_card_description_1} </p>
+								<p style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>{dictionary.winery_card_description_1} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_2'>
@@ -122,7 +122,7 @@ export default function Winery(props) {
 						<Col className='col_picture_story_3'>
 							<div className='text_story'>
 								<h1 className='black'>{dictionary.winery_card_title_2}</h1>
-								<p style={language === 'zh-CN' ? { fontSize: '1rem' } : ''}>{dictionary.winery_card_description_2} </p>
+								<p style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>{dictionary.winery_card_description_2} </p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_4'>
