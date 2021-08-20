@@ -35,7 +35,7 @@ export default function Navbar(props) {
 					<BootstrapNavbar.Brand>{dictionary.navbar_brand}</BootstrapNavbar.Brand>
 				</Link>
 				<BootstrapNavbar.Toggle aria-controls='basic-navbar-nav' />
-				<BootstrapNavbar.Collapse id='basic-navbar-nav' className='navbar_nav'>
+				<BootstrapNavbar.Collapse id='basic-navbar-nav' className={language === 'zh-CN' ? 'navbar_nav cn_a' : 'navbar_nav'}>
 					<Nav className='mr-auto'>
 						<NavLink
 							exact

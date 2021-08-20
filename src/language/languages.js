@@ -106,7 +106,7 @@ export const dictionaryList = {
 		learn_more: '了解更多',
 
 		// HOME
-		home_title: '来自法国的专业红酒进出口商',
+		home_title: '源自法国',
 		home_wine_name_1: '罗纳河谷',
 		home_wine_description_1: '干红葡萄酒 - IGP',
 		home_wine_name_2: 'Muscat',
@@ -141,7 +141,7 @@ export const dictionaryList = {
 		// NAVBAR
 		navbar_brand: 'Le Village',
 		navbar_wines: '红酒',
-		navbar_story: '内容',
+		navbar_story: '介绍',
 		navbar_winery: '酿酒厂',
 		navbar_contact: '联系方式',
 

@@ -83,7 +83,7 @@ export default function Winery(props) {
 					</Row>
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
 						<Row className='row_learn_more'>
-							<p ref={learn_more} className='text_learn_more'>
+							<p ref={learn_more} className={language === 'zh-CN' ? 'text_learn_more cn_learn_more' : 'text_learn_more'}>
 								{dictionary.learn_more}
 							</p>
 							<Col className='col_scrolldown'>

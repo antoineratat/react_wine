@@ -26,49 +26,49 @@
 
 @font-face {
 	font-family: 'poppinsbold';
-	src: url('./fonts/poppins-bold-webfont.woff') format('woff');
+	src: url('./fonts/poppins/poppins-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'poppinsmedium';
-	src: url('./fonts/poppins-medium-webfont.woff') format('woff');
+	src: url('./fonts/poppins/poppins-medium-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'poppinssemibold';
-	src: url('./fonts/poppins-semibold-webfont.woff') format('woff');
+	src: url('./fonts/poppins/poppins-semibold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'poppinsregular';
-	src: url('./fonts/poppins-regular-webfont.woff') format('woff');
+	src: url('./fonts/poppins/poppins-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'rudaregular';
-	src: url('./fonts/Ruda-Regular.woff') format('woff');
+	src: url('./fonts/ruda/Ruda-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'rudaextrabold';
-	src: url('./fonts/Ruda-ExtraBold.woff') format('woff');
+	src: url('./fonts/ruda/Ruda-ExtraBold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'rudabold';
-	src: url('./fonts/Ruda-Bold.woff') format('woff');
+	src: url('./fonts/ruda/Ruda-Bold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -94,6 +94,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'hanzhen';
+	src: url('./fonts/hanzhen.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 h1 {
 	text-transform: capitalize;
 	color: white;
@@ -104,6 +111,12 @@ h1 {
 
 p {
 	color: white;
+}
+
+.cn_a {
+	font-family: 'noto-bold', 'hanzhen';
+	letter-spacing: 0.15rem;
+	font-size: 1.1rem;
 }
 
 /* HOME */
@@ -137,6 +150,12 @@ p {
 	font-family: 'rudaregular';
 	text-align: center;
 	/* background-color: rgba(0, 255, 242, 0.274); */
+}
+
+.cn_learn_more {
+	font-family: 'hanzhen';
+	font-size: 1.2rem;
+	letter-spacing: 0.15rem;
 }
 
 /* SCROLL LINE */
@@ -228,7 +247,12 @@ p {
 	text-decoration: none;
 }
 
-.navbar-nav a {
+.cn_a a {
+	font-family: 'hanzhen';
+}
+
+.navbar-nav a,
+.navbar_nav_cn a {
 	transition: 0.5s ease-in-out;
 }
 
