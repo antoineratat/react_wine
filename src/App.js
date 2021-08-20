@@ -14,6 +14,9 @@ import Wines from './components/Wines'
 import Winery from './components/Winery'
 import Contact from './components/Contact'
 
+import bg_video from './static/bg_video.mp4'
+import phone_bg_video from './static/phone_bg_video.mp4'
+
 function App() {
 	const [language, setLanguage] = useState('')
 	const [isLoaded, setIsLoaded] = useState(false)
@@ -52,7 +55,8 @@ function App() {
 				<BrowserRouter>
 					<video
 						id='background_big'
-						src='https://res.cloudinary.com/della-vite/video/upload/f_auto,q_auto,ac_none,f_auto,w_1400/dato/1598299900-dvwebsitehomepagegeneral16x9.mp4'
+						// src='https://res.cloudinary.com/della-vite/video/upload/f_auto,q_auto,ac_none,f_auto,w_1400/dato/1598299900-dvwebsitehomepagegeneral16x9.mp4'
+						src={bg_video}
 						loop='loop'
 						muted='muted'
 						autoPlay='autoplay'
@@ -62,7 +66,8 @@ function App() {
 
 					<video
 						id='background_small'
-						src='https://res.cloudinary.com/della-vite/video/upload/f_auto,q_auto,ac_none,f_auto,w_900/dato/1598299917-dvwebsitehomepagegeneral9x16.mp4'
+						// src='https://res.cloudinary.com/della-vite/video/upload/f_auto,q_auto,ac_none,f_auto,w_900/dato/1598299917-dvwebsitehomepagegeneral9x16.mp4'
+						src={phone_bg_video}
 						loop='loop'
 						muted='muted'
 						autoPlay='autoplay'
