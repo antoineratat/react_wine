@@ -34,9 +34,21 @@ Wine is a programming project, that allows its developers to practice client-sid
 
 Versions:
 
--   Node: 14.15.1
--   Npm: 6.14.8
+-   Node: 12.19.0
+-   Npm: 7.6.3
 -   React: 17.0.2
+
+Dependancies:
+
+-   country-flag-icons: v1.4.0
+-   react: v17.0.2
+-   react-animated-css: v1.2.1
+-   react-bootstrap: v1.6.1
+-   react-dom: v17.0.2
+-   react-router: v5.2.0
+-   react-router-dom: v5.2.0
+-   react-scripts: 4.0.3
+-   web-vitals: v1.0.1
 
 Download code from Github:
 
