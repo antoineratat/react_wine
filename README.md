@@ -26,15 +26,9 @@ Wine is a programming project, that allows its developers to practice client-sid
 
 ## 2. Features<a name="features"></a>
 
-The Wine system provides simple mechanism for users to acquire information.
-
-The following are the main features that are include in the system:
-
--   Cross Platform Support: Offer support for most of the known and commercial operating systems
-
--   Browse products: The system allows users to browse products directly from the product database.
-
--   Filter products: The system allows user to filter and quickly find products.
+-   Allow to dynamically change context to update the language
+-   Text Content is fetched from a language.json file and can be loaded in English, French or Chinese
+-   Use interesection observer to load images on screen and trigger animations
 
 ## 3. Installation instructions<a name="installation"></a>
 
@@ -70,14 +64,18 @@ yarn start
 
 ## 4. Project structure<a name="structure"></a>
 
-![Components Screenshot](https://github.com/antoineratat/react_advisor/blob/master/screenshots/Components_advisor.png?raw=true)
+![Components Screenshot](https://templars.guru/app/github/wine_api/1.png)
 
 ## 5. Screenshots<a name="screenshots"></a>
 
-Main Result Page
+Landing Page - Desktop Version
 
-![Components Screenshot](https://github.com/antoineratat/react_advisor/blob/master/screenshots/main_search.PNG?raw=true)
+![Components Screenshot](https://templars.guru/app/github/react_wine/react_wine_1.PNG)
 
-Filter Component
+Wine Component - Desktop Version
 
-![Components Screenshot](https://github.com/antoineratat/react_advisor/blob/master/screenshots/quick_search_component.PNG?raw=true)
+![Components Screenshot](https://templars.guru/app/github/react_wine/react_wine_3.PNG)
+
+Landing Page - Mobile Version
+
+![Components Screenshot](https://templars.guru/app/github/react_wine/react_wine_4.PNG)
