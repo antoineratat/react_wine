@@ -5,8 +5,7 @@
 1. [Project description](#description)
 2. [Features](#features)
 3. [Installation instructions](#installation)
-4. [Project structure](#structure)
-5. [Screenshots](#screenshots)
+4. [Screenshots](#screenshots)
 
 ## 1. Project description<a name="description"></a>
 
@@ -74,20 +73,16 @@ Run the app in development mode. Open http://localhost:3000 to view it in the br
 yarn start
 ```
 
-## 4. Project structure<a name="structure"></a>
-
-![Components Screenshot](https://templars.guru/app/github/wine_api/1.png)
-
-## 5. Screenshots<a name="screenshots"></a>
+## 4. Screenshots<a name="screenshots"></a>
 
 Landing Page - Desktop Version
 
-![Components Screenshot](https://templars.guru/app/github/react_wine/react_wine_1.PNG)
+![Components Screenshot](https://github.com/antoineratat/github_docs/blob/main/react_wine/react_wine_1.PNG?raw=true)
 
 Wine Component - Desktop Version
 
-![Components Screenshot](https://templars.guru/app/github/react_wine/react_wine_3.PNG)
+![Components Screenshot](https://github.com/antoineratat/github_docs/blob/main/react_wine/react_wine_3.PNG?raw=true)
 
 Landing Page - Mobile Version
 
-![Components Screenshot](https://templars.guru/app/github/react_wine/react_wine_4.PNG)
+![Components Screenshot](https://github.com/antoineratat/github_docs/blob/main/react_wine/react_wine_4.PNG?raw=true)
