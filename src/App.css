@@ -114,13 +114,13 @@ p {
 }
 
 .cn_a {
-	font-family: 'noto-bold', 'hanzhen';
+	/* font-family: 'noto-bold', 'hanzhen'; */
 	letter-spacing: 0.15rem;
 	font-size: 1.1rem;
 }
 
 .h1_cn {
-	font-family: 'hanzhen';
+	/* font-family: 'hanzhen'; */
 	letter-spacing: 0.15rem;
 }
 
@@ -162,7 +162,7 @@ p {
 }
 
 .cn_learn_more {
-	font-family: 'hanzhen';
+	/* font-family: 'hanzhen'; */
 	font-size: 1.2rem;
 	letter-spacing: 0.15rem;
 }
@@ -257,7 +257,7 @@ p {
 }
 
 .cn_a a {
-	font-family: 'hanzhen';
+	/* font-family: 'hanzhen'; */
 }
 
 .navbar-nav a,
@@ -712,7 +712,7 @@ a.current {
 }
 
 .image_wines_1 {
-	width: 35%;
+	width: 75%;
 }
 
 .wine_description {

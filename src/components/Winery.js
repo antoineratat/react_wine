@@ -81,9 +81,15 @@ export default function Winery(props) {
 							<h1 className={language === 'zh-CN' ? 'h1_cn' : ''}>{dictionary.winery_title}</h1>
 						</Col>
 					</Row>
-					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visible}>
+					<Animated
+						animationIn='fadeIn'
+						animationOut='fadeOut'
+						animationInDuration={1000}
+						isVisible={visible}>
 						<Row className='row_learn_more'>
-							<p ref={learn_more} className={language === 'zh-CN' ? 'text_learn_more cn_learn_more' : 'text_learn_more'}>
+							<p
+								ref={learn_more}
+								className={language === 'zh-CN' ? 'text_learn_more cn_learn_more' : 'text_learn_more'}>
 								{dictionary.learn_more}
 							</p>
 							<Col className='col_scrolldown'>
@@ -94,42 +100,64 @@ export default function Winery(props) {
 				</Container>
 				<Row ref={wines} className='row_description_story'>
 					<Col>
-						<h1 className={language === 'zh-CN' ? 'h1_cn title_story' : 'title_story'}>{dictionary.winery_subtitle}</h1>
+						<h1 className={language === 'zh-CN' ? 'h1_cn title_story' : 'title_story'}>
+							{dictionary.winery_subtitle}
+						</h1>
 					</Col>
 				</Row>
 
-				<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visiblePicture1}>
+				<Animated
+					animationIn='fadeIn'
+					animationOut='fadeOut'
+					animationInDuration={1000}
+					isVisible={visiblePicture1}>
 					<Row className='row_picture_story_1' ref={picture1}>
 						<Col className='col_picture_story_1'>
 							<div className='text_story'>
 								<h1 className='black'>{dictionary.winery_card_title_1}</h1>
-								<p style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>{dictionary.winery_card_description_1} </p>
+								<p style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>
+									{dictionary.winery_card_description_1}{' '}
+								</p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_2'>
-							<Animated animationIn='fadeInUp' animationOut='fadeOut' animationInDuration={2000} isVisible={visiblePicture1}>
+							<Animated
+								animationIn='fadeInUp'
+								animationOut='fadeOut'
+								animationInDuration={2000}
+								isVisible={visiblePicture1}>
 								<Image
 									className='col_picture_story_picture_1'
-									src='https://f6nwnnenqm-flywheel.netdna-ssl.com/wp-content/uploads/2017/12/Sebastiani-2-2400x1400.jpg'
+									src='https://imageprocessor.digital.vistaprint.com/maxWidth/2000/https://uploads.documents.cimpress.io/v1/uploads/acd2122c-751e-4c3f-87f1-bd937d353fa1~110/original?tenant=vbu-digital'
 								/>
 							</Animated>
 						</Col>
 					</Row>
 				</Animated>
 
-				<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={visiblePicture2}>
+				<Animated
+					animationIn='fadeIn'
+					animationOut='fadeOut'
+					animationInDuration={1000}
+					isVisible={visiblePicture2}>
 					<Row className='row_picture_story_1' ref={picture2}>
 						<Col className='col_picture_story_3'>
 							<div className='text_story'>
 								<h1 className='black'>{dictionary.winery_card_title_2}</h1>
-								<p style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>{dictionary.winery_card_description_2} </p>
+								<p style={language === 'zh-CN' ? { fontSize: '1rem' } : {}}>
+									{dictionary.winery_card_description_2}{' '}
+								</p>
 							</div>
 						</Col>
 						<Col className='col_picture_story_4'>
-							<Animated animationIn='fadeInUp' animationOut='fadeOut' animationInDuration={2000} isVisible={visiblePicture2}>
+							<Animated
+								animationIn='fadeInUp'
+								animationOut='fadeOut'
+								animationInDuration={2000}
+								isVisible={visiblePicture2}>
 								<Image
 									className='col_picture_story_picture_1'
-									src='https://www.foleyfoodandwinesociety.com/assets/client/images/Wineries/Lancaster/LE%202.jpg'
+									src='https://imageprocessor.digital.vistaprint.com/maxWidth/2000/https://uploads.documents.cimpress.io/v1/uploads/1491d3eb-e05f-4667-8a66-3aa0558b196b~110/original?tenant=vbu-digital'
 								/>
 							</Animated>
 						</Col>

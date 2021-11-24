@@ -70,7 +70,7 @@ export default function Wines(props) {
 								isVisible={visibleRow1}>
 								<Image
 									className='image_wines_1'
-									src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
+									src='https://templars.guru/app/github/wine_api/bottle.png'
 								/>
 							</Animated>
 						</Col>
@@ -84,7 +84,9 @@ export default function Wines(props) {
 								isVisible={visibleRow1}>
 								<Row className='wine_description'>
 									<Col className='wine_description_left'>
-										<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{dictionary.wine_card_title_1}</h1>
+										<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>
+											{dictionary.wine_card_title_1}
+										</h1>
 										<h4>{dictionary.wine_card_description_1}</h4>
 										<p>{dictionary.wine_card_location_1}</p>
 									</Col>
@@ -126,7 +128,9 @@ export default function Wines(props) {
 								isVisible={visibleRow2}>
 								<Row className='wine_description'>
 									<Col className='wine_description_left'>
-										<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{dictionary.wine_card_title_2}</h1>
+										<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>
+											{dictionary.wine_card_title_2}
+										</h1>
 										<h4>{dictionary.wine_card_description_2}</h4>
 										<p>{dictionary.wine_card_location_2}</p>
 									</Col>
@@ -165,7 +169,7 @@ export default function Wines(props) {
 								isVisible={visibleRow2}>
 								<Image
 									className='image_wines_1'
-									src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
+									src='https://templars.guru/app/github/wine_api/bottle.png'
 								/>
 							</Animated>
 						</Col>
@@ -182,7 +186,7 @@ export default function Wines(props) {
 								isVisible={visibleRow3}>
 								<Image
 									className='image_wines_1'
-									src='https://www.datocms-assets.com/25196/1598624942-docg-test-2808.png?q=50&auto=format&dpr=1&w=600'
+									src='https://templars.guru/app/github/wine_api/bottle.png'
 								/>
 							</Animated>
 						</Col>
@@ -196,7 +200,9 @@ export default function Wines(props) {
 								isVisible={visibleRow3}>
 								<Row className='wine_description'>
 									<Col className='wine_description_left'>
-										<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{dictionary.wine_card_title_3}</h1>
+										<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>
+											{dictionary.wine_card_title_3}
+										</h1>
 										<h4>{dictionary.wine_card_description_3}</h4>
 										<p>{dictionary.wine_card_location_3}</p>
 									</Col>

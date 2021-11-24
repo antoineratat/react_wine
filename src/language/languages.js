@@ -115,9 +115,9 @@ export const dictionaryList = {
 		home_wine_description_3: '白葡萄起泡酒 - AOC',
 
 		// contact
-		contact_company_name: 'Le Village Distribution',
+		contact_company_name: '卡普亚诺—费雷里酒庄',
 		contact_company_description:
-			'Le Village Distribution代表来自法国三个不同地区的五家葡萄酒厂，他们在葡萄栽培方面具有很高的专业性。Le Village Distribution目前生产15种不同的优质葡萄酒红酒.每一个葡萄园都根据其原产地，法式传统方式进行专业化地管理。',
+			'卡普亚诺—费雷里酒庄 经过多年的发展，如今已在波恩山和夏朗内山扩大了超过 8 公顷的葡萄园。我们的首要任务：让我们不同的风土通过我们享有盛誉的勃艮第产区来表达自己。我们的作品每年都被业内最优秀的记者引用，出现在法国最顶级的餐桌上。',
 		contact_company_location: '北纬30.40001°  东经104.04001° , 成都, 中国',
 		contact_label_phone: '联系电话',
 		contact_phone: '13111881660',
@@ -153,17 +153,17 @@ export const dictionaryList = {
 			'Le Village 是着力于把高品质红酒带给中国的每一位红酒爱好者并同中国进行友好的民间文化交流活动，促进两国人民友谊持续健康友好发展',
 		story_card_title_2: '令人心旷神怡的地方',
 		story_card_description_2:
-			'这里是一个有着宁静山谷和蔚蓝天空的地方，从古至今都是葡萄种植的宝地。这里同时也是法国人工葡萄种植文化核心的所在地，因为文化环境的非凡意义因而被选定为法定保护区        // 酿酒厂',
+			'卡普亚诺—费雷里酒庄 经过多年的发展，如今已在波恩山和夏朗内山扩大了超过 8 公顷的葡萄园。我们的首要任务：让我们不同的风土通过我们享有盛誉的勃艮第产区来表达自己。我们的作品每年都被业内最优秀的记者引用，出现在法国最顶级的餐桌上。',
 
 		// WINERY
 		winery_title: '探索我们的酿酒厂',
 		winery_subtitle: '我们有自己一套独特的酿酒方式和设备组合',
-		winery_card_title_1: 'LES BACCHANALES',
+		winery_card_title_1: '橡木桶陈年',
 		winery_card_description_1:
-			'这里的气候白天日照充足夜晚凉爽温差大，土壤的多样性为麝香葡萄品种创造了理想的生长条件。在Les Bacchanales，我们致力于种植麝香葡萄并使其名扬海外，其目的是为了带给大家最优质的葡萄酒.',
-		winery_card_title_2: 'MALTOFF',
+			'我们所有的葡萄酒都在法国原产的橡木桶中陈酿。当他们的陈年已经到了顶峰之后，再装瓶，这样就是为了对得起他们称谓，以及自己对产品的尊重和做工地精致的传承',
+		winery_card_title_2: '葡萄藤及采摘',
 		winery_card_description_2:
-			'这家酿酒厂专门生产以霞多丽、黑皮诺等为主要品种的勃艮第红酒。此外，这里还会组织品尝红葡萄酒、白葡萄酒和桃红葡萄酒的品酒活动。',
+			'我们葡萄园的光照的优势、优质的葡萄藤，以及手工采摘严的制度，正确年份的分类等，这样使我们能够获得优质的葡萄酒。在我们庄园的酒窖中，以传统法式酿造与自然的方式相结合进行酿造',
 
 		// WINES
 		wine_label_taste: '口味',
@@ -182,7 +182,8 @@ export const dictionaryList = {
 		wine_card_grapes_1: '70% 歌海娜 20% 佳丽酿 10% 神索',
 
 		wine_card_title_2: '小麝香',
-		wine_card_description_2: '博姆-德沃尼斯白葡萄酒专门用小粒麝香酿制而成。这种享誉世界的白葡萄酒以其美丽的芳香持久性和新鲜度而著称',
+		wine_card_description_2:
+			'博姆-德沃尼斯白葡萄酒专门用小粒麝香酿制而成。这种享誉世界的白葡萄酒以其美丽的芳香持久性和新鲜度而著称',
 		wine_card_location_2: '北纬44,0709° ,东经5,0127°, 博姆-德沃尼斯, 法国',
 		wine_card_taste_2: '甜型',
 		wine_card_acidity_2: '4.5G/L',
