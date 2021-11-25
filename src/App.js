@@ -75,11 +75,26 @@ function App() {
 						className='backgroundMedia'
 						data-video='0'></video>
 					<Switch>
-						<Route path='/home' render={(props) => <Home handleUpdateLanguage={handleUpdateLanguage} {...props} />} />
-						<Route path='/story' render={(props) => <Story handleUpdateLanguage={handleUpdateLanguage} {...props} />} />
-						<Route path='/wines' render={(props) => <Wines handleUpdateLanguage={handleUpdateLanguage} {...props} />} />
-						<Route path='/winery' render={(props) => <Winery handleUpdateLanguage={handleUpdateLanguage} {...props} />} />
-						<Route path='/contact' render={(props) => <Contact handleUpdateLanguage={handleUpdateLanguage} {...props} />} />
+						<Route
+							path='/home'
+							render={(props) => <Home handleUpdateLanguage={handleUpdateLanguage} {...props} />}
+						/>
+						<Route
+							path='/appelations'
+							render={(props) => <Story handleUpdateLanguage={handleUpdateLanguage} {...props} />}
+						/>
+						<Route
+							path='/wines'
+							render={(props) => <Wines handleUpdateLanguage={handleUpdateLanguage} {...props} />}
+						/>
+						<Route
+							path='/vineyards'
+							render={(props) => <Winery handleUpdateLanguage={handleUpdateLanguage} {...props} />}
+						/>
+						<Route
+							path='/contact'
+							render={(props) => <Contact handleUpdateLanguage={handleUpdateLanguage} {...props} />}
+						/>
 						<Redirect from='/' to='/home' />
 					</Switch>
 				</BrowserRouter>

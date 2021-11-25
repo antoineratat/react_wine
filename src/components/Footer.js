@@ -45,7 +45,7 @@ export default function Footer() {
 					id='navbar_story'
 					className='navbar_story'
 					activeClassName='current'
-					to='/story'
+					to='/appelations'
 					onMouseEnter={(e) => onMouseEnter(e)}
 					onMouseLeave={(e) => onMouseExit(e)}>
 					{dictionary.footer_story}
@@ -55,7 +55,7 @@ export default function Footer() {
 					id='navbar_winery'
 					className='navbar_winery'
 					activeClassName='current'
-					to='/winery'
+					to='/vineyards'
 					onMouseEnter={(e) => onMouseEnter(e)}
 					onMouseLeave={(e) => onMouseExit(e)}>
 					{dictionary.footer_winery}

@@ -53,7 +53,7 @@ export default function Navbar(props) {
 							id='navbar_story'
 							className='navbar_story'
 							activeClassName='current'
-							to='/story'
+							to='/appelations'
 							onMouseEnter={(e) => onMouseEnter(e)}
 							onMouseLeave={(e) => onMouseExit(e)}>
 							{dictionary.navbar_story}
@@ -63,7 +63,7 @@ export default function Navbar(props) {
 							id='navbar_winery'
 							className='navbar_winery'
 							activeClassName='current'
-							to='/winery'
+							to='/vineyards'
 							onMouseEnter={(e) => onMouseEnter(e)}
 							onMouseLeave={(e) => onMouseExit(e)}>
 							{dictionary.navbar_winery}
