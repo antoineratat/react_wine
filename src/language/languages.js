@@ -12,9 +12,9 @@ export const dictionaryList = {
 		home_wine_description_3: 'Sparkling White Wine - AOC',
 
 		// CONTACT
-		contact_company_name: 'Le Village Distribution',
+		contact_company_name: 'DOMAIN CAPUANO - FERRERI',
 		contact_company_description:
-			'Le Village Distribution represents five wineries from three different regions of France that have a high vocation in viticulture. Le Village Distribution currently produces 15 different varieties of fine wines. Each vineyard is managed with passion and respect for its tradition, in accordance with its territory of origin.',
+			'DOMAINE CAPUANO - FERRERI has evolved over the years, and today extends over 8 hectares of vineyard, in Côte de Beaune and Côte Chalonnaise. Our priority: to let our different terroirs express themselves through our prestigious Burgundy appellations. Our production, referenced each year by the best journalists in the profession, is present on the greatest tables in France.',
 		contact_company_location: '30.40001° N 104.04001° E, CHENGDU, CHINA',
 		contact_label_phone: 'Phone',
 		contact_phone: '13111881660',
@@ -96,8 +96,6 @@ export const dictionaryList = {
 		wine_card_grapes_3: '100% MUSCAT',
 	},
 
-	// --- CN ---
-
 	'zh-CN': {
 		learn_more: '了解更多',
 
@@ -113,7 +111,7 @@ export const dictionaryList = {
 		// contact
 		contact_company_name: '卡普亚诺—费雷里酒庄',
 		contact_company_description:
-			'卡普亚诺—费雷里酒庄 经过多年的发展，如今已在波恩山和夏朗内山扩大了超过 8 公顷的葡萄园。我们的首要任务：让我们不同的风土通过我们享有盛誉的勃艮第产区来表达自己。我们的作品每年都被业内最优秀的记者引用，出现在法国最顶级的餐桌上。',
+			'卡普亚诺—费雷里酒庄 经过多年的发展，如今已在波恩山和夏朗内山扩大了超过 8公顷的葡萄园。我们的首要任务：让我们不同的风土通过我们享有盛誉的勃艮第产区来表达自己。我们的作品每年都被业内最优秀的记者引用，出现在法国最顶级的餐桌上。',
 		contact_company_location: '北纬30.40001°  东经104.04001° , 成都, 中国',
 		contact_label_phone: '联系电话',
 		contact_phone: '13111881660',
@@ -206,10 +204,10 @@ export const dictionaryList = {
 		home_wine_description_3: 'Vin Blanc Pétillant - AOC',
 
 		// CONTACT
-		contact_company_name: 'Le Village Distribution',
+		contact_company_name: 'DOMAINE CAPUANO - FERRERI',
 		contact_company_description:
-			"Le Village Distribution représente cinq domaines viticoles de trois régions différentes de France qui ont une forte vocation viticole. Le Village Distribution produit actuellement 15 variétés différentes de vins fins. Chaque vignoble est conduit avec passion et respect de sa tradition, dans le respect de son territoire d'origine.",
-		contact_company_location: '30.40001° N 104.04001° E, CHENGDU, CHINA',
+			"Le DOMAINE CAPUANO - FERRERI a évolué au fil des années, et s'étend aujourd'hui sur 8 hectares de vignoble, en côte de Beaune et en côte Chalonnaise. Notre priorité : laisser nos différents terroirs s' exprimer à travers nos prestigieuses appellations de Bourgogne.	Notre production, référencée chaque année par les meilleurs journalistes de la profession, est présente sur les plus grandes tables de France.",
+		contact_company_location: '30.40001° N 104.04001° E, CHENGDU, CHINE',
 		contact_label_phone: 'Téléphone',
 		contact_phone: '13111881660',
 		contact_phone_cn: '18008008656',
