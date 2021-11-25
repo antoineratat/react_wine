@@ -22,10 +22,6 @@ export const dictionaryList = {
 		contact_label_email: 'Email',
 		contact_email: 'antoine.ratat@gmail.com',
 		contact_email_cn: '1205233942@qq.com',
-		contact_label_tiktok: 'TikTok',
-		contact_tiktok: '@18008008656',
-		contact_label_skype: 'Weibo',
-		contact_skype: '@18008008656',
 
 		// FOOTER
 		footer_wines: 'Wines',
@@ -125,10 +121,6 @@ export const dictionaryList = {
 		contact_label_email: '邮箱',
 		contact_email: 'antoine.ratat@gmail.com',
 		contact_email_cn: '1205233942@qq.com',
-		contact_label_tiktok: '抖音',
-		contact_tiktok: '@18008008656',
-		contact_label_skype: '微博',
-		contact_skype: '@18008008656',
 
 		// FOOTER
 		footer_红酒: '红酒',
@@ -224,10 +216,6 @@ export const dictionaryList = {
 		contact_label_email: 'Email',
 		contact_email: 'antoine.ratat@gmail.com',
 		contact_email_cn: '1205233942@qq.com',
-		contact_label_tiktok: 'TikTok',
-		contact_tiktok: '@18008008656',
-		contact_label_skype: 'Weibo',
-		contact_skype: '@18008008656',
 
 		// FOOTER
 		footer_wines: 'Vins',

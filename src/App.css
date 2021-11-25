@@ -288,7 +288,6 @@ a.current {
 	font-weight: 450;
 	text-decoration: none;
 	color: white;
-	height: 60px;
 	transition: 0.5s ease-in-out;
 }
 
@@ -472,25 +471,22 @@ a.current {
 
 .container_inner_contact {
 	background-color: #232221;
-	min-height: 400px;
-	display: grid;
-	grid-template: 1fr / 4fr 3fr;
-	column-gap: 2rem;
 	max-width: 1800px;
 }
 
 .contact_left {
 	/* background-color: rgba(0, 255, 255, 0.281); */
-	padding: 2rem;
+	padding: 1.5rem;
 	display: grid;
 	grid-template: repeat(3, 1fr) / 1fr;
+	max-width: 1100px;
 }
 
 .contact_left .row {
 	justify-self: flex-start;
 	margin: 0;
 	padding: 2rem 0rem 0rem 2rem;
-	max-width: 700px;
+	/* max-width: 700px; */
 }
 
 .contact_left .row h1 {
@@ -522,12 +518,12 @@ a.current {
 
 .contact_right {
 	/* background-color: rgba(0, 0, 255, 0.342); */
-	display: grid;
-	grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-	height: 60%;
-	padding: 0rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
 	align-self: center;
-	margin-top: 3.5rem;
+	padding: 1.5rem;
 }
 
 .contact_right .row {
@@ -541,6 +537,7 @@ a.current {
 	color: #a67b3b;
 	font-weight: 600;
 	letter-spacing: 0.15rem;
+	margin-bottom: 0.25rem;
 }
 
 .text_contact {
@@ -549,6 +546,12 @@ a.current {
 	font-size: 0.8rem;
 	color: white;
 	letter-spacing: 0.15rem;
+}
+
+.text_contact_email {
+	text-transform: lowercase;
+	letter-spacing: 0.05rem;
+	font-size: 0.9rem;
 }
 
 /* SELECT */

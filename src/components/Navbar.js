@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Navbar as BootstrapNavbar, Nav, Button, Col } from 'react-bootstrap'
-import Flags from 'country-flag-icons/react/3x2'
 import { LanguageContext } from '../language/LanguageContext'
 
 export default function Navbar(props) {
@@ -35,7 +34,9 @@ export default function Navbar(props) {
 					<BootstrapNavbar.Brand>{dictionary.navbar_brand}</BootstrapNavbar.Brand>
 				</Link>
 				<BootstrapNavbar.Toggle aria-controls='basic-navbar-nav' />
-				<BootstrapNavbar.Collapse id='basic-navbar-nav' className={language === 'zh-CN' ? 'navbar_nav cn_a' : 'navbar_nav'}>
+				<BootstrapNavbar.Collapse
+					id='basic-navbar-nav'
+					className={language === 'zh-CN' ? 'navbar_nav cn_a' : 'navbar_nav'}>
 					<Nav className='mr-auto'>
 						<NavLink
 							exact
@@ -81,23 +82,32 @@ export default function Navbar(props) {
 							<Button
 								onClick={() => handleUpdateLanguage('zh-CN')}
 								variant='dark'
-								className={language === 'zh-CN' ? 'button_language_CN button_language_hover' : 'button_language_CN'}>
+								className={
+									language === 'zh-CN'
+										? 'button_language_CN button_language_hover'
+										: 'button_language_CN'
+								}>
 								中文
-								<Flags.CN title='China' className='flag_cn' />
 							</Button>
 							<Button
 								onClick={() => handleUpdateLanguage('fr-FR')}
 								variant='dark'
-								className={language === 'fr-FR' ? 'button_language_FR button_language_hover' : 'button_language_FR'}>
+								className={
+									language === 'fr-FR'
+										? 'button_language_FR button_language_hover'
+										: 'button_language_FR'
+								}>
 								FR
-								<Flags.FR title='France' className='flag_fr' />
 							</Button>
 							<Button
 								onClick={() => handleUpdateLanguage('en-US')}
 								variant='dark'
-								className={language === 'en-US' ? 'button_language_EN button_language_hover' : 'button_language_EN'}>
+								className={
+									language === 'en-US'
+										? 'button_language_EN button_language_hover'
+										: 'button_language_EN'
+								}>
 								EN
-								<Flags.US title='United States' className='flag_us' />
 							</Button>
 						</Col>
 					</Nav>
@@ -106,23 +116,26 @@ export default function Navbar(props) {
 					<Button
 						onClick={() => handleUpdateLanguage('zh-CN')}
 						variant='dark'
-						className={language === 'zh-CN' ? 'button_language_CN button_language_hover' : 'button_language_CN'}>
+						className={
+							language === 'zh-CN' ? 'button_language_CN button_language_hover' : 'button_language_CN'
+						}>
 						中文
-						<Flags.CN title='China' className='flag_cn' />
 					</Button>
 					<Button
 						onClick={() => handleUpdateLanguage('fr-FR')}
 						variant='dark'
-						className={language === 'fr-FR' ? 'button_language_FR button_language_hover' : 'button_language_FR'}>
+						className={
+							language === 'fr-FR' ? 'button_language_FR button_language_hover' : 'button_language_FR'
+						}>
 						FR
-						<Flags.FR title='France' className='flag_fr' />
 					</Button>
 					<Button
 						onClick={() => handleUpdateLanguage('en-US')}
 						variant='dark'
-						className={language === 'en-US' ? 'button_language_EN button_language_hover' : 'button_language_EN'}>
+						className={
+							language === 'en-US' ? 'button_language_EN button_language_hover' : 'button_language_EN'
+						}>
 						EN
-						<Flags.US title='United States' className='flag_us' />
 					</Button>
 				</Col>
 			</BootstrapNavbar>

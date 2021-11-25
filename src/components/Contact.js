@@ -17,7 +17,7 @@ export default function Contact(props) {
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
 						<Container fluid className='container_inner_contact'>
 							<Row>
-								<Col className='contact_left'>
+								<Col className='contact_left' xs={9}>
 									<Row>
 										<h1>{dictionary.contact_company_name}</h1>
 									</Row>
@@ -28,16 +28,18 @@ export default function Contact(props) {
 										<p>{dictionary.contact_company_location}</p>
 									</Row>
 								</Col>
-							</Row>
-							<Row className='row_contact_right'>
-								<Col className='contact_right'>
+								<Col className='contact_right' xs={3}>
 									<Row>
 										<Col>
 											<Row>
 												<p className='title_contact'>{dictionary.contact_label_phone}</p>
 											</Row>
 											<Row>
-												<p className='text_contact'>{language === 'zh-CN' ? dictionary.contact_phone_cn : dictionary.contact_phone}</p>
+												<p className='text_contact text_contact_email'>
+													{language === 'zh-CN'
+														? dictionary.contact_phone_cn
+														: dictionary.contact_phone}
+												</p>
 											</Row>
 										</Col>
 									</Row>
@@ -47,27 +49,11 @@ export default function Contact(props) {
 												<p className='title_contact'>{dictionary.contact_label_email}</p>
 											</Row>
 											<Row>
-												<p className='text_contact'>{language === 'zh-CN' ? dictionary.contact_email_cn : dictionary.contact_email}</p>
-											</Row>
-										</Col>
-									</Row>
-									<Row>
-										<Col>
-											<Row>
-												<p className='title_contact'>{dictionary.contact_label_tiktok}</p>
-											</Row>
-											<Row>
-												<p className='text_contact'>{dictionary.contact_tiktok}</p>
-											</Row>
-										</Col>
-									</Row>
-									<Row>
-										<Col>
-											<Row>
-												<p className='title_contact'>{dictionary.contact_label_skype}</p>
-											</Row>
-											<Row>
-												<p className='text_contact'>{dictionary.contact_skype}</p>
+												<p className='text_contact text_contact_email'>
+													{language === 'zh-CN'
+														? dictionary.contact_email_cn
+														: dictionary.contact_email}
+												</p>
 											</Row>
 										</Col>
 									</Row>

@@ -3604,11 +3604,6 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-country-flag-icons@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/country-flag-icons/-/country-flag-icons-1.4.0.tgz#68a55441dbe98a7f028d4b00c1dfef3b9f83b7cd"
-  integrity sha512-tIeh/IZbm3G7O1ocNuEckmd1jkABkJzCPhQm+rBgJXkz1L+lKfwVY/rAy+ih06zGD4kagrZ+1eOndga09y8UHw==
-
 create-ecdh@^4.0.0:
   version "4.0.4"
   resolved "https://registry.npmjs.org/create-ecdh/-/create-ecdh-4.0.4.tgz"
