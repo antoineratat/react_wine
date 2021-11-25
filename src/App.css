@@ -223,7 +223,6 @@ p {
 	letter-spacing: 0.1rem;
 	font-size: 1.5rem;
 	text-decoration: none;
-	/* text-shadow: 2px 2px 2px black; */
 }
 
 .col_language_phone {
@@ -237,15 +236,15 @@ p {
 .navbar_nav {
 	grid-area: 1 / 2 / span 1 / span 1;
 	justify-content: center;
+	max-width: 500px;
+	margin: auto;
 }
 
 .navbar-nav {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	min-width: 400px;
-	max-width: 400px;
-	align-content: space-evenly;
-	justify-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	gap: 1.5rem;
 }
 
 .navbar-nav a {
@@ -255,10 +254,6 @@ p {
 	font-weight: 450;
 	text-decoration: none;
 }
-
-/* .cn_a a {
-	font-family: 'hanzhen';
-} */
 
 .navbar-nav a,
 .navbar_nav_cn a {
@@ -275,10 +270,9 @@ a.current {
 }
 
 .col_language {
-	/* background-color: rgba(0, 255, 255, 0.459); */
 	display: flex;
 	margin: auto;
-	grid-gap: 0.5rem;
+	grid-gap: 0.2rem;
 	max-width: 170px;
 }
 
@@ -372,12 +366,10 @@ a.current {
 
 .navigation-footer {
 	grid-area: 1 / 1 / span 1 / span 12;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	display: flex;
 	min-width: 400px;
-	max-width: 400px;
-	align-content: space-evenly;
-	justify-items: flex-start;
+	max-width: 450px;
+	justify-content: space-around;
 }
 
 .navigation-footer p {
@@ -938,16 +930,20 @@ a.current {
 
 	.navbar_nav {
 		width: 95%;
-		margin: 1rem 0rem;
 		display: flex;
+		justify-content: center;
 		background-color: rgba(34, 37, 37, 0.466);
 		border-radius: 0.2rem;
 	}
 
 	.navbar-nav {
+		grid-gap: 0rem;
+		gap: 0rem;
 		padding: 1rem 0.7rem;
-		display: grid;
+		display: flex;
 		justify-content: center;
+		justify-items: center;
+		text-align: center;
 		grid-template: repeat(4, 1fr) / 1fr;
 	}
 

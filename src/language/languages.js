@@ -24,23 +24,23 @@ export const dictionaryList = {
 		contact_email_cn: '1205233942@qq.com',
 
 		// FOOTER
-		footer_wines: 'Wines',
-		footer_story: 'Story',
-		footer_winery: 'Vines',
-		footer_contact: 'Contact',
+		footer_wines: 'Our Wines',
+		footer_story: 'Our Appellations',
+		footer_winery: 'Vineyard Work',
+		footer_contact: 'Contact Us',
 		footer_website: '2021 © Le Village',
 		footer_website_by: 'Website by Antoine Ratat',
 
 		// NAVBAR
 		navbar_brand: 'Le Village',
-		navbar_wines: 'Wines',
-		navbar_story: 'Story',
-		navbar_winery: 'Vines',
-		navbar_contact: 'Contact',
+		navbar_wines: 'Our Wines',
+		navbar_story: 'Our Appellations',
+		navbar_winery: 'Vineyard Work',
+		navbar_contact: 'Contact Us',
 
 		// STORY
-		story_title: 'OUR JOURNEY OF DISCOVERY',
-		story_subtitle: 'EXCEPTIONAL QUALITY WINE MADE USING SUSTAINABLE METHODS',
+		story_title: 'CLASSIFIED VINEYARD OF BURGUNDY',
+		story_subtitle: 'SANTENAY, POMMARD, BEAUNE, MARANGES, MERCUREY',
 		story_card_title_1: 'Connect Cultures',
 		story_card_description_1:
 			'Le Village is growing and remains fully committed to its original purpose: reaching out and connect cultures to discerning wine lovers from all over China.',
@@ -216,23 +216,23 @@ export const dictionaryList = {
 		contact_email_cn: '1205233942@qq.com',
 
 		// FOOTER
-		footer_wines: 'Vins',
-		footer_story: 'Histoire',
+		footer_wines: 'Nos Vins',
+		footer_story: 'Nos Appellations',
 		footer_winery: 'Vignes',
-		footer_contact: 'Contact',
+		footer_contact: 'Nous Contacter',
 		footer_website: '2021 © Le Village',
 		footer_website_by: 'Antoine Ratat',
 
 		// NAVBAR
 		navbar_brand: 'Le Village',
-		navbar_wines: 'Vins',
-		navbar_story: 'Histoire',
+		navbar_wines: 'Nos Vins',
+		navbar_story: 'Nos Appellations',
 		navbar_winery: 'Vignes',
-		navbar_contact: 'Contact',
+		navbar_contact: 'Nous Contacter',
 
 		// STORY
-		story_title: 'NOTRE VOYAGE DE DECOUVERTE',
-		story_subtitle: 'UN VIN DE QUALITÉ EXCEPTIONNEL ÉLABORÉ AVEC DES MÉTHODES DURABLES',
+		story_title: 'CLASSÉ VIGNOBLE DE BOURGOGNE',
+		story_subtitle: 'SANTENAY, POMMARD, BEAUNE, MARANGES, MERCUREY',
 		story_card_title_1: 'Connecte les cultures',
 		story_card_description_1:
 			'Le Village grandit et reste pleinement attaché à son objectif initial : atteindre et connecter les cultures aux amateurs de vin exigeants de toute la Chine.',
