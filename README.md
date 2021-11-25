@@ -39,7 +39,6 @@ Versions:
 
 Dependancies:
 
--   country-flag-icons: v1.4.0
 -   react: v17.0.2
 -   react-animated-css: v1.2.1
 -   react-bootstrap: v1.6.1
