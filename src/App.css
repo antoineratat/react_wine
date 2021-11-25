@@ -572,6 +572,12 @@ a.current {
 	text-transform: uppercase;
 }
 
+.title_appel {
+	margin: 3rem 0rem 0.5rem 0rem;
+	font-size: 2.3rem;
+	text-transform: uppercase;
+}
+
 .row_picture_story_1 {
 	/* background-color: rgba(0, 255, 255, 0.397); */
 	min-height: 120vh;
@@ -647,8 +653,13 @@ a.current {
 
 .row_appel_1 {
 	max-width: 1500px;
-	margin: 2.5rem auto;
+	margin: 1.5rem auto;
 	min-height: 15vh;
+}
+
+.col_appel_desc {
+	background-color: #232221ba;
+	display: flex;
 }
 
 .image_appel_1 {
@@ -656,12 +667,8 @@ a.current {
 }
 
 .col_appel_image {
-	/* background-color: pink; */
 	margin: 0rem;
 	padding: 0rem;
-}
-.col_appel_desc {
-	background-color: #232221;
 }
 
 .appel_right {
@@ -670,7 +677,9 @@ a.current {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 	height: 100%;
+	width: 100%;
 }
 .animated_wines {
 	height: 100%;
@@ -684,7 +693,7 @@ a.current {
 
 .appel_right .row h1 {
 	font-family: 'Silk-Serif';
-	font-size: 1.8rem;
+	font-size: 1.65rem;
 	text-transform: uppercase;
 	align-self: flex-end;
 	text-align: left;
@@ -695,10 +704,11 @@ a.current {
 	font-family: 'rudaregular';
 	font-size: 0.78rem;
 	letter-spacing: 0.05rem;
-	line-height: 2;
+	line-height: 1.5;
 	text-transform: inherit;
 	color: white;
 	align-self: flex-start;
+	font-weight: lighter;
 }
 
 /* WINES */
@@ -758,6 +768,10 @@ a.current {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+}
+
+.animated_appel {
+	justify-content: flex-start;
 }
 
 .image_wines_1 {

@@ -41,12 +41,39 @@ export const dictionaryList = {
 		// STORY
 		story_title: 'CLASSIFIED VINEYARD OF BURGUNDY',
 		story_subtitle: 'SANTENAY, POMMARD, BEAUNE, MARANGES, MERCUREY',
-		story_card_title_1: 'Connect Cultures',
-		story_card_description_1:
-			'Le Village is growing and remains fully committed to its original purpose: reaching out and connect cultures to discerning wine lovers from all over China.',
-		story_card_title_2: 'AN INSPIRATIONAL LANDSCAPE',
-		story_card_description_2:
-			'A region of quiet valleys and dramatic skylines, grapes have been grown here since ancient times. At the heart of artisanal French wine culture, selected for conservation for its cultural and environmental significance.',
+
+		appel_wine_red: 'Our Great Red Wines',
+		appel_wine_white: 'Our Great White Wines',
+		appel_title_0: 'Pinot Noir',
+		appel_desc_0: 'Intense scent of red fruits, elegant and fine.',
+		appel_title_1: 'Santenay - Veilles Vignes',
+		appel_desc_1: 'With very developed fruit aromas (almond and strawberry), supple and round tannins.',
+		appel_title_2: 'Maranges - 1er Cru - La Fussière',
+		appel_desc_2: 'Visual intensity, bouquet of undergrowth and a lot of breadth and character.',
+		appel_title_3: 'Santenay - 1er Cru - Gravières',
+		appel_desc_3: 'Excellent in attack, combining power and concentration, of exceptional length.',
+		appel_title_4: 'Santenay - 1er Cru - Passe Temps',
+		appel_desc_4: 'Vinous on the palate, well coated tannins, fruity and woody, all in harmony.',
+		appel_title_5: 'Santenay - 1er Cru - La Comme',
+		appel_desc_5: 'A nose of overripe fruit, elegance and finesse, a very feminine wine',
+		appel_title_6: 'Mercurey - 1er Cru - Clos du Paradis',
+		appel_desc_6:
+			'Explosions of aromas and freshness serving the taste buds, its concentration shows it a bright future.',
+		appel_title_7: 'Pommard - Veilles Vignes',
+		appel_desc_7: 'Deep red, round, full and fat on the palate, delicious complexity.',
+		appel_title_8: 'Corton - Grand Cru',
+		appel_desc_8:
+			'Ripe and brilliant red, well structured with long notes of roasting, the flagship of the range is not lacking in nobility.',
+		appel_title_9: 'Chardonnay',
+		appel_desc_9: 'Tension and minerality on the nose, elegance and finesse on the palate.',
+		appel_title_10: 'Chassagne-Montrachet - 1er Cru - Morgeot',
+		appel_desc_10:
+			'Buttered on a background of hazelnuts, a note of toast and a lot of amplitude for this white wine.',
+		appel_title_11: 'Santenay - Veilles Vignes',
+		appel_desc_11: 'Very developed fruit aromas of almond type, well balanced.',
+		appel_title_12: 'Chassagne-Montrachet - Cuvée Prestige',
+		appel_desc_12:
+			'Magnificent golden color of high intensity, fine and complex, in which aromatic notes of baked bread, white peach and honey intermingle, endowed with a nice potential.',
 
 		// WINERY
 		winery_title: 'WORK IN THE VINEYARD',
@@ -144,12 +171,39 @@ export const dictionaryList = {
 		// STORY
 		story_title: '我们的发现之旅',
 		story_subtitle: '采用可持续方法酿造的优质葡萄酒',
-		story_card_title_1: '文化交流',
-		story_card_description_1:
-			'Le Village 是着力于把高品质红酒带给中国的每一位红酒爱好者并同中国进行友好的民间文化交流活动，促进两国人民友谊持续健康友好发展',
-		story_card_title_2: '令人心旷神怡的地方',
-		story_card_description_2:
-			'卡普亚诺—费雷里酒庄 经过多年的发展，如今已在波恩山和夏朗内山扩大了超过 8 公顷的葡萄园。我们的首要任务：让我们不同的风土通过我们享有盛誉的勃艮第产区来表达自己。我们的作品每年都被业内最优秀的记者引用，出现在法国最顶级的餐桌上。',
+
+		appel_wine_red: 'Nos Grands Vins Rouges',
+		appel_wine_white: 'Nos Grands Vins Blancs',
+		appel_title_0: 'Pinot Noir',
+		appel_desc_0: 'Intense parfum de fruits rouges, élégant et fin.',
+		appel_title_1: 'Santenay - Veilles Vignes',
+		appel_desc_1: 'Aux arômes de fruits très développés (amande et fraise), tanins souples et ronds.',
+		appel_title_2: 'Maranges - 1er Cru - La Fussière',
+		appel_desc_2: "Intensité visuelle, bouquet de sous bois et beaucoup d'ampleur et de caractère.",
+		appel_title_3: 'Santenay - 1er Cru - Gravières',
+		appel_desc_3: "Excellent en attaque, alliant puissance et concentration, d'une longueur exceptionnelle",
+		appel_title_4: 'Santenay - 1er Cru - Passe Temps',
+		appel_desc_4: 'Bouche vineuse, tannins bien enrobés, fruité et boisé, le tout en harmonie.',
+		appel_title_5: 'Santenay - 1er Cru - La Comme',
+		appel_desc_5: 'Nez de fruits surmaturés, élégance et finesse , un vin très féminin.',
+		appel_title_6: 'Mercurey - 1er Cru - Clos du Paradis',
+		appel_desc_6:
+			"Explosions d'arômes et de fraîcheur au service des papilles, sa concentration lui témoigne un bel avenir.",
+		appel_title_7: 'Pommard - Veilles Vignes',
+		appel_desc_7: 'Rouge profond, rond, plein et gras en bouche délicieuse complexité.',
+		appel_title_8: 'Corton - Grand Cru',
+		appel_desc_8:
+			'Rouge mûr et brillant, bien structuré long sur des notes de torréfaction, le fleuron de la gamme ne manque pas de noblesse.',
+		appel_title_9: 'Chardonnay',
+		appel_desc_9: 'Tension et minéralité au nez, élégance et finesse en bouche.',
+		appel_title_10: 'Chassagne-Montrachet - 1er Cru - Morgeot',
+		appel_desc_10:
+			"Beurré sur fond de noisettes, une note de pain grillé et beaucoup d'amplitude pour ce vin blanc.",
+		appel_title_11: 'Santenay - Veilles Vignes',
+		appel_desc_11: 'Arômes de fruits très développés de type amande, bien équilibré.',
+		appel_title_12: 'Chassagne-Montrachet - Cuvée Prestige',
+		appel_desc_12:
+			'Magnifique robe or de forte intensité, fin et complexe, où s’entremêlent des notes aromatiques de pain cuit, de pêche blanches de miel, dotée d’un joli potentiel.',
 
 		// WINERY
 		winery_title: '探索我们的酿酒厂',
@@ -239,12 +293,39 @@ export const dictionaryList = {
 		// STORY
 		story_title: 'CLASSÉ VIGNOBLE DE BOURGOGNE',
 		story_subtitle: 'SANTENAY, POMMARD, BEAUNE, MARANGES, MERCUREY',
-		story_card_title_1: 'Connecte les cultures',
-		story_card_description_1:
-			'Le Village grandit et reste pleinement attaché à son objectif initial : atteindre et connecter les cultures aux amateurs de vin exigeants de toute la Chine.',
-		story_card_title_2: 'UN PAYSAGE INSPIRANT',
-		story_card_description_2:
-			"Une région de vallées tranquilles et d'horizons spectaculaires, les raisins sont cultivés ici depuis l'Antiquité. Au cœur de la culture artisanale du vin français, sélectionné pour la conservation pour son importance culturelle et environnementale.",
+
+		appel_wine_red: 'Nos Grands Vins Rouges',
+		appel_wine_white: 'Nos Grands Vins Blancs',
+		appel_title_0: 'Pinot Noir',
+		appel_desc_0: 'Intense parfum de fruits rouges, élégant et fin.',
+		appel_title_1: 'Santenay - Veilles Vignes',
+		appel_desc_1: 'Aux arômes de fruits très développés (amande et fraise), tanins souples et ronds.',
+		appel_title_2: 'Maranges - 1er Cru - La Fussière',
+		appel_desc_2: "Intensité visuelle, bouquet de sous bois et beaucoup d'ampleur et de caractère.",
+		appel_title_3: 'Santenay - 1er Cru - Gravières',
+		appel_desc_3: "Excellent en attaque, alliant puissance et concentration, d'une longueur exceptionnelle",
+		appel_title_4: 'Santenay - 1er Cru - Passe Temps',
+		appel_desc_4: 'Bouche vineuse, tannins bien enrobés, fruité et boisé, le tout en harmonie.',
+		appel_title_5: 'Santenay - 1er Cru - La Comme',
+		appel_desc_5: 'Nez de fruits surmaturés, élégance et finesse , un vin très féminin.',
+		appel_title_6: 'Mercurey - 1er Cru - Clos du Paradis',
+		appel_desc_6:
+			"Explosions d'arômes et de fraîcheur au service des papilles, sa concentration lui témoigne un bel avenir.",
+		appel_title_7: 'Pommard - Veilles Vignes',
+		appel_desc_7: 'Rouge profond, rond, plein et gras en bouche délicieuse complexité.',
+		appel_title_8: 'Corton - Grand Cru',
+		appel_desc_8:
+			'Rouge mûr et brillant, bien structuré long sur des notes de torréfaction, le fleuron de la gamme ne manque pas de noblesse.',
+		appel_title_9: 'Chardonnay',
+		appel_desc_9: 'Tension et minéralité au nez, élégance et finesse en bouche.',
+		appel_title_10: 'Chassagne-Montrachet - 1er Cru - Morgeot',
+		appel_desc_10:
+			"Beurré sur fond de noisettes, une note de pain grillé et beaucoup d'amplitude pour ce vin blanc.",
+		appel_title_11: 'Santenay - Veilles Vignes',
+		appel_desc_11: 'Arômes de fruits très développés de type amande, bien équilibré.',
+		appel_title_12: 'Chassagne-Montrachet - Cuvée Prestige',
+		appel_desc_12:
+			'Magnifique robe or de forte intensité, fin et complexe, où s’entremêlent des notes aromatiques de pain cuit, de pêche blanches de miel, dotée d’un joli potentiel.',
 
 		// WINERY
 		winery_title: 'LE TRAVAIL DE LA VIGNE',
