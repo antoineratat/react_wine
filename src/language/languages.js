@@ -14,7 +14,7 @@ export const dictionaryList = {
 		// CONTACT
 		contact_company_name: 'DOMAIN CAPUANO - FERRERI',
 		contact_company_description:
-			'DOMAINE CAPUANO - FERRERI has evolved over the years, and today extends over 8 hectares of vineyard, in Côte de Beaune and Côte Chalonnaise. Our priority: to let our different terroirs express themselves through our prestigious Burgundy appellations. Our production, referenced each year by the best journalists in the profession, is present on the greatest tables in France.',
+			'Domain CAPUANO - FERRERI has evolved over the years, and today extends over 8 hectares of vineyard, in Côte de Beaune and Côte Chalonnaise. Our priority: to let our different terroirs express themselves through our prestigious Burgundy appellations. Our production, referenced each year by the best journalists in the profession, is present on the greatest tables in France.',
 		contact_company_location: '30.40001° N 104.04001° E, CHENGDU, CHINA',
 		contact_label_phone: 'Phone',
 		contact_phone: '13111881660',
@@ -26,7 +26,7 @@ export const dictionaryList = {
 		// FOOTER
 		footer_wines: 'Wines',
 		footer_story: 'Story',
-		footer_winery: 'Winery',
+		footer_winery: 'Vines',
 		footer_contact: 'Contact',
 		footer_website: '2021 © Le Village',
 		footer_website_by: 'Website by Antoine Ratat',
@@ -35,7 +35,7 @@ export const dictionaryList = {
 		navbar_brand: 'Le Village',
 		navbar_wines: 'Wines',
 		navbar_story: 'Story',
-		navbar_winery: 'Winery',
+		navbar_winery: 'Vines',
 		navbar_contact: 'Contact',
 
 		// STORY
@@ -49,14 +49,14 @@ export const dictionaryList = {
 			'A region of quiet valleys and dramatic skylines, grapes have been grown here since ancient times. At the heart of artisanal French wine culture, selected for conservation for its cultural and environmental significance.',
 
 		// WINERY
-		winery_title: 'EXPLORE OUR WINERIES',
-		winery_subtitle: 'We have an incredibly unique and diverse portfolio of wineries',
-		winery_card_title_1: 'LES BACCHANALES',
+		winery_title: 'WORK IN THE VINEYARD',
+		winery_subtitle: 'Work guarantees quality',
+		winery_card_title_1: 'Aging in oak barrels',
 		winery_card_description_1:
-			'It is the great diversity of soil along with the cool evenings and sun-drenched days that create ideal growing conditions for Muscat varietals. At Les Bacchanales, we are dedicated to growing Muscat and Sparkling with the explicit intention of producing the most authentic expression possible.',
-		winery_card_title_2: 'MALTOFF',
+			'In the cellars of our estate, the vinification takes place in the old-fashioned way, in a natural way.	All our wines are aged in oak barrels of French origin.	Their aging has reached its peak, the bottling is done with respect and delicacy for products worthy of their appellation.',
+		winery_card_title_2: 'Work in the vineyard',
 		winery_card_description_2:
-			'This winery specializes in producing the red wines Burgundy is famous for like Chardonnay,  Pinot Noir etc. And there are also wine-tasting events organized here that consists of red, white and rosé wines.',
+			'The very good exposure of our vineyards, a rigorous work of the vines, as well as the manual harvest and the sorting of the vintage allow to obtain wines of great quality.',
 
 		// WINES
 		wine_label_taste: 'Taste',
@@ -206,7 +206,7 @@ export const dictionaryList = {
 		// CONTACT
 		contact_company_name: 'DOMAINE CAPUANO - FERRERI',
 		contact_company_description:
-			"Le DOMAINE CAPUANO - FERRERI a évolué au fil des années, et s'étend aujourd'hui sur 8 hectares de vignoble, en côte de Beaune et en côte Chalonnaise. Notre priorité : laisser nos différents terroirs s' exprimer à travers nos prestigieuses appellations de Bourgogne.	Notre production, référencée chaque année par les meilleurs journalistes de la profession, est présente sur les plus grandes tables de France.",
+			"Le domaine CAPUANO - FERRERI a évolué au fil des années, et s'étend aujourd'hui sur 8 hectares de vignoble, en côte de Beaune et en côte Chalonnaise. Notre priorité : laisser nos différents terroirs s' exprimer à travers nos prestigieuses appellations de Bourgogne.	Notre production, référencée chaque année par les meilleurs journalistes de la profession, est présente sur les plus grandes tables de France.",
 		contact_company_location: '30.40001° N 104.04001° E, CHENGDU, CHINE',
 		contact_label_phone: 'Téléphone',
 		contact_phone: '13111881660',
@@ -218,7 +218,7 @@ export const dictionaryList = {
 		// FOOTER
 		footer_wines: 'Vins',
 		footer_story: 'Histoire',
-		footer_winery: 'Vignobles',
+		footer_winery: 'Vignes',
 		footer_contact: 'Contact',
 		footer_website: '2021 © Le Village',
 		footer_website_by: 'Antoine Ratat',
@@ -227,7 +227,7 @@ export const dictionaryList = {
 		navbar_brand: 'Le Village',
 		navbar_wines: 'Vins',
 		navbar_story: 'Histoire',
-		navbar_winery: 'Vignobles',
+		navbar_winery: 'Vignes',
 		navbar_contact: 'Contact',
 
 		// STORY
@@ -241,14 +241,14 @@ export const dictionaryList = {
 			"Une région de vallées tranquilles et d'horizons spectaculaires, les raisins sont cultivés ici depuis l'Antiquité. Au cœur de la culture artisanale du vin français, sélectionné pour la conservation pour son importance culturelle et environnementale.",
 
 		// WINERY
-		winery_title: 'EXPLOREZ NOS VIGNOBLES',
-		winery_subtitle: 'Nous avons un portefeuille incroyablement unique et diversifié de vignobles',
-		winery_card_title_1: 'LES BACCHANALES',
+		winery_title: 'LE TRAVAIL DE LA VIGNE',
+		winery_subtitle: 'Le Travail gage de qualité',
+		winery_card_title_1: 'Vieillissement en fût de chêne',
 		winery_card_description_1:
-			"C'est la grande diversité des sols ainsi que les soirées fraîches et les journées ensoleillées qui créent des conditions de croissance idéales pour les cépages Muscat. Chez Les Bacchanales, nous consacrons à la culture du Muscat et du Mousseux avec l'intention explicite de produire l'expression la plus authentique possible.",
-		winery_card_title_2: 'MALTOFF',
+			"Dans les caves de notre domaine, la vinification s'effectue à l'ancienne, de façon naturelle. Tout nos vins sont élevé en fûts de bois de chêne d'origine française. Leur vieillissement arrivé à son apogée, la mise en bouteille est faite avec respect et délicatesse pour des produits dignes de leur appellation.",
+		winery_card_title_2: 'Le travail de la vigne',
 		winery_card_description_2:
-			'Cette cave est spécialisée dans la production des vins rouges pour lesquels la Bourgogne est célèbre comme le Chardonnay, le Pinot Noir, etc. Et il y a aussi des événements de dégustation de vins organisés ici qui se composent de vins rouges, blancs et rosés.',
+			"La très bonne exposition de nos vignobles, un travail rigoureux de la vigne, ainsi que la récolte manuelle et le tri de la vendange permettent d'obtenir des vins de grande qualité.",
 
 		// WINES
 
