@@ -875,6 +875,15 @@ a.current {
 		margin: 0rem;
 	}
 
+	.row_appel_1 {
+		margin: 3.5rem auto;
+		min-height: 15vh;
+	}
+
+	.appel_right {
+		padding: 2rem;
+	}
+
 	.navigation-footer {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -1139,15 +1148,6 @@ a.current {
 
 	.col_language_phone {
 		display: inline-flex;
-	}
-
-	.row_appel_1 {
-		margin: 3.5rem auto;
-		min-height: 15vh;
-	}
-
-	.appel_right {
-		padding: 2rem;
 	}
 }
 
