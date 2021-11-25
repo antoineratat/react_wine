@@ -256,9 +256,9 @@ p {
 	text-decoration: none;
 }
 
-.cn_a a {
-	/* font-family: 'hanzhen'; */
-}
+/* .cn_a a {
+	font-family: 'hanzhen';
+} */
 
 .navbar-nav a,
 .navbar_nav_cn a {
@@ -712,7 +712,7 @@ a.current {
 }
 
 .image_wines_1 {
-	width: 75%;
+	width: 35%;
 }
 
 .wine_description {
