@@ -17,7 +17,7 @@ export default function Contact(props) {
 					<Animated animationIn='fadeIn' animationOut='fadeOut' animationInDuration={1000} isVisible={true}>
 						<Container fluid className='container_inner_contact'>
 							<Row>
-								<Col className='contact_left' xs={9}>
+								<Col className='contact_left' xs={12} md={8} lg={8} xl={9}>
 									<Row>
 										<h1>{dictionary.contact_company_name}</h1>
 									</Row>
@@ -28,7 +28,7 @@ export default function Contact(props) {
 										<p>{dictionary.contact_company_location}</p>
 									</Row>
 								</Col>
-								<Col className='contact_right' xs={3}>
+								<Col className='contact_right' xs={12} md={4} lg={4} xl={3}>
 									<Row>
 										<Col>
 											<Row>
