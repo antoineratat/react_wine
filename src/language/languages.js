@@ -128,10 +128,16 @@ export const dictionaryList = {
 		footer_website: '2021 © Le Village',
 		footer_website_by: '网站由 Antoine Ratat',
 
+		// FOOTER
+		footer_wines: '红酒',
+		footer_story: '红酒',
+		footer_winery: '酿酒厂',
+		footer_contact: '联系方式',
+
 		// NAVBAR
 		navbar_brand: 'Le Village',
 		navbar_wines: '红酒',
-		navbar_story: '介绍',
+		navbar_story: '红酒',
 		navbar_winery: '酿酒厂',
 		navbar_contact: '联系方式',
 
