@@ -984,6 +984,12 @@ a.current {
 	.animated_wines {
 		margin: auto;
 	}
+
+	.appel_right .row h1 {
+		font-size: 1.3rem;
+		align-self: flex-end;
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -1133,6 +1139,15 @@ a.current {
 
 	.col_language_phone {
 		display: inline-flex;
+	}
+
+	.row_appel_1 {
+		margin: 3.5rem auto;
+		min-height: 15vh;
+	}
+
+	.appel_right {
+		padding: 2rem;
 	}
 }
 
