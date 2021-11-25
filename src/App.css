@@ -645,6 +645,62 @@ a.current {
 	padding: 0rem 2rem;
 }
 
+.row_appel_1 {
+	max-width: 1500px;
+	margin: 2.5rem auto;
+	min-height: 15vh;
+}
+
+.image_appel_1 {
+	width: 100%;
+}
+
+.col_appel_image {
+	/* background-color: pink; */
+	margin: 0rem;
+	padding: 0rem;
+}
+.col_appel_desc {
+	background-color: #232221;
+}
+
+.appel_right {
+	padding: 0.5rem;
+	max-width: 1100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+.animated_wines {
+	height: 100%;
+}
+
+.appel_right .row {
+	justify-self: flex-start;
+	margin: 0;
+	padding: 0rem 0rem 0.5rem 2rem;
+}
+
+.appel_right .row h1 {
+	font-family: 'Silk-Serif';
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	align-self: flex-end;
+	text-align: left;
+}
+
+.appel_right .row h4 {
+	padding-top: 0rem;
+	font-family: 'rudaregular';
+	font-size: 0.78rem;
+	letter-spacing: 0.05rem;
+	line-height: 2;
+	text-transform: inherit;
+	color: white;
+	align-self: flex-start;
+}
+
 /* WINES */
 
 .row_wines_1 {
