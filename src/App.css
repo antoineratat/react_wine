@@ -1204,16 +1204,6 @@ a.current {
 		width: 100%;
 	}
 
-	/* .contact_right {
-		display: grid;
-		grid-template: repeat(5, 1fr) / 1fr;
-		row-gap: 1rem;
-		height: 60%;
-		padding: 0rem;
-		align-self: center;
-		margin-top: 2rem;
-	} */
-
 	.animated {
 		margin: 0rem;
 	}
@@ -1291,5 +1281,11 @@ a.current {
 	.image_wine {
 		padding: 1rem 1rem;
 		margin-left: 1rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.appel_right .row {
+		padding: 0rem;
 	}
 }
