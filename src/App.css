@@ -652,9 +652,9 @@ a.current {
 }
 
 .row_appel_1 {
-	max-width: 1500px;
+	max-width: 1100px;
 	margin: 1.5rem auto;
-	min-height: 15vh;
+	/* min-height: 15vh; */
 }
 
 .col_appel_desc {
@@ -664,6 +664,7 @@ a.current {
 
 .image_appel_1 {
 	width: 100%;
+	min-height: 181.5px;
 }
 
 .col_appel_image {
@@ -689,12 +690,14 @@ a.current {
 .appel_right .row {
 	justify-self: flex-start;
 	margin: 0;
-	padding: 0rem 0rem 0.5rem 2rem;
+	/* padding: 0rem 0rem 0.5rem 2rem; */
+	padding-left: 2rem;
 }
 
 .appel_right .row h1 {
-	font-family: 'Silk-Serif';
-	font-size: 1.65rem;
+	/* font-family: 'Silk-Serif'; */
+	font-family: 'rudaregular';
+	font-size: 1.25rem;
 	text-transform: uppercase;
 	align-self: flex-end;
 	text-align: left;
