@@ -1258,6 +1258,8 @@ a.current {
 	.col_picture_story_1 h1,
 	.col_picture_story_3 h1 {
 		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		margin-top: 1.5rem;
 	}
 
 	.row_picture_story_1 {
