@@ -38,9 +38,7 @@ export default function Story(props) {
 									animationIn='fadeIn'
 									animationOut='fadeOut'
 									animationInDuration={2000}
-									animationOutDuration={0}
-									// style={{ minHeight: '179.66px' }}>
-								>
+									animationOutDuration={0}>
 									<Appelation
 										appelName={dictionary[`appel_title_${count - 1}`]}
 										appelDesc={dictionary[`appel_desc_${count - 1}`]}

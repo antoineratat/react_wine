@@ -27,29 +27,29 @@ export default function Wines(props) {
 		)
 		observerRow1.observe(row_wines_1.current)
 
-		let observerRow2 = new IntersectionObserver(
-			(entries) =>
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						setVisibleRow2(true)
-						observerRow2 = observerRow2.disconnect()
-					}
-				}),
-			{ rootMargin: '0px 0px -400px 0px' }
-		)
-		observerRow2.observe(row_wines_2.current)
+		// let observerRow2 = new IntersectionObserver(
+		// 	(entries) =>
+		// 		entries.forEach((entry) => {
+		// 			if (entry.isIntersecting) {
+		// 				setVisibleRow2(true)
+		// 				observerRow2 = observerRow2.disconnect()
+		// 			}
+		// 		}),
+		// 	{ rootMargin: '0px 0px -400px 0px' }
+		// )
+		// observerRow2.observe(row_wines_2.current)
 
-		let observerRow3 = new IntersectionObserver(
-			(entries) =>
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						setVisibleRow3(true)
-						observerRow3 = observerRow3.disconnect()
-					}
-				}),
-			{ rootMargin: '0px 0px -300px 0px' }
-		)
-		observerRow3.observe(row_wines_3.current)
+		// let observerRow3 = new IntersectionObserver(
+		// 	(entries) =>
+		// 		entries.forEach((entry) => {
+		// 			if (entry.isIntersecting) {
+		// 				setVisibleRow3(true)
+		// 				observerRow3 = observerRow3.disconnect()
+		// 			}
+		// 		}),
+		// 	{ rootMargin: '0px 0px -300px 0px' }
+		// )
+		// observerRow3.observe(row_wines_3.current)
 	})
 
 	return (
@@ -58,9 +58,8 @@ export default function Wines(props) {
 				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} language={language} />
 				<div id='overlay'></div>
 				<Container fluid className='container_wines'>
-					{/* ROW 1 */}
-					<Row className='row_wines_1' ref={row_wines_1}>
-						<Col className='col_wines_1'>
+					<Row ref={row_wines_1} className='row_wines'>
+						<Col xs={{ span: 12 }} md={{ span: 4 }} lg={{ span: 3 }} xl={{ span: 3 }}>
 							<Animated
 								className='animated_wines'
 								animationIn='fadeInUp'
@@ -74,7 +73,7 @@ export default function Wines(props) {
 								/>
 							</Animated>
 						</Col>
-						<Col className='col_wines_2'>
+						<Col xs={{ span: 12 }} md={{ span: 8 }} lg={{ span: 9 }} xl={{ span: 9 }}>
 							<Animated
 								className='animated_wines'
 								animationIn='fadeIn'
@@ -88,36 +87,14 @@ export default function Wines(props) {
 											{dictionary.wine_card_title_1}
 										</h1>
 										<h4>{dictionary.wine_card_description_1}</h4>
-										<p>{dictionary.wine_card_location_1}</p>
-									</Col>
-									<Col className='wine_description_right'>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_taste}</p>
-											<p className='text_contact'>{dictionary.wine_card_taste_1}</p>
-										</Row>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_acidity}</p>
-											<p className='text_contact'>{dictionary.wine_card_acidity_1}</p>
-										</Row>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_alcohol}</p>
-											<p className='text_contact'>{dictionary.wine_card_alcohol_1}</p>
-										</Row>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_pressure}</p>
-											<p className='text_contact'>{dictionary.wine_card_pressure_1}</p>
-										</Row>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_grape}</p>
-											<p className='text_contact'>{dictionary.wine_card_grapes_1}</p>
-										</Row>
 									</Col>
 								</Row>
 							</Animated>
 						</Col>
 					</Row>
+
 					{/* ROW 2 */}
-					<Row className='row_wines_1' ref={row_wines_2}>
+					{/* <Row className='row_wines_1' ref={row_wines_2}>
 						<Col className='col_wines_3'>
 							<Animated
 								className='animated_wines'
@@ -173,65 +150,7 @@ export default function Wines(props) {
 								/>
 							</Animated>
 						</Col>
-					</Row>
-					{/* ROW 3 */}
-					<Row className='row_wines_1' ref={row_wines_3}>
-						<Col className='col_wines_1'>
-							<Animated
-								className='animated_wines'
-								animationIn='fadeInUp'
-								animationOut='fadeOut'
-								animationInDuration={2000}
-								animationOutDuration={0}
-								isVisible={visibleRow3}>
-								<Image
-									className='image_wines_1'
-									src='https://templars.guru/app/github/wine_api/bottle.png'
-								/>
-							</Animated>
-						</Col>
-						<Col className='col_wines_2'>
-							<Animated
-								className='animated_wines'
-								animationIn='fadeIn'
-								animationOut='fadeOut'
-								animationInDuration={2000}
-								animationOutDuration={0}
-								isVisible={visibleRow3}>
-								<Row className='wine_description'>
-									<Col className='wine_description_left'>
-										<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>
-											{dictionary.wine_card_title_3}
-										</h1>
-										<h4>{dictionary.wine_card_description_3}</h4>
-										<p>{dictionary.wine_card_location_3}</p>
-									</Col>
-									<Col className='wine_description_right'>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_taste}</p>
-											<p className='text_contact'>{dictionary.wine_card_taste_3}</p>
-										</Row>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_acidity}</p>
-											<p className='text_contact'>{dictionary.wine_card_acidity_3}</p>
-										</Row>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_alcohol}</p>
-											<p className='text_contact'>{dictionary.wine_card_alcohol_3}</p>
-										</Row>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_pressure}</p>
-											<p className='text_contact'>{dictionary.wine_card_pressure_3}</p>
-										</Row>
-										<Row>
-											<p className='title_contact'>{dictionary.wine_label_grape}</p>
-											<p className='text_contact'>{dictionary.wine_card_grapes_3}</p>
-										</Row>
-									</Col>
-								</Row>
-							</Animated>
-						</Col>
-					</Row>
+					</Row> */}
 				</Container>
 				<Footer />
 			</Container>
