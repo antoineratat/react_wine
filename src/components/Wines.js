@@ -8,10 +8,8 @@ import { LanguageContext } from '../language/LanguageContext'
 export default function Wines(props) {
 	const row_wines_1 = useRef()
 	const row_wines_2 = useRef()
-	const row_wines_3 = useRef()
 	const [visibleRow1, setVisibleRow1] = useState(false)
 	const [visibleRow2, setVisibleRow2] = useState(false)
-	const [visibleRow3, setVisibleRow3] = useState(false)
 	const { dictionary, language } = useContext(LanguageContext)
 
 	useEffect(() => {
@@ -38,18 +36,6 @@ export default function Wines(props) {
 			{ rootMargin: '0px 0px -400px 0px' }
 		)
 		observerRow2.observe(row_wines_2.current)
-
-		// let observerRow3 = new IntersectionObserver(
-		// 	(entries) =>
-		// 		entries.forEach((entry) => {
-		// 			if (entry.isIntersecting) {
-		// 				setVisibleRow3(true)
-		// 				observerRow3 = observerRow3.disconnect()
-		// 			}
-		// 		}),
-		// 	{ rootMargin: '0px 0px -300px 0px' }
-		// )
-		// observerRow3.observe(row_wines_3.current)
 	})
 
 	return (
