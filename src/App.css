@@ -784,7 +784,6 @@ a.current {
 	.navigation-footer {
 		padding-bottom: 1rem;
 		gap: 1rem;
-		/* box-shadow: inset 0 -1px 0 0 #96968f5b; */
 		margin-bottom: 1rem;
 	}
 
@@ -877,27 +876,6 @@ a.current {
 		margin-bottom: 5rem;
 	}
 
-	.row_wines_1 {
-		grid-template: repeat(12, 1fr) / repeat(12, 1fr);
-		height: 120vh;
-	}
-
-	.col_wines_1 {
-		grid-area: 1 / 1 / span 6 / span 12;
-	}
-
-	.col_wines_2 {
-		grid-area: 9 / 1 / span 12 / span 12;
-	}
-
-	.col_wines_3 {
-		grid-area: 9 / 1 / span 12 / span 12;
-	}
-
-	.col_wines_4 {
-		grid-area: 1 / 1 / span 6 / span 12;
-	}
-
 	.animated_wines {
 		margin: auto;
 	}
@@ -914,14 +892,13 @@ a.current {
 
 	.wine_description_left h1 {
 		font-size: 1.65rem;
-		display: flex;
-		margin: 1rem auto;
-		text-align: center;
 	}
 	.wine_description_left h4 {
 		display: flex;
 		margin: 1rem auto;
-		text-align: center;
+		text-align: left;
+		margin: auto;
+		justify-content: flex-start;
 	}
 }
 
@@ -1085,9 +1062,18 @@ a.current {
 		margin-bottom: 1rem;
 	}
 
+	.image_wines_1 {
+		width: 20%;
+	}
+
+	.row_wines {
+		min-height: 0vh;
+	}
+
 	.wine_description {
 		padding: 1.5rem 1rem;
 		display: flex;
+		margin-top: 2rem;
 	}
 
 	.wine_description_left h1 {
@@ -1235,10 +1221,18 @@ a.current {
 		text-align: center;
 		margin-top: 0rem;
 	}
+
+	.image_wines_1 {
+		width: 25%;
+	}
 }
 
 @media only screen and (max-width: 480px) {
 	.appel_right .row {
 		padding: 0rem;
+	}
+
+	.image_wines_1 {
+		width: 30%;
 	}
 }
