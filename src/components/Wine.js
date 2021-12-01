@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Row, Col, Image, Breadcrumb } from 'react-bootstrap'
+import Ratings from './Ratings'
 import { Animated } from 'react-animated-css'
 
 export default function Wine(props) {
@@ -55,6 +56,11 @@ export default function Wine(props) {
 							<Col className='wine_description_left'>
 								<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{wineTitle}</h1>
 								<h4>{wineDescription}</h4>
+							</Col>
+						</Row>
+						<Row>
+							<Col>
+								<Ratings />
 							</Col>
 						</Row>
 						<Row className='wine_breadcrumb'>
