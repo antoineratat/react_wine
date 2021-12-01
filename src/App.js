@@ -9,7 +9,7 @@ import { LanguageContext } from './language/LanguageContext'
 import { dictionaryList } from './language/languages'
 
 import Home from './components/Home'
-import Story from './components/Story'
+import Appellations from './components/Appellations'
 import Wines from './components/Wines'
 import Winery from './components/Winery'
 import Contact from './components/Contact'
@@ -81,7 +81,7 @@ function App() {
 						/>
 						<Route
 							path='/appelations'
-							render={(props) => <Story handleUpdateLanguage={handleUpdateLanguage} {...props} />}
+							render={(props) => <Appellations handleUpdateLanguage={handleUpdateLanguage} {...props} />}
 						/>
 						<Route
 							path='/wines'

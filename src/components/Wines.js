@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Wine from './Wine'
 import imageWines from '../utils/imagesWines'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 import { LanguageContext } from '../language/LanguageContext'
 

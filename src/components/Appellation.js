@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Image } from 'react-bootstrap'
 
-export default function Appelation(props) {
+export default function Appellation(props) {
 	const { appelName, appelDesc, img } = props
 
 	return (
