@@ -417,7 +417,7 @@ a.current {
 }
 
 .row_wine {
-	height: 15vh;
+	min-height: 15vh;
 }
 
 .card_wine {
