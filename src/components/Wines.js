@@ -1,8 +1,9 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Wine from './Wine'
-import { Container } from 'react-bootstrap'
+import imageWines from '../utils/imagesWines'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import { LanguageContext } from '../language/LanguageContext'
 
@@ -15,20 +16,19 @@ export default function Wines(props) {
 				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} language={language} />
 				<div id='overlay'></div>
 				<Container fluid className='container_wines'>
-					<Wine
-						isLeft={true}
-						language={language}
-						wineTitle={'wineTitle'}
-						wineDescription={'WineDescription'}
-						wineImage={'https://templars.guru/app/github/wine_api/bottle.png'}
-					/>
-					<Wine
-						isLeft={false}
-						language={language}
-						wineTitle={'wineTitle'}
-						wineDescription={'WineDescription'}
-						wineImage={'https://templars.guru/app/github/wine_api/bottle.png'}
-					/>
+					{imageWines.map((elem, count) => {
+						count++
+						return (
+							<Wine
+								key={count}
+								isLeft={count % 2 === 0}
+								language={language}
+								wineTitle={dictionary[`appel_title_${count - 1}`]}
+								wineDescription={dictionary[`appel_desc_${count - 1}`]}
+								wineImage={elem.img}
+							/>
+						)
+					})}
 				</Container>
 				<Footer />
 			</Container>
