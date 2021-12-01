@@ -398,6 +398,11 @@ a.current {
 
 /* RATINGS */
 
+.ratings {
+	color: #f1f1f1;
+	font-size: 0.75rem;
+}
+
 /* WINES */
 
 .row_wines {
