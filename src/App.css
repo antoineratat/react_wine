@@ -396,6 +396,8 @@ a.current {
 	font-size: 0.75rem;
 }
 
+/* RATINGS */
+
 /* WINES */
 
 .row_wines {
@@ -509,7 +511,6 @@ a.current {
 }
 
 .contact_right {
-	/* background-color: rgba(0, 0, 255, 0.342); */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
