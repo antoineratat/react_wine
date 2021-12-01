@@ -1,13 +1,11 @@
-import React, { useState, useEffect, useRef, useContext } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Row, Col, Image } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
-import { LanguageContext } from '../language/LanguageContext'
 
 export default function Wine(props) {
-	const { isLeft } = props
+	const { isLeft, language, wineTitle, wineDescription, wineImage } = props
 	const row_wines = useRef()
 	const [visibleRow, setVisibleRow] = useState(false)
-	const { dictionary, language } = useContext(LanguageContext)
 
 	useEffect(() => {
 		let observerRow = new IntersectionObserver(
@@ -18,7 +16,7 @@ export default function Wine(props) {
 						observerRow = observerRow.disconnect()
 					}
 				}),
-			{ rootMargin: '0px 0px 0px 0px' }
+			{ rootMargin: '0px 0px -400px 0px' }
 		)
 		observerRow.observe(row_wines.current)
 	})
@@ -37,7 +35,7 @@ export default function Wine(props) {
 					animationInDuration={2000}
 					animationOutDuration={0}
 					isVisible={visibleRow}>
-					<Image className='image_wines_1' src='https://templars.guru/app/github/wine_api/bottle.png' />
+					<Image className='image_wines_1' src={wineImage} />
 				</Animated>
 			</Col>
 			<Col
@@ -54,10 +52,8 @@ export default function Wine(props) {
 					isVisible={visibleRow}>
 					<Row className='wine_description'>
 						<Col className='wine_description_left'>
-							<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>
-								{dictionary.wine_card_title_1}
-							</h1>
-							<h4>{dictionary.wine_card_description_1}</h4>
+							<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{wineTitle}</h1>
+							<h4>{wineDescription}</h4>
 						</Col>
 					</Row>
 				</Animated>
