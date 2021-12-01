@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import Appelation from './Appelation'
+import Appellation from './Appellation'
 import appelList from '../utils/imagesAppelations'
 import { Container, Row, Col } from 'react-bootstrap'
 import { LanguageContext } from '../language/LanguageContext'
 import { Animated } from 'react-animated-css'
 
-export default function Story(props) {
+export default function Appellations(props) {
 	const { dictionary, language } = useContext(LanguageContext)
 
 	return (
@@ -39,7 +39,7 @@ export default function Story(props) {
 									animationOut='fadeOut'
 									animationInDuration={2000}
 									animationOutDuration={0}>
-									<Appelation
+									<Appellation
 										appelName={dictionary[`appel_title_${count - 1}`]}
 										appelDesc={dictionary[`appel_desc_${count - 1}`]}
 										img={elem.img}
