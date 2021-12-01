@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef, useContext } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Wine from './Wine'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
 import { LanguageContext } from '../language/LanguageContext'
@@ -44,6 +45,9 @@ export default function Wines(props) {
 				<Navbar className='navbar' handleUpdateLanguage={props.handleUpdateLanguage} language={language} />
 				<div id='overlay'></div>
 				<Container fluid className='container_wines'>
+					<Wine isLeft={true} />
+					<Wine isLeft={false} />
+
 					{/* WINE1 */}
 					<Row ref={row_wines_1} className='row_wines'>
 						<Col xs={{ span: 12 }} md={{ span: 4 }} lg={{ span: 3 }} xl={{ span: 3 }}>
