@@ -715,7 +715,7 @@ a.current {
 }
 
 .wine_description {
-	background-color: #232221;
+	background-color: #232221d9;
 	height: 22vh;
 	display: flex;
 	padding: 1rem 3rem;
