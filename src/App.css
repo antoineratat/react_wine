@@ -1066,6 +1066,10 @@ a.current {
 		width: 20%;
 	}
 
+	.container_wines > .row_wines:nth-child(n + 2) {
+		margin-top: 5rem;
+	}
+
 	.row_wines {
 		min-height: 0vh;
 	}
