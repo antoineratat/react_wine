@@ -389,6 +389,13 @@ a.current {
 	align-items: center;
 }
 
+/* BREADCRUMBS */
+
+.breadcrumb-item.active {
+	color: #f1f1f1ab;
+	font-size: 0.75rem;
+}
+
 /* WINES */
 
 .row_wines {
@@ -401,6 +408,14 @@ a.current {
 .col_wines {
 	margin: auto;
 	max-width: 450px;
+}
+
+.wine_breadcrumb {
+	height: 1.5rem;
+}
+
+.row_wine {
+	height: 15vh;
 }
 
 .card_wine {
