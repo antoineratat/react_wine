@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Row, Col, Image } from 'react-bootstrap'
+import { Row, Col, Image, Breadcrumb } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
 
 export default function Wine(props) {
-	const { isLeft, language, wineTitle, wineDescription, wineImage } = props
+	const { isLeft, language, wineTitle, wineDescription, wineImage, wineArea, wineType } = props
 	const row_wines = useRef()
 	const [visibleRow, setVisibleRow] = useState(false)
 
@@ -51,10 +51,20 @@ export default function Wine(props) {
 					animationOutDuration={0}
 					isVisible={visibleRow}>
 					<Row className='wine_description'>
-						<Col className='wine_description_left'>
-							<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{wineTitle}</h1>
-							<h4>{wineDescription}</h4>
-						</Col>
+						<Row className='row_wine'>
+							<Col className='wine_description_left'>
+								<h1 style={language === 'zh-CN' ? { fontFamily: 'hanzhen' } : {}}>{wineTitle}</h1>
+								<h4>{wineDescription}</h4>
+							</Col>
+						</Row>
+						<Row className='wine_breadcrumb'>
+							<Col>
+								<Breadcrumb>
+									<Breadcrumb.Item active>{wineArea}</Breadcrumb.Item>
+									<Breadcrumb.Item active>{wineType}</Breadcrumb.Item>
+								</Breadcrumb>
+							</Col>
+						</Row>
 					</Row>
 				</Animated>
 			</Col>
