@@ -42,6 +42,9 @@ export const dictionaryList = {
 		story_title: 'CLASSIFIED VINEYARD OF BURGUNDY',
 		story_subtitle: 'SANTENAY, POMMARD, BEAUNE, MARANGES, MERCUREY',
 
+		red_wine: 'Red Wine',
+		white_wine: 'White Wine',
+		burgundy: 'Burgundy',
 		appel_wine_red: 'Our Great Red Wines',
 		appel_wine_white: 'Our Great White Wines',
 		appel_title_0: 'Pinot Noir',
@@ -172,6 +175,9 @@ export const dictionaryList = {
 		story_title: '我们的发现之旅',
 		story_subtitle: '采用可持续方法酿造的优质葡萄酒',
 
+		red_wine: '红葡萄酒',
+		white_wine: '白葡萄酒',
+		burgundy: '勃艮第',
 		appel_wine_red: '我们伟大的红葡萄酒',
 		appel_wine_white: '我们的优质白葡萄酒',
 		appel_title_0: 'Pinot Noir',
@@ -290,6 +296,9 @@ export const dictionaryList = {
 		story_title: 'CLASSÉ VIGNOBLE DE BOURGOGNE',
 		story_subtitle: 'SANTENAY, POMMARD, BEAUNE, MARANGES, MERCUREY',
 
+		red_wine: 'Vin Rouge',
+		white_wine: 'Vin Blanc',
+		burgundy: 'Bourgogne',
 		appel_wine_red: 'Nos Grands Vins Rouges',
 		appel_wine_white: 'Nos Grands Vins Blancs',
 		appel_title_0: 'Pinot Noir',

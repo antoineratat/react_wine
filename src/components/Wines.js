@@ -26,6 +26,8 @@ export default function Wines(props) {
 								wineTitle={dictionary[`appel_title_${count - 1}`]}
 								wineDescription={dictionary[`appel_desc_${count - 1}`]}
 								wineImage={elem.img}
+								wineType={count >= 10 ? dictionary.white_wine : dictionary.red_wine}
+								wineArea={dictionary.burgundy}
 							/>
 						)
 					})}

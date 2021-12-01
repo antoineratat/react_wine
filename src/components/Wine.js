@@ -3,7 +3,7 @@ import { Row, Col, Image, Breadcrumb } from 'react-bootstrap'
 import { Animated } from 'react-animated-css'
 
 export default function Wine(props) {
-	const { isLeft, language, wineTitle, wineDescription, wineImage } = props
+	const { isLeft, language, wineTitle, wineDescription, wineImage, wineArea, wineType } = props
 	const row_wines = useRef()
 	const [visibleRow, setVisibleRow] = useState(false)
 
@@ -60,8 +60,8 @@ export default function Wine(props) {
 						<Row className='wine_breadcrumb'>
 							<Col>
 								<Breadcrumb>
-									<Breadcrumb.Item active>Burgundy</Breadcrumb.Item>
-									<Breadcrumb.Item active>Red Wine</Breadcrumb.Item>
+									<Breadcrumb.Item active>{wineArea}</Breadcrumb.Item>
+									<Breadcrumb.Item active>{wineType}</Breadcrumb.Item>
 								</Breadcrumb>
 							</Col>
 						</Row>
