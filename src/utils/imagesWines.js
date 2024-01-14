@@ -1,17 +1,17 @@
 const imageWines = [
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-	{ img: 'https://templars.guru/app/github/wine_api/bottle.png' },
-]
+  { img: "/assets/bottle.avif" },
+  { img: "/assets/bottle.avif" },
+  { img: "/assets/bottle.avif" },
+  { img: "/assets/bottle.avif" },
+  { img: "/assets/bottle.avif" },
+  { img: "/assets/bottle2.avif" },
+  { img: "/assets/bottle2.avif" },
+  { img: "/assets/bottle2.avif" },
+  { img: "/assets/bottle2.avif" },
+  { img: "/assets/bottle3.avif" },
+  { img: "/assets/bottle3.avif" },
+  { img: "/assets/bottle3.avif" },
+  { img: "/assets/bottle3.avif" },
+];
 
-export default imageWines
+export default imageWines;
