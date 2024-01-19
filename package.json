@@ -1,5 +1,6 @@
 {
   "name": "react_wine",
+  "homepage": "http://antoineratat.xyz/wine",
   "version": "0.1.0",
   "private": true,
   "engines": {
