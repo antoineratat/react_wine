@@ -4,6 +4,9 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Animated } from "react-animated-css";
+import bottleImage from "../assets/bottle.avif";
+import bottleImage2 from "../assets/bottle2.avif";
+import bottleImage3 from "../assets/bottle3.avif";
 import { LanguageContext } from "../language/LanguageContext";
 
 export default function Home(props) {
@@ -122,7 +125,7 @@ export default function Home(props) {
                   <Card.Img
                     className="image_wine"
                     variant="top"
-                    src="/assets/bottle.avif"
+                    src={bottleImage}
                   />
                   <Card.Body>
                     <Card.Title
@@ -159,7 +162,7 @@ export default function Home(props) {
                   <Card.Img
                     className="image_wine"
                     variant="top"
-                    src="/assets/bottle2.avif"
+                    src={bottleImage2}
                   />
                   <Card.Body>
                     <Card.Title
@@ -196,7 +199,7 @@ export default function Home(props) {
                   <Card.Img
                     className="image_wine"
                     variant="top"
-                    src="/assets/bottle3.avif"
+                    src={bottleImage3}
                   />
                   <Card.Body>
                     <Card.Title

@@ -1,17 +1,21 @@
+import bottleImage from "../assets/bottle.avif";
+import bottleImage2 from "../assets/bottle2.avif";
+import bottleImage3 from "../assets/bottle3.avif";
+
 const imageWines = [
-  { img: "/assets/bottle.avif" },
-  { img: "/assets/bottle.avif" },
-  { img: "/assets/bottle.avif" },
-  { img: "/assets/bottle.avif" },
-  { img: "/assets/bottle.avif" },
-  { img: "/assets/bottle2.avif" },
-  { img: "/assets/bottle2.avif" },
-  { img: "/assets/bottle2.avif" },
-  { img: "/assets/bottle2.avif" },
-  { img: "/assets/bottle3.avif" },
-  { img: "/assets/bottle3.avif" },
-  { img: "/assets/bottle3.avif" },
-  { img: "/assets/bottle3.avif" },
+  { img: bottleImage },
+  { img: bottleImage },
+  { img: bottleImage },
+  { img: bottleImage },
+  { img: bottleImage },
+  { img: bottleImage2 },
+  { img: bottleImage2 },
+  { img: bottleImage2 },
+  { img: bottleImage2 },
+  { img: bottleImage3 },
+  { img: bottleImage3 },
+  { img: bottleImage3 },
+  { img: bottleImage3 },
 ];
 
 export default imageWines;
